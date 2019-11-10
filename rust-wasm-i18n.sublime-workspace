@@ -1,0 +1,1737 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"discon",
+				"disconnectAndConnect\tproperty"
+			],
+			[
+				"obser",
+				"observableArray\twarning"
+			],
+			[
+				"needsO",
+				"needsOctaveChan"
+			],
+			[
+				"maintenA",
+				"maintenanceRequestManager"
+			],
+			[
+				"persna",
+				"personality2"
+			],
+			[
+				"cach",
+				"cachedTokenPromise"
+			],
+			[
+				"rackspa",
+				"rackspaceToken"
+			],
+			[
+				"racsp",
+				"rackspaceToken"
+			],
+			[
+				"countdown",
+				"countdownExtraTime"
+			],
+			[
+				"countdownEx",
+				"countdownExtraTimeSeconds"
+			],
+			[
+				"coun",
+				"countdown_request_time_override"
+			],
+			[
+				"count",
+				"countdown_request_time_override"
+			],
+			[
+				"defa",
+				"defaultValue"
+			],
+			[
+				"legal",
+				"legal_time_override"
+			],
+			[
+				"ann",
+				"announcementDisplay"
+			],
+			[
+				"enable",
+				"enable_welcome_message"
+			],
+			[
+				"CGR",
+				"CGROUP_NAME"
+			],
+			[
+				"header",
+				"header_height"
+			],
+			[
+				"the",
+				"theme_collection"
+			],
+			[
+				"d12",
+				"d12_svg"
+			],
+			[
+				"pngB",
+				"pngBuffers"
+			],
+			[
+				"fil",
+				"finalizeSvg"
+			],
+			[
+				"use",
+				"useQty"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"gridS",
+				"gridSize"
+			],
+			[
+				"tile",
+				"tile_info_texts"
+			],
+			[
+				"circle",
+				"circle-2"
+			],
+			[
+				"victory_",
+				"victory_texts_large"
+			],
+			[
+				"u2",
+				"u26E8"
+			],
+			[
+				"error",
+				"writeError"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"_output",
+				"_outputBytes"
+			],
+			[
+				"show",
+				"showGuide"
+			],
+			[
+				"bottom",
+				"bottomFlexBasis"
+			],
+			[
+				"flex",
+				"bottomFlexBasis"
+			],
+			[
+				"current",
+				"currentVariant"
+			],
+			[
+				"DIFFS",
+				"DIFFS_LENGTH-5"
+			],
+			[
+				"curr",
+				"currentId"
+			],
+			[
+				"global",
+				"globalOptions"
+			],
+			[
+				"renderer",
+				"rendererBuilder"
+			],
+			[
+				"cardOp",
+				"cardOptionsErrors"
+			],
+			[
+				"toC",
+				"toCardCreatrForm"
+			],
+			[
+				"cardData",
+				"cardDataWatchers"
+			],
+			[
+				"asset",
+				"assetBuffers"
+			],
+			[
+				"web",
+				"webpackConfig"
+			],
+			[
+				"mo",
+				"moveProperty"
+			],
+			[
+				"ic",
+				"iconst_2"
+			],
+			[
+				"Doub",
+				"DoubleDabbleJava"
+			],
+			[
+				"getDefualt",
+				"getDefaultTemplate"
+			],
+			[
+				"csvStrin",
+				"csvStringify"
+			],
+			[
+				"sv",
+				"svgBuffer"
+			],
+			[
+				"_load",
+				"_loadedListeners"
+			],
+			[
+				"template",
+				"templateString"
+			],
+			[
+				"sho",
+				"shouldLoadBuffer"
+			],
+			[
+				"read",
+				"readFileSync"
+			],
+			[
+				"readF",
+				"readFileFn"
+			],
+			[
+				"multi",
+				"multipliedCards"
+			],
+			[
+				"mult",
+				"multipliedCards"
+			],
+			[
+				"rend",
+				"renderedCards"
+			],
+			[
+				"processF",
+				"processFieldSync"
+			],
+			[
+				"col",
+				"columnText"
+			],
+			[
+				"prop",
+				"propertiesRegex"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"paragr",
+				"paragraphSpacing"
+			],
+			[
+				"new",
+				"newKey"
+			],
+			[
+				"par",
+				"paragraph-spacing"
+			],
+			[
+				"pa",
+				"paragraphSpacing"
+			],
+			[
+				"line",
+				"lineHeight"
+			],
+			[
+				"glp",
+				"glyphId"
+			],
+			[
+				"gl",
+				"glyph"
+			],
+			[
+				"outpt",
+				"output_transcoder"
+			],
+			[
+				"pdf",
+				"pdf_ostream"
+			],
+			[
+				"place",
+				"placeholder"
+			],
+			[
+				"placeh",
+				"placeholders"
+			],
+			[
+				"Card",
+				"CardReader"
+			],
+			[
+				"data",
+				"dataPath"
+			],
+			[
+				"def",
+				"defaultValue"
+			],
+			[
+				"get",
+				"getDejaVuPath"
+			],
+			[
+				"sound",
+				"soundWhistle"
+			],
+			[
+				"stars",
+				"starsMask"
+			],
+			[
+				"comp",
+				"computerWorkerFn"
+			],
+			[
+				"ren",
+				"renderGameState"
+			],
+			[
+				"strok",
+				"strokeWidth"
+			],
+			[
+				"CO",
+				"COLUMN_WIDTH"
+			],
+			[
+				"G",
+				"GameState"
+			],
+			[
+				"computer",
+				"computerMove"
+			],
+			[
+				"ru",
+				"rungMove"
+			],
+			[
+				"comm",
+				"communicator"
+			],
+			[
+				"ref",
+				"reference1"
+			],
+			[
+				"parseT",
+				"parseToGitFileArray"
+			],
+			[
+				"lst",
+				"lstreeRaw"
+			],
+			[
+				"prev",
+				"previous"
+			],
+			[
+				"sync",
+				"syncFile1"
+			],
+			[
+				"previ",
+				"previousPath"
+			],
+			[
+				"initiali",
+				"initializeK"
+			],
+			[
+				"initili",
+				"initializeG"
+			],
+			[
+				"child",
+				"child_process"
+			],
+			[
+				"fileO",
+				"fileObject"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"k",
+				"kloudlessFiles"
+			],
+			[
+				"kl",
+				"kloudlessFiles"
+			],
+			[
+				"Kl",
+				"KloudlessWrapper"
+			],
+			[
+				"rela",
+				"relativePath"
+			],
+			[
+				"next",
+				"nextClean"
+			],
+			[
+				"de",
+				"defaultFolderName"
+			],
+			[
+				"file",
+				"fileObject"
+			],
+			[
+				"all",
+				"allFiles"
+			],
+			[
+				"reac",
+				"reaction_texts"
+			],
+			[
+				"con",
+				"contentString"
+			],
+			[
+				"que",
+				"queueObj"
+			],
+			[
+				"_thr",
+				"_throttleTime"
+			],
+			[
+				"shad",
+				"shadowRegex"
+			],
+			[
+				"SH",
+				"IGNORE_SHADOW_PACKAGES"
+			],
+			[
+				"octa",
+				"octaverc"
+			],
+			[
+				"max",
+				"max_message_length"
+			],
+			[
+				"so",
+				"socketListeners"
+			],
+			[
+				"message",
+				"messageString"
+			],
+			[
+				"cont",
+				"contentString\tparameter"
+			],
+			[
+				"requ",
+				"request-input-answer"
+			],
+			[
+				"at",
+				"attachmentId"
+			],
+			[
+				"len",
+				"lutf8_len"
+			],
+			[
+				"spwn",
+				"spawnOptions"
+			],
+			[
+				"_send",
+				"_sendMessageToFiles"
+			],
+			[
+				"ba",
+				"back-octave"
+			],
+			[
+				"_doCr",
+				"_doCreateImpl"
+			],
+			[
+				"att",
+				"attachContentScripts"
+			],
+			[
+				"clear",
+				"clearFollowedUpRulersCache"
+			],
+			[
+				"foll",
+				"followedUpRulers"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "www/index.js",
+			"settings":
+			{
+				"buffer_size": 62,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/webpack.config.js",
+			"settings":
+			{
+				"buffer_size": 311,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/lib.rs",
+			"settings":
+			{
+				"buffer_size": 522,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Cargo.toml",
+			"settings":
+			{
+				"buffer_size": 1010,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pkg/rust_wasm_i18n_bg.d.ts",
+			"settings":
+			{
+				"buffer_size": 244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Cargo.lock",
+			"settings":
+			{
+				"buffer_size": 19527,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rena",
+				"ANF: Rename File"
+			],
+			[
+				"format",
+				"TypeScript: Paste And Format"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"chan",
+				"ChangeQuotes"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"sp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wrap",
+				"Wrap Plus: Wrap Lines"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ren",
+				"ANF: Rename File"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"dele",
+				"ANF: Delete Current File"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ch",
+				"ChangeQuotes"
+			],
+			[
+				"cha",
+				"ChangeQuotes"
+			],
+			[
+				"reni",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"uniq",
+				"Permute Lines: Unique"
+			],
+			[
+				"change",
+				"ChangeQuotes"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ren\t",
+				"ANF: Rename File"
+			],
+			[
+				"w",
+				"Wrap Plus: Wrap Lines"
+			],
+			[
+				"wpl",
+				"Wrap Plus: Wrap Lines"
+			],
+			[
+				"d",
+				"ANF: Delete Current File"
+			],
+			[
+				"re",
+				"ANF: Rename File"
+			],
+			[
+				"s",
+				"Sort Lines"
+			],
+			[
+				"c",
+				"ChangeQuotes"
+			],
+			[
+				"",
+				"ANF: Rename File"
+			],
+			[
+				"del",
+				"ANF: Delete Current File"
+			],
+			[
+				"wrp",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rn",
+				"ANF: Rename File"
+			],
+			[
+				"open",
+				"Open in Default Application"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"line",
+				"Line Ending: Unix"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rene",
+				"ANF: Rename File"
+			],
+			[
+				"cq",
+				"ChangeQuotes"
+			]
+		],
+		"width": 524.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.encoding()",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sffc/Documents/Projects/rust-wasm-i18n",
+		"/Users/sffc/Documents/Projects/rust-wasm-i18n/pkg",
+		"/Users/sffc/Documents/Projects/rust-wasm-i18n/src",
+		"/Users/sffc/Documents/Projects/rust-wasm-i18n/www"
+	],
+	"file_history":
+	[
+		"/Users/sffc/Documents/Projects/rust-wasm-i18n/Cargo.toml",
+		"/Users/sffc/Documents/Projects/rust-wasm-i18n/www/package.json",
+		"/Users/sffc/Documents/Projects/rust-wasm-i18n/rust-wasm-i18n-2/.gitignore",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/workspace_normal.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/express_setup.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/workspace_shared.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/flexbox.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/editor.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/app.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/flavor_record_model.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/app.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-filesystem/app.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/modals.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/ot-handler.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/ws-shared.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/mongo.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/session_middleware.ts",
+		"/Users/sffc/Documents/Projects/octave-online/octave-online.sublime-project",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/typedefs/iuser.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/config-helper.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/Makefile",
+		"/Users/sffc/Documents/Projects/octave-online/prod_config.hjson",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/app.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/index.html",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/client.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/session-impl.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/redis-util.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/main-pool.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/main-flavor.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/main.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/socket_connect.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/colab.html",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/official/fire.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/ot-client.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/ot_document.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/rack/operations.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/rack/rackapi.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/maintenance-request-manager.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/config.hjson",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/octave_session_helper.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/lua/get-sesscode.lua",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/typedefs/iworkspace.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/session-manager.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/redis-messenger.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/config_defaults.hjson",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/typedefs/iredis.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/index.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/lua/remove-sesscode.lua",
+		"/Users/sffc/Documents/Projects/octave-online/projects/rack/index.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/rack/operations.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/message-translator.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/user_model.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/rack/rackapi.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/config.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/rack/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/image_loop.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/header.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/output_panel.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/octave-session.js",
+		"/Users/sffc/Documents/Projects/octave-online/strings.txt",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-filesystem/src/working-util.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/attachment.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/dockerfiles/build-octave.dockerfile",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/official/lava.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/fire.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/ice.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/lava.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/sun.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/official/ice.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/official/sun.styl",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/all.styl",
+		"/Users/sffc/Documents/Projects/octave-online/ot-blog.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/css/themes/fire.css",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/async-cache.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/rack/rackauth.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/promise-cache.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/Gruntfile.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/entrypoint/back-selinux.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/program_model.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/entrypoint/oo-reinstall.service",
+		"/Users/sffc/Documents/Projects/octave-online/projects/.gitignore",
+		"/Users/sffc/Documents/Projects/octave-online/projects/rack/vulnerabilities-20190105.txt",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/process-handler.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/maintenance.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-filesystem/src/controller.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/onboarding.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/octfile.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-octave/octaverc.m",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/runtime.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/.travis.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/utils-auth/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/capped-file-system.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/app.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-filesystem/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/utils-auth/package.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/config.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/.eslintignore",
+		"/Users/sffc/Documents/Projects/octave-online/projects/entrypoint/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-filesystem/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/.eslintrc.yml",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/.eslintignore",
+		"/Users/sffc/Documents/Projects/octave-online/projects/utils-auth/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/shared/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/bower.json",
+		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/js/download.js",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-octave/oo-changesets/000-README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-octave/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-filesystem/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/config.sample.hjson",
+		"/Users/sffc/Documents/Projects/octave-online/projects/dockerfiles/install-node.dockerfile",
+		"/Users/sffc/Documents/Projects/octave-online/projects/dockerfiles/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/entrypoint/README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/back-octave/oo-changesets/100-README.md",
+		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/back_server_handler.ts",
+		"/Users/sffc/Documents/Projects/octave-online/projects/config_defaults.yaml"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 110.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"str",
+			"rust.wasm.i18n.2",
+			"rust.wasm.i18n",
+			"push",
+			"str"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "www/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "www/webpack.config.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/lib.rs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rust/Rust.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 2,
+								"tabSize": 2
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Cargo.toml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1010,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1010,
+								1010
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TOML/TOML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 383.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pkg/rust_wasm_i18n_bg.d.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Cargo.lock",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4549,
+								4549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "rust-wasm-i18n.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fire.styl",
+				"projects/client/app/styl/themes/official/fire.styl"
+			],
+			[
+				"prod",
+				"prod_config.hjson"
+			],
+			[
+				"packagelock",
+				"projects/front/package-lock.json"
+			],
+			[
+				"filesystemcontro",
+				"projects/back-filesystem/src/controller.js"
+			],
+			[
+				"client.js",
+				"projects/client/app/js/client.js"
+			],
+			[
+				"socketconn",
+				"projects/front/src/socket_connect.ts"
+			],
+			[
+				"cliet",
+				"projects/client/app/js/client.js"
+			],
+			[
+				"shared",
+				"projects/front/src/workspace_shared.ts"
+			],
+			[
+				"socket",
+				"projects/front/src/socket_connect.ts"
+			],
+			[
+				"redis",
+				"projects/shared/redis-util.js"
+			],
+			[
+				"",
+				"projects/shared/redis-util.js"
+			],
+			[
+				"prod_con",
+				"prod_config.hjson"
+			],
+			[
+				"dockerfile",
+				"projects/dockerfiles/build-octave.dockerfile"
+			],
+			[
+				"user_model",
+				"projects/front/src/user_model.ts"
+			],
+			[
+				"modals",
+				"projects/client/app/styl/modals.styl"
+			],
+			[
+				"index.html",
+				"projects/client/app/index.html"
+			],
+			[
+				"index.js",
+				"projects/shared/rack/index.js"
+			],
+			[
+				"operations",
+				"projects/shared/rack/operations.js"
+			],
+			[
+				"rack/index",
+				"projects/shared/rack/index.js"
+			],
+			[
+				"config.hjson",
+				"projects/config.hjson"
+			],
+			[
+				"prod_",
+				"prod_config.hjson"
+			],
+			[
+				"rack/",
+				"projects/shared/rack/index.js"
+			],
+			[
+				"config_de",
+				"projects/config_defaults.hjson"
+			],
+			[
+				"oper",
+				"projects/shared/rack/operations.js"
+			],
+			[
+				"rack/op",
+				"projects/shared/rack/operations.js"
+			],
+			[
+				"client",
+				"projects/client/app/js/client.js"
+			],
+			[
+				"clie",
+				"projects/client/app/js/client.js"
+			],
+			[
+				"index",
+				"projects/client/app/index.html"
+			],
+			[
+				"header",
+				"projects/client/app/styl/header.styl"
+			],
+			[
+				"flex",
+				"projects/client/app/styl/flexbox.styl"
+			],
+			[
+				"flexbox.styl",
+				"projects/client/app/styl/flexbox.styl"
+			],
+			[
+				"app.js",
+				"projects/back-master/app.js"
+			],
+			[
+				"flav",
+				"projects/front/flavor_record_model.ts"
+			],
+			[
+				"client.s",
+				"projects/client/app/js/client.js"
+			],
+			[
+				"socket_",
+				"projects/front/src/socket_connect.ts"
+			],
+			[
+				"lava",
+				"projects/client/app/styl/themes/official/lava.styl"
+			],
+			[
+				"user",
+				"projects/front/src/user_model.ts"
+			],
+			[
+				"iuser.ts",
+				"projects/front/src/typedefs/iuser.ts"
+			],
+			[
+				"app",
+				"projects/client/app/js/app.js"
+			],
+			[
+				"otclient",
+				"projects/client/app/js/ot-client.js"
+			],
+			[
+				"COLAB",
+				"projects/client/app/colab.html"
+			],
+			[
+				"iredis",
+				"projects/front/src/typedefs/iredis.ts"
+			],
+			[
+				"ot-handler",
+				"projects/client/app/js/ot-handler.js"
+			],
+			[
+				"redis-util",
+				"projects/shared/redis-util.js"
+			],
+			[
+				"iredis.ts",
+				"projects/front/src/typedefs/iredis.ts"
+			],
+			[
+				"maintenan",
+				"projects/back-master/src/maintenance-request-manager.js"
+			],
+			[
+				"redis-me",
+				"projects/shared/redis-messenger.js"
+			],
+			[
+				"IWorkspace",
+				"projects/front/src/typedefs/iworkspace.ts"
+			],
+			[
+				"worksp",
+				"projects/front/src/workspace_shared.ts"
+			],
+			[
+				"octave",
+				"projects/back-master/src/octave-session.js"
+			],
+			[
+				"session",
+				"projects/back-master/src/octave-session.js"
+			],
+			[
+				"user.ts",
+				"projects/front/src/user_model.ts"
+			],
+			[
+				"socket_conn",
+				"projects/front/src/socket_connect.ts"
+			],
+			[
+				"session-ma",
+				"projects/back-master/src/session-manager.js"
+			],
+			[
+				"session-impl",
+				"projects/back-master/src/session-impl.js"
+			],
+			[
+				"program.ts",
+				"projects/front/src/program_model.ts"
+			],
+			[
+				"onboarding.js",
+				"projects/client/app/js/onboarding.js"
+			],
+			[
+				"octarc.m",
+				"projects/back-octave/octaverc.m"
+			],
+			[
+				"runtime.js",
+				"projects/client/app/js/runtime.js"
+			],
+			[
+				"Gruntile",
+				"codebase/oo-client/Gruntfile.js"
+			],
+			[
+				"anal",
+				"codebase/oo-client/app/js/anal.js"
+			],
+			[
+				"Gruntfile",
+				"codebase/oo-client/Gruntfile.js"
+			],
+			[
+				"git-util",
+				"projects/back-filesystem/src/git-util.js"
+			],
+			[
+				"tstrbnf",
+				"test/intltest/itrbnf.cpp"
+			],
+			[
+				"numbertest.h",
+				"icu4c/source/test/intltest/numbertest.h"
+			],
+			[
+				"unicode/number",
+				"icu4c/source/i18n/unicode/numberformatter.h"
+			],
+			[
+				"numbertest_api",
+				"icu4c/source/test/intltest/numbertest_api.cpp"
+			],
+			[
+				"stringpiece.cpp",
+				"icu4c/source/common/stringpiece.cpp"
+			],
+			[
+				"stringpiece.h",
+				"icu4c/source/common/unicode/stringpiece.h"
+			],
+			[
+				"cstr.h",
+				"icu4c/source/common/cstr.h"
+			],
+			[
+				"intltest.cpp",
+				"icu4c/source/test/intltest/intltest.cpp"
+			],
+			[
+				"number_decimalqu",
+				"icu4c/source/test/intltest/numbertest_decimalquantity.cpp"
+			],
+			[
+				"numberformattertest",
+				"android/src/com1/ibm/icu/dev/test/number/NumberFormatterTest.java"
+			],
+			[
+				"microprops",
+				"icu4j/main/classes/core/src/newapi/impl/MicroProps.java"
+			],
+			[
+				"pattern",
+				"android/src/com1/ibm/icu/impl/number/PatternStringParser.java"
+			],
+			[
+				"mutable",
+				"android/src/com1/ibm/icu/dev/test/number/MutablePatternModifierTest.java"
+			],
+			[
+				"decimalquantity",
+				"android/src/com1/ibm/icu/impl/number/DecimalQuantity_AbstractBCD.java"
+			],
+			[
+				"canvg/index",
+				"node_modules/canvg/index.js"
+			],
+			[
+				"glyphset",
+				"node_modules/opentype.js/src/glyphset.js"
+			],
+			[
+				"font.js",
+				"node_modules/opentype.js/src/font.js"
+			],
+			[
+				"sax.js",
+				"node_modules/canvg/node_modules/xmldom/sax.js"
+			],
+			[
+				"nodemodulespuglibindex",
+				"node_modules/pug/lib/index.js"
+			],
+			[
+				"ustream",
+				"io/unicode/ustream.h"
+			],
+			[
+				"card.rb",
+				"card.rb"
+			],
+			[
+				"config",
+				"projects/shared/config.json"
+			],
+			[
+				"trans",
+				"projects/back-master/src/message-translator.js"
+			],
+			[
+				"octaverc",
+				"projects/_old/octaverc.m"
+			],
+			[
+				"appjs",
+				"projects/back-master/app.js"
+			],
+			[
+				"octavesessionjs",
+				"projects/back-master/src/octave-session.js"
+			],
+			[
+				"maintenance",
+				"projects/back-master/src/maintenance-request-manager.js"
+			],
+			[
+				"jsonmainh",
+				"octave/octave/libinterp/corefcn/json-main.h"
+			],
+			[
+				"usage",
+				"octave/octave/libinterp/options-usage.h"
+			],
+			[
+				"octavecc",
+				"octave/octave/libinterp/octave.cc"
+			],
+			[
+				"config.json",
+				"projects/shared/config.json"
+			],
+			[
+				"othandler",
+				"codebase/oo-client/app/js/ot-handler.js"
+			],
+			[
+				"aceada",
+				"codebase/oo-client/app/js/ace-adapter.js"
+			],
+			[
+				"controller",
+				"projects/back-filesystem/src/controller.js"
+			],
+			[
+				"contro",
+				"projects/back-filesystem/src/controller.js"
+			],
+			[
+				"image.m",
+				"octave/octave/scripts/image/image.m"
+			],
+			[
+				"__gnupl",
+				"octave/octave/scripts/plot/util/__gnuplot_drawnow__.m"
+			],
+			[
+				"translat",
+				"projects/back-master/src/message-translator.js"
+			],
+			[
+				"__gnuplot_drawnow__",
+				"octave/octave/scripts/plot/util/__gnuplot_drawnow__.m"
+			],
+			[
+				"imshow",
+				"octave/octave/scripts/image/imshow.m"
+			],
+			[
+				"capp",
+				"projects/back-master/src/capped-file-system.js"
+			],
+			[
+				"audfiltbw",
+				"projects/back-octave/placeholders/audfiltbw.m"
+			],
+			[
+				"octave-s",
+				"projects/back-master/src/octave-session.js"
+			],
+			[
+				"docker",
+				"projects/back-master/src/docker-handler.js"
+			],
+			[
+				"sessionmanager",
+				"projects/back-master/src/session-manager.js"
+			],
+			[
+				"plotte",
+				"projects/back-octave/plot-tester.js"
+			],
+			[
+				"place",
+				"octave/placeholders.m"
+			],
+			[
+				"placeh",
+				"octave/placeholders.m"
+			],
+			[
+				"octavelinkh",
+				"octave/octave/libinterp/corefcn/octave-link.h"
+			],
+			[
+				"octavelinkcc",
+				"octave/octave/libinterp/corefcn/octave-link.cc"
+			],
+			[
+				"octavejsonh",
+				"octave/octave/libinterp/corefcn/octave-json-link.h"
+			],
+			[
+				"octavejsoncc",
+				"octave/octave/libinterp/corefcn/octave-json-link.cc"
+			],
+			[
+				"plotstres",
+				"projects/back-octave/plot-tester.js"
+			],
+			[
+				"makefile",
+				"projects/back-octave/Makefile"
+			],
+			[
+				"host",
+				"projects/back-octave/host.c"
+			],
+			[
+				"jsonutilcc",
+				"octave/octave/libinterp/corefcn/json-util.cc"
+			],
+			[
+				"optionsusage",
+				"octave/r1/libinterp/options-usage.h"
+			],
+			[
+				"jsonmaincc",
+				"octave/octave/libinterp/corefcn/json-main.cc"
+			],
+			[
+				"libinterpoctavelinkh",
+				"octave/octave/libinterp/corefcn/octave-json-link.h"
+			],
+			[
+				"libinterpjsonlinkcc",
+				"octave/octave/libinterp/corefcn/octave-json-link.cc"
+			],
+			[
+				"libinterpmodulemk",
+				"octave/octave/libinterp/corefcn/module.mk"
+			],
+			[
+				"modulemk",
+				"octave/octave/m4/module.mk"
+			],
+			[
+				"plottest",
+				"projects/back-octave/plot-tester.js"
+			],
+			[
+				"octave.cc",
+				"octave/octave/libinterp/octave.cc"
+			],
+			[
+				"inputcc",
+				"octave/octave/libinterp/corefcn/input.cc"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 551.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
