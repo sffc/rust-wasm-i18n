@@ -1,5 +1,5 @@
 [package]
-name = "rust-wasm-i18n-2"
+name = "rust-wasm-i18n"
 version = "0.1.0"
 authors = ["Shane F. Carr <shane.carr@wustl.edu>"]
 edition = "2018"
