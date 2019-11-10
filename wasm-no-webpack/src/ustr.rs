@@ -21,7 +21,7 @@ impl UStr {
 		for c in s.bytes() {
 			if let Some(elem) = self.data.get_mut(self.len) {
 				*elem = c;
-				self.len += 1;
+				self.len += 1
 			}
 		}
 	}
@@ -29,7 +29,7 @@ impl UStr {
 	pub fn as_str(&self) -> &str {
 		unsafe {
 			// TODO: Stop at self.len, but right now that could trigger a panic.
-			str::from_utf8_unchecked(&self.data)
+			str::from_utf8_unchecked(&self.data/*[..self.len]*/)
 		}
 	}
 }

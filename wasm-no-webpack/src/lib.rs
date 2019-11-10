@@ -15,6 +15,11 @@ extern "C" {
 
 #[wasm_bindgen]
 pub fn greet(input: &str) {
+	if cfg!(debug_assertions) {
+		// Enable console.log panicking in debug mode
+		console_error_panic_hook::set_once();
+	}
+
 	// let mut message = String::new();
 	// message.push_str("Hello, ");
 	// message.push_str(name);

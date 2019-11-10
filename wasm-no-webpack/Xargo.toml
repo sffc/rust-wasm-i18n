@@ -1,0 +1,8 @@
+# Additional code size optimizations
+# https://github.com/johnthagen/min-sized-rust
+
+# TODO: How to enable this with wasm-pack?
+# https://github.com/rustwasm/wasm-pack/issues/737
+
+[dependencies]
+std = {default-features=false, features=["panic_immediate_abort"]}
