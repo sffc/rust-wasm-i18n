@@ -56,10 +56,20 @@ function passStringToWasm(arg) {
     return ptr;
 }
 /**
-* @param {string} name
+* @param {string} input
 */
-export function greet(name) {
-    wasm.greet(passStringToWasm(name), WASM_VECTOR_LEN);
+export function greet(input) {
+    wasm.greet(passStringToWasm(input), WASM_VECTOR_LEN);
+}
+
+/**
+* @param {number} a
+* @param {number} b
+* @returns {number}
+*/
+export function add(a, b) {
+    const ret = wasm.add(a, b);
+    return ret >>> 0;
 }
 
 let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true, fatal: true });
