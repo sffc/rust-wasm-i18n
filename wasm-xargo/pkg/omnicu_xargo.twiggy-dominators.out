@@ -1,83 +1,85 @@
  Retained Bytes │ Retained % │ Dominator Tree
 ────────────────┼────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-           2022 ┊     25.56% ┊ "function names" subsection
-           1057 ┊     13.36% ┊ data[0]
-            721 ┊      9.11% ┊ wee_alloc::alloc_with_refill::h5c9d402193a17c6f
-            578 ┊      7.31% ┊   ⤷ wee_alloc::alloc_first_fit::he0386570d411f2dd
+           2102 ┊     25.87% ┊ "function names" subsection
+           1061 ┊     13.06% ┊ data[0]
+            721 ┊      8.87% ┊ wee_alloc::alloc_with_refill::h5c9d402193a17c6f
+            578 ┊      7.11% ┊   ⤷ wee_alloc::alloc_first_fit::he0386570d411f2dd
               9 ┊      0.11% ┊   ⤷ type[10]: (i32, i32, i32, i32, i32) -> i32
-            548 ┊      6.93% ┊ export "__wbindgen_anyref_table_alloc"
-            516 ┊      6.52% ┊   ⤷ __wbindgen_anyref_table_alloc
-             57 ┊      0.72% ┊       ⤷ import __wbindgen_anyref_xform__::__wbindgen_anyref_table_grow
-            534 ┊      6.75% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::dealloc::h69711e8132e6f382
-            322 ┊      4.07% ┊   ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::hff20f0f104c45c9b
-            349 ┊      4.41% ┊ __wbindgen_anyref_table_dealloc
-             61 ┊      0.77% ┊   ⤷ import __wbindgen_anyref_xform__::__wbindgen_anyref_table_set_null
-            337 ┊      4.26% ┊ export "greet"
-            329 ┊      4.16% ┊   ⤷ greet
-             93 ┊      1.18% ┊       ⤷ omnicu_xargo::ustr::UStr::push_str::hefe9e9a4b144d8a6
-             56 ┊      0.71% ┊       ⤷ import __wbindgen_placeholder__::__wbg_alert_07a8b1643f0fc0c4
-              6 ┊      0.08% ┊       ⤷ core::slice::slice_index_len_fail::h90dd41b8d72969e8
-            336 ┊      4.25% ┊ table[0]
-            332 ┊      4.20% ┊   ⤷ elem[0]
-            160 ┊      2.02% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h8a067d3ac413d7cb
-            121 ┊      1.53% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h76947ebbcc6ea2bd
+            548 ┊      6.74% ┊ export "__wbindgen_anyref_table_alloc"
+            516 ┊      6.35% ┊   ⤷ __wbindgen_anyref_table_alloc
+             57 ┊      0.70% ┊       ⤷ import __wbindgen_anyref_xform__::__wbindgen_anyref_table_grow
+            534 ┊      6.57% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::dealloc::h69711e8132e6f382
+            322 ┊      3.96% ┊   ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::hff20f0f104c45c9b
+            461 ┊      5.67% ┊ export "greet"
+            453 ┊      5.58% ┊   ⤷ greet
+            241 ┊      2.97% ┊       ⤷ alloc::vec::Vec<T>::extend_from_slice::h1ab3d3d931b75739
+             52 ┊      0.64% ┊           ⤷ alloc::alloc::handle_alloc_error::h0cc978e7966f5f5f
+             39 ┊      0.48% ┊               ⤷ rust_oom
+             56 ┊      0.69% ┊       ⤷ import __wbindgen_placeholder__::__wbg_alert_07a8b1643f0fc0c4
+            349 ┊      4.30% ┊ __wbindgen_anyref_table_dealloc
+             61 ┊      0.75% ┊   ⤷ import __wbindgen_anyref_xform__::__wbindgen_anyref_table_set_null
+            341 ┊      4.20% ┊ table[0]
+            337 ┊      4.15% ┊   ⤷ elem[0]
+            160 ┊      1.97% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h8a067d3ac413d7cb
+            121 ┊      1.49% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h76947ebbcc6ea2bd
               7 ┊      0.09% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h46f760d9fc30d768
-              6 ┊      0.08% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h808536f25131690a
-              6 ┊      0.08% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::h7b1f2a3bf020c7ad
-              6 ┊      0.08% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hcc249a0c690184fb
+              6 ┊      0.07% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h808536f25131690a
+              6 ┊      0.07% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::h7b1f2a3bf020c7ad
+              6 ┊      0.07% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hcc249a0c690184fb
+              4 ┊      0.05% ┊       ⤷ std::alloc::default_alloc_error_hook::hbcec6c9c827ba0ad
               4 ┊      0.05% ┊       ⤷ core::ptr::real_drop_in_place::ha50c0d7cdfd5e643
               4 ┊      0.05% ┊       ⤷ core::ptr::real_drop_in_place::ha50c0d7cdfd5e643.621
               4 ┊      0.05% ┊       ⤷ core::ptr::real_drop_in_place::h35391338b43a3261
-            323 ┊      4.08% ┊ export "__wbindgen_anyref_heap_live_count_impl"
-            282 ┊      3.56% ┊   ⤷ __wbindgen_anyref_heap_live_count_impl
-            217 ┊      2.74% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::alloc::hc581bd987e59e6c9
-            144 ┊      1.82% ┊ export "__wbindgen_realloc"
-            123 ┊      1.55% ┊   ⤷ __wbindgen_realloc
-             85 ┊      1.07% ┊       ⤷ __rust_realloc
-             59 ┊      0.75% ┊           ⤷ __rg_realloc
-              8 ┊      0.10% ┊           ⤷ type[6]: (i32, i32, i32, i32) -> i32
-            103 ┊      1.30% ┊ export "__wbindgen_describe___wbg_alert_07a8b1643f0fc0c4"
-             52 ┊      0.66% ┊   ⤷ __wbindgen_describe___wbg_alert_07a8b1643f0fc0c4
-             88 ┊      1.11% ┊ data[1]
-             80 ┊      1.01% ┊ export "__wbindgen_describe_greet"
-             52 ┊      0.66% ┊   ⤷ __wbindgen_describe_greet
-             80 ┊      1.01% ┊ export "__wbindgen_drop_anyref_slice"
-             49 ┊      0.62% ┊   ⤷ __wbindgen_drop_anyref_slice
-             78 ┊      0.99% ┊ export "__wbindgen_describe_add"
-             52 ┊      0.66% ┊   ⤷ __wbindgen_describe_add
-             70 ┊      0.88% ┊ export "__wbindgen_malloc"
-             50 ┊      0.63% ┊   ⤷ __wbindgen_malloc
-             56 ┊      0.71% ┊ memcpy
-             47 ┊      0.59% ┊ import __wbindgen_placeholder__::__wbindgen_describe
-             42 ┊      0.53% ┊ export "__wbindgen_free"
+            323 ┊      3.98% ┊ export "__wbindgen_anyref_heap_live_count_impl"
+            282 ┊      3.47% ┊   ⤷ __wbindgen_anyref_heap_live_count_impl
+            217 ┊      2.67% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::alloc::hc581bd987e59e6c9
+            103 ┊      1.27% ┊ export "__wbindgen_describe___wbg_alert_07a8b1643f0fc0c4"
+             52 ┊      0.64% ┊   ⤷ __wbindgen_describe___wbg_alert_07a8b1643f0fc0c4
+             88 ┊      1.08% ┊ data[1]
+             85 ┊      1.05% ┊ __rust_realloc
+             59 ┊      0.73% ┊   ⤷ __rg_realloc
+              8 ┊      0.10% ┊   ⤷ type[6]: (i32, i32, i32, i32) -> i32
+             80 ┊      0.98% ┊ export "__wbindgen_describe_greet"
+             52 ┊      0.64% ┊   ⤷ __wbindgen_describe_greet
+             80 ┊      0.98% ┊ export "__wbindgen_drop_anyref_slice"
+             49 ┊      0.60% ┊   ⤷ __wbindgen_drop_anyref_slice
+             78 ┊      0.96% ┊ export "__wbindgen_describe_add"
+             52 ┊      0.64% ┊   ⤷ __wbindgen_describe_add
+             70 ┊      0.86% ┊ export "__wbindgen_malloc"
+             50 ┊      0.62% ┊   ⤷ __wbindgen_malloc
+             59 ┊      0.73% ┊ export "__wbindgen_realloc"
+             38 ┊      0.47% ┊   ⤷ __wbindgen_realloc
+             56 ┊      0.69% ┊ memcpy
+             47 ┊      0.58% ┊ import __wbindgen_placeholder__::__wbindgen_describe
+             42 ┊      0.52% ┊ export "__wbindgen_free"
              24 ┊      0.30% ┊   ⤷ __wbindgen_free
-             34 ┊      0.43% ┊ export "__wbindgen_anyref_table_dealloc"
-             32 ┊      0.40% ┊ __rust_dealloc
+             34 ┊      0.42% ┊ export "__wbindgen_anyref_table_dealloc"
+             32 ┊      0.39% ┊ __rust_dealloc
              16 ┊      0.20% ┊   ⤷ __rg_dealloc
-             28 ┊      0.35% ┊ __rust_alloc
-             14 ┊      0.18% ┊   ⤷ __rg_alloc
-             27 ┊      0.34% ┊ export "__wbindgen_exn_store"
+             28 ┊      0.34% ┊ __rust_alloc
+             14 ┊      0.17% ┊   ⤷ __rg_alloc
+             27 ┊      0.33% ┊ export "__wbindgen_exn_store"
               4 ┊      0.05% ┊   ⤷ __wbindgen_exn_store
-             27 ┊      0.34% ┊ custom section '__wasm_bindgen_unstable' headers
-             22 ┊      0.28% ┊ export "__heap_base"
+             27 ┊      0.33% ┊ custom section '__wasm_bindgen_unstable' headers
+             22 ┊      0.27% ┊ export "__heap_base"
               8 ┊      0.10% ┊   ⤷ global[2]
-             21 ┊      0.27% ┊ export "__data_end"
+             21 ┊      0.26% ┊ export "__data_end"
               8 ┊      0.10% ┊   ⤷ global[1]
-             15 ┊      0.19% ┊ export "add"
+             15 ┊      0.18% ┊ export "add"
               9 ┊      0.11% ┊   ⤷ add
              11 ┊      0.14% ┊ export "memory"
-              2 ┊      0.03% ┊   ⤷ memory[0]
+              2 ┊      0.02% ┊   ⤷ memory[0]
               8 ┊      0.10% ┊ global[0]
               8 ┊      0.10% ┊ custom section 'name' headers
               8 ┊      0.10% ┊ wasm magic bytes
-              7 ┊      0.09% ┊ type[0]: (i32, i32, i32, i32) -> nil
+              7 ┊      0.09% ┊ type[1]: (i32, i32, i32, i32) -> nil
               7 ┊      0.09% ┊ type[9]: (i32, i32, i32) -> i32
               7 ┊      0.09% ┊ code section headers
-              6 ┊      0.08% ┊ type[1]: (i32, i32) -> i32
-              6 ┊      0.08% ┊ type[5]: (i32, i32, i32) -> nil
-              5 ┊      0.06% ┊ type[2]: (i32) -> i32
-              5 ┊      0.06% ┊ type[4]: (i32, i32) -> nil
-              4 ┊      0.05% ┊ type[3]: (i32) -> nil
+              6 ┊      0.07% ┊ type[2]: (i32, i32) -> i32
+              6 ┊      0.07% ┊ type[5]: (i32, i32, i32) -> nil
+              5 ┊      0.06% ┊ type[0]: (i32, i32) -> nil
+              5 ┊      0.06% ┊ type[3]: (i32) -> i32
+              4 ┊      0.05% ┊ type[4]: (i32) -> nil
               4 ┊      0.05% ┊ type[8]: () -> i32
               4 ┊      0.05% ┊ import section headers
               4 ┊      0.05% ┊ export section headers
@@ -88,4 +90,4 @@
               3 ┊      0.04% ┊ memory section headers
               3 ┊      0.04% ┊ global section headers
               3 ┊      0.04% ┊ element section headers
-            358 ┊      4.52% ┊ [1 Unreachable Items]
+            358 ┊      4.41% ┊ [1 Unreachable Items]
