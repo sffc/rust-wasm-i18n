@@ -20,5 +20,10 @@ panic = "abort"
 opt-level = "s"
 lto = true
 
-# [features]
+[features]
+panic_immediate_abort = []
 # default=["panic_immediate_abort"]
+
+# [package.metadata.cargo-sysroot]
+# # target = "wasm32-unknown-unknown"
+# target = "wasm.json"
