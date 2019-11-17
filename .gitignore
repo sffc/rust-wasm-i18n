@@ -3,3 +3,4 @@ Cargo.lock
 bin/
 target/
 wasm-pack.log
+external/

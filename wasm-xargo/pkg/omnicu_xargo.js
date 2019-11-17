@@ -72,6 +72,27 @@ export function greet(input) {
     wasm.greet(passStringToWasm(input), WASM_VECTOR_LEN);
 }
 
+/**
+* @param {string} input
+*/
+export function get_langauge(input) {
+    wasm.get_langauge(passStringToWasm(input), WASM_VECTOR_LEN);
+}
+
+/**
+* @param {string} input
+*/
+export function pusher(input) {
+    wasm.pusher(passStringToWasm(input), WASM_VECTOR_LEN);
+}
+
+/**
+* @param {number} input
+*/
+export function simple_format(input) {
+    wasm.simple_format(input);
+}
+
 let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true, fatal: true });
 
 cachedTextDecoder.decode();

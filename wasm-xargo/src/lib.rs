@@ -1,9 +1,10 @@
-#![no_main]
-
 use wasm_bindgen::prelude::*;
 use wee_alloc::WeeAlloc;
+use unic_langid_impl::LanguageIdentifier;
+use unic_langid::langid;
 
 mod ustr;
+mod numfmt;
 
 #[global_allocator]
 static ALLOC: WeeAlloc = WeeAlloc::INIT;
@@ -31,4 +32,33 @@ pub fn greet(input: &str) {
 	// u.push_str(input);
 	// u.push_str("!");
 	// alert(u.as_str());
+}
+
+// #[cfg(feature = "unic-langid-macros")]
+#[wasm_bindgen]
+pub fn get_langauge(input: &str) {
+	let loc1 = LanguageIdentifier::from_bytes(input.as_bytes()).unwrap();
+	let loc2 = LanguageIdentifier::from_bytes("en-US".as_bytes()).unwrap();
+	// let loc = LanguageIdentifier::from_bytes("en-US".as_bytes()).unwrap();
+	// let loc = langid!(&input);
+	// let loc = langid!("en-US");
+	alert(&loc1.get_language());
+	alert(&loc2.get_language());
+}
+
+#[wasm_bindgen]
+pub fn pusher(input: &str) {
+	let mut vec = vec![];
+	vec.push(input);
+	vec.push(input);
+	vec.push(input);
+	vec.sort();
+	vec.dedup();
+	alert(vec[2]);
+}
+
+#[wasm_bindgen]
+pub fn simple_format(input: i32) {
+	let nf = numfmt::NumFmt::from_locale("en");
+	alert(&nf.format(input));
 }
