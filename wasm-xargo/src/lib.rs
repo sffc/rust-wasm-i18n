@@ -58,7 +58,7 @@ pub fn pusher(input: &str) {
 }
 
 #[wasm_bindgen]
-pub fn simple_format(input: i32) {
-	let nf = numfmt::NumFmt::from_locale("en");
+pub fn simple_format(loc: &str, input: i32) {
+	let nf = numfmt::NumFmt::from_locale(loc);
 	alert(&nf.format(input));
 }

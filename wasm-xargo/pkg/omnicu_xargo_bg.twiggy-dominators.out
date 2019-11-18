@@ -1,43 +1,43 @@
  Retained Bytes │ Retained % │ Dominator Tree
 ────────────────┼────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-           4736 ┊     29.89% ┊ export "get_langauge"
-           4721 ┊     29.80% ┊   ⤷ get_langauge
-           4350 ┊     27.46% ┊       ⤷ unic_langid_impl::LanguageIdentifier::from_bytes::hc6fa41a72e7381e5
-            399 ┊      2.52% ┊           ⤷ unic_langid_impl::subtags::parse_variant_subtag::h9de84d41caa95114
-            308 ┊      1.94% ┊           ⤷ alloc::slice::insert_head::h80ee90280fc5e79f
-            244 ┊      1.54% ┊           ⤷ <core::slice::Split<T,P> as core::iter::traits::iterator::Iterator>::next::h7dc5633616ee5abd
-             50 ┊      0.32% ┊               ⤷ <core::ops::range::Range<usize> as core::slice::SliceIndex<[T]>>::index::h7596658b34ec69d6
-            237 ┊      1.50% ┊           ⤷ unic_langid_impl::subtags::parse_region_subtag::hc225b8d70a4c1c7d
-            230 ┊      1.45% ┊           ⤷ alloc::vec::Vec<T>::push::h8eacb5876fe307d7
+           4731 ┊     29.63% ┊ export "get_langauge"
+           4716 ┊     29.54% ┊   ⤷ get_langauge
+           4350 ┊     27.25% ┊       ⤷ unic_langid_impl::LanguageIdentifier::from_bytes::hc6fa41a72e7381e5
+            399 ┊      2.50% ┊           ⤷ unic_langid_impl::subtags::parse_variant_subtag::h9de84d41caa95114
+            308 ┊      1.93% ┊           ⤷ alloc::slice::insert_head::h80ee90280fc5e79f
+            244 ┊      1.53% ┊           ⤷ <core::slice::Split<T,P> as core::iter::traits::iterator::Iterator>::next::h7dc5633616ee5abd
+             50 ┊      0.31% ┊               ⤷ <core::ops::range::Range<usize> as core::slice::SliceIndex<[T]>>::index::h7596658b34ec69d6
+            237 ┊      1.48% ┊           ⤷ unic_langid_impl::subtags::parse_region_subtag::hc225b8d70a4c1c7d
+            230 ┊      1.44% ┊           ⤷ alloc::vec::Vec<T>::push::h8eacb5876fe307d7
               5 ┊      0.03% ┊               ⤷ type[11]: (i32, i64) -> nil
-            198 ┊      1.25% ┊           ⤷ alloc::slice::<impl [T]>::sort::{{closure}}::h00a98561f801c5bd
+            198 ┊      1.24% ┊           ⤷ alloc::slice::<impl [T]>::sort::{{closure}}::h00a98561f801c5bd
               6 ┊      0.04% ┊               ⤷ type[12]: (i64, i64) -> i32
-            104 ┊      0.66% ┊           ⤷ core::iter::adapters::Peekable<I>::peek::h6b0aa5f6e8b7c2d7
+            104 ┊      0.65% ┊           ⤷ core::iter::adapters::Peekable<I>::peek::h6b0aa5f6e8b7c2d7
              53 ┊      0.33% ┊           ⤷ <core::ops::range::Range<usize> as core::slice::SliceIndex<[T]>>::index_mut::hdd9ff0a9fe0ec6a3
              49 ┊      0.31% ┊           ⤷ tinystr::tinystr4::TinyStr4::is_ascii_alphabetic::h92eb88cdf752b79d
              33 ┊      0.21% ┊           ⤷ alloc::raw_vec::RawVec<T,A>::dealloc_buffer::h1f1a55fa0b7f2b01
              78 ┊      0.49% ┊       ⤷ unic_langid_impl::LanguageIdentifier::get_language::hc3ceae532e51945f
-             66 ┊      0.42% ┊       ⤷ core::result::Result<T,E>::unwrap::h5eb731a2675a9a82
+             66 ┊      0.41% ┊       ⤷ core::result::Result<T,E>::unwrap::h5eb731a2675a9a82
              43 ┊      0.27% ┊       ⤷ core::ptr::real_drop_in_place::h3814f972ff60a10a
-              5 ┊      0.03% ┊       ⤷ core::result::unwrap_failed::h1554aef34dfd1608
-           3648 ┊     23.03% ┊ "function names" subsection
-           2245 ┊     14.17% ┊ export "pusher"
-           2236 ┊     14.11% ┊   ⤷ pusher
-            207 ┊      1.31% ┊       ⤷ alloc::vec::Vec<T>::push::ha8cb3e39eaa0f61f
-            162 ┊      1.02% ┊       ⤷ alloc::slice::insert_head::h0515679ecf4baf0a
+           3700 ┊     23.17% ┊ "function names" subsection
+           2245 ┊     14.06% ┊ export "pusher"
+           2236 ┊     14.00% ┊   ⤷ pusher
+            207 ┊      1.30% ┊       ⤷ alloc::vec::Vec<T>::push::ha8cb3e39eaa0f61f
+            162 ┊      1.01% ┊       ⤷ alloc::slice::insert_head::h0515679ecf4baf0a
              65 ┊      0.41% ┊       ⤷ alloc::slice::<impl [T]>::sort::{{closure}}::hfe35b9dc95663671
              53 ┊      0.33% ┊       ⤷ <core::ops::range::Range<usize> as core::slice::SliceIndex<[T]>>::index_mut::h0c7d072caead306f
              33 ┊      0.21% ┊       ⤷ <alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop::ha31b0eab55e73512
-           1061 ┊      6.70% ┊ data[0]
-            904 ┊      5.71% ┊ export "simple_format"
-            888 ┊      5.60% ┊   ⤷ simple_format
-            565 ┊      3.57% ┊ wee_alloc::alloc_with_refill::h804521cfebfb6ccf
-            447 ┊      2.82% ┊   ⤷ wee_alloc::alloc_first_fit::h1af5cb89d218d3ea
+           1061 ┊      6.65% ┊ data[0]
+            967 ┊      6.06% ┊ export "simple_format"
+            951 ┊      5.96% ┊   ⤷ simple_format
+            297 ┊      1.86% ┊       ⤷ alloc::string::String::push::h73424532677c9fac.473
+            565 ┊      3.54% ┊ wee_alloc::alloc_with_refill::h804521cfebfb6ccf
+            447 ┊      2.80% ┊   ⤷ wee_alloc::alloc_first_fit::h1af5cb89d218d3ea
               9 ┊      0.06% ┊   ⤷ type[10]: (i32, i32, i32, i32, i32) -> i32
-            374 ┊      2.36% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::dealloc::hc31ede2eee1fa477
-            191 ┊      1.21% ┊   ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::h2da6fbda2f614867
-            324 ┊      2.05% ┊ table[0]
-            320 ┊      2.02% ┊   ⤷ elem[0]
+            374 ┊      2.34% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::dealloc::hc31ede2eee1fa477
+            191 ┊      1.20% ┊   ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::h2da6fbda2f614867
+            324 ┊      2.03% ┊ table[0]
+            320 ┊      2.00% ┊   ⤷ elem[0]
             143 ┊      0.90% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h2ff8e18a315eb7f4
             121 ┊      0.76% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h4ecedddbb72087a4
               7 ┊      0.04% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::he7427e55ff72dc91
@@ -46,30 +46,30 @@
               6 ┊      0.04% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::h537d10c7d8a47c59
               4 ┊      0.03% ┊       ⤷ std::alloc::default_alloc_error_hook::h327e2f5512c176a8
               4 ┊      0.03% ┊       ⤷ core::ptr::real_drop_in_place::h1092d580c466569d
-              4 ┊      0.03% ┊       ⤷ core::ptr::real_drop_in_place::h1092d580c466569d.860
+              4 ┊      0.03% ┊       ⤷ core::ptr::real_drop_in_place::h1092d580c466569d.867
               4 ┊      0.03% ┊       ⤷ core::ptr::real_drop_in_place::h90aba2658c9c2bcf
-            189 ┊      1.19% ┊ alloc::vec::Vec<T>::reserve::h0c2c544b6134b753
-            188 ┊      1.19% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::alloc::h3e6c391451428484
-            178 ┊      1.12% ┊ alloc::vec::Vec<T>::remove::h43cc2b3a2ce8be61
+            189 ┊      1.18% ┊ alloc::vec::Vec<T>::reserve::h0c2c544b6134b753
+            188 ┊      1.18% ┊ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::alloc::h3e6c391451428484
+            178 ┊      1.11% ┊ alloc::vec::Vec<T>::remove::h43cc2b3a2ce8be61
             113 ┊      0.71% ┊   ⤷ memmove
-            146 ┊      0.92% ┊ export "greet"
-            138 ┊      0.87% ┊   ⤷ greet
-            145 ┊      0.92% ┊ alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
-            123 ┊      0.78% ┊ wee_alloc::neighbors::Neighbors<T>::remove::h00efd741b39596e7
-             96 ┊      0.61% ┊ data[1]
-             89 ┊      0.56% ┊ core::alloc::Layout::repeat::h3aeea8e44c11afb0.777
-             66 ┊      0.42% ┊ memcmp
+            146 ┊      0.91% ┊ export "greet"
+            138 ┊      0.86% ┊   ⤷ greet
+            145 ┊      0.91% ┊ alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
+            123 ┊      0.77% ┊ wee_alloc::neighbors::Neighbors<T>::remove::h00efd741b39596e7
+            104 ┊      0.65% ┊ data[1]
+             89 ┊      0.56% ┊ core::alloc::Layout::repeat::h3aeea8e44c11afb0.784
+             66 ┊      0.41% ┊ memcmp
              65 ┊      0.41% ┊ export "__wbindgen_malloc"
              45 ┊      0.28% ┊   ⤷ __wbindgen_malloc
-             61 ┊      0.39% ┊ __rust_realloc
-             47 ┊      0.30% ┊   ⤷ __rg_realloc
+             61 ┊      0.38% ┊ __rust_realloc
+             47 ┊      0.29% ┊   ⤷ __rg_realloc
              54 ┊      0.34% ┊ export "__wbindgen_realloc"
              33 ┊      0.21% ┊   ⤷ __wbindgen_realloc
              51 ┊      0.32% ┊ memcpy
              46 ┊      0.29% ┊ <[A] as core::slice::SlicePartialEq<A>>::equal::h26704bc02cea0fab
              45 ┊      0.28% ┊ omnicu_xargo::alert::h86f6a45c725e53a5
              35 ┊      0.22% ┊   ⤷ import wbg::__wbg_alert_07a8b1643f0fc0c4
-             42 ┊      0.27% ┊ alloc::vec::Vec<T>::extend_from_slice::hacafdfa59324aa33
+             42 ┊      0.26% ┊ alloc::vec::Vec<T>::extend_from_slice::hacafdfa59324aa33
              33 ┊      0.21% ┊ alloc::raw_vec::RawVec<T,A>::dealloc_buffer::h762a9ccd957d2951
              30 ┊      0.19% ┊ core::ptr::real_drop_in_place::hf60447cb8174d7c6
              24 ┊      0.15% ┊ __rust_dealloc
@@ -103,6 +103,7 @@
               6 ┊      0.04% ┊ type[5]: (i32, i32, i32) -> nil
               5 ┊      0.03% ┊ type[2]: (i32) -> i32
               5 ┊      0.03% ┊ type[3]: (i32, i32) -> nil
+              5 ┊      0.03% ┊ core::result::unwrap_failed::h1554aef34dfd1608
               5 ┊      0.03% ┊ core::slice::slice_index_len_fail::h7b71ea0ec4ef28dc
               5 ┊      0.03% ┊ core::slice::slice_index_order_fail::hf157c4d35eca972c
               4 ┊      0.03% ┊ type[1]: (i32) -> nil

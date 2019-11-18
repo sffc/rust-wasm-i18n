@@ -18,9 +18,10 @@ export function get_langauge(input: string): void;
 */
 export function pusher(input: string): void;
 /**
+* @param {string} loc 
 * @param {number} input 
 */
-export function simple_format(input: number): void;
+export function simple_format(loc: string, input: number): void;
 
 /**
 * If `module_or_path` is {RequestInfo}, makes a request and

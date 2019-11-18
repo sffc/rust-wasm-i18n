@@ -189,7 +189,7 @@
                                           i32.const 3
                                           i32.shr_u
                                           i32.sub
-                                          i32.const 1049641
+                                          i32.const 1049648
                                           i32.const 3
                                           call $<_A__as_core::slice::SlicePartialEq<A>>::equal::h26704bc02cea0fab
                                           select
@@ -2170,470 +2170,344 @@
       return
     end
     unreachable)
-  (func $simple_format (type 1) (param i32)
-    (local i32 i32 i32 i32 i32 i32)
+  (func $simple_format (type 5) (param i32 i32 i32)
+    (local i32 i32 i32 i32 i32)
     global.get 0
-    i32.const 32
+    i32.const 48
     i32.sub
-    local.tee 1
+    local.tee 3
     global.set 0
+    local.get 3
+    local.get 0
     local.get 1
-    i32.const 0
+    call $wasm_bindgen::convert::slices::<impl_wasm_bindgen::convert::traits::RefFromWasmAbi_for_str>::ref_from_abi::h247a1a85a0ec703b
+    local.get 3
+    local.get 3
+    i32.load offset=4
+    local.tee 1
+    i32.store offset=12
+    local.get 3
+    local.get 3
+    i32.load
+    local.tee 4
     i32.store offset=8
+    local.get 4
     local.get 1
-    i64.const 1
-    i64.store
+    i32.const 1049641
+    i32.const 2
+    call $<_A__as_core::slice::SlicePartialEq<A>>::equal::h26704bc02cea0fab
+    local.set 5
     i32.const 3
-    local.set 2
-    i32.const 1
-    local.set 3
-    loop  ;; label = @1
+    local.set 0
+    local.get 3
+    i32.const 25
+    i32.add
+    i32.const 2
+    i32.const 3
+    local.get 4
+    local.get 1
+    i32.const 1049643
+    i32.const 5
+    call $<_A__as_core::slice::SlicePartialEq<A>>::equal::h26704bc02cea0fab
+    select
+    local.tee 6
+    i32.store8
+    local.get 3
+    i32.const 2
+    i32.store8 offset=28
+    local.get 3
+    i32.const 3
+    i32.store8 offset=24
+    local.get 3
+    i32.const 44
+    i32.store offset=20
+    local.get 3
+    i32.const 2534
+    i32.const 48
+    local.get 5
+    select
+    i32.store offset=16
+    local.get 3
+    i32.const 0
+    i32.store offset=40
+    local.get 3
+    i64.const 1
+    i64.store offset=32
+    local.get 3
+    i32.const 32
+    i32.add
+    i32.const 0
+    call $alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
+    block  ;; label = @1
       block  ;; label = @2
-        block  ;; label = @3
+        loop  ;; label = @3
+          local.get 2
+          i32.eqz
+          br_if 1 (;@2;)
           block  ;; label = @4
             block  ;; label = @5
-              block  ;; label = @6
-                local.get 0
-                i32.eqz
-                br_if 0 (;@6;)
-                block  ;; label = @7
-                  local.get 2
-                  i32.const 255
-                  i32.and
-                  i32.eqz
-                  br_if 0 (;@7;)
-                  local.get 2
-                  local.get 2
-                  i32.const 24
-                  i32.shl
-                  i32.const 24
-                  i32.shr_s
-                  i32.const 0
-                  i32.gt_s
-                  i32.sub
-                  local.set 4
-                  br 3 (;@4;)
-                end
-                i32.const 0
-                local.set 4
-                i32.const 3
-                local.set 2
-                i32.const 44
-                local.set 5
-                local.get 0
-                i32.const 9
-                i32.gt_s
-                br_if 1 (;@5;)
-                local.get 3
-                i32.const 255
-                i32.and
-                br_if 2 (;@4;)
-                br 1 (;@5;)
-              end
-              local.get 1
-              i32.load
-              local.set 4
-              local.get 1
-              i32.load offset=8
-              local.set 0
-              local.get 1
-              i32.const 0
-              i32.store offset=24
-              local.get 1
-              i64.const 1
-              i64.store offset=16
-              local.get 1
-              i32.const 16
-              i32.add
               local.get 0
-              i32.const 3
-              i32.add
-              i32.const 2
-              i32.shr_u
-              call $alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
-              local.get 4
-              local.get 0
-              i32.add
+              i32.const 255
+              i32.and
+              br_if 0 (;@5;)
+              local.get 3
+              i32.load offset=20
+              local.set 1
+              local.get 6
               local.set 0
-              loop  ;; label = @6
-                block  ;; label = @7
-                  block  ;; label = @8
-                    local.get 0
-                    local.get 4
-                    i32.eq
-                    br_if 0 (;@8;)
-                    block  ;; label = @9
-                      local.get 0
-                      i32.const -1
-                      i32.add
-                      local.tee 2
-                      i32.load8_u
-                      local.tee 5
-                      i32.const 24
-                      i32.shl
-                      i32.const 24
-                      i32.shr_s
-                      local.tee 3
-                      i32.const 0
-                      i32.lt_s
-                      br_if 0 (;@9;)
-                      local.get 2
-                      local.set 0
-                      br 2 (;@7;)
-                    end
-                    block  ;; label = @9
-                      block  ;; label = @10
-                        local.get 2
-                        local.get 4
-                        i32.ne
-                        br_if 0 (;@10;)
-                        i32.const 0
-                        local.set 2
-                        local.get 4
-                        local.set 0
-                        br 1 (;@9;)
-                      end
-                      block  ;; label = @10
-                        local.get 0
-                        i32.const -2
-                        i32.add
-                        local.tee 5
-                        i32.load8_u
-                        local.tee 2
-                        i32.const 192
-                        i32.and
-                        i32.const 128
-                        i32.eq
-                        br_if 0 (;@10;)
-                        local.get 2
-                        i32.const 31
-                        i32.and
-                        local.set 2
-                        local.get 5
-                        local.set 0
-                        br 1 (;@9;)
-                      end
-                      block  ;; label = @10
-                        block  ;; label = @11
-                          local.get 5
-                          local.get 4
-                          i32.ne
-                          br_if 0 (;@11;)
-                          i32.const 0
-                          local.set 5
-                          local.get 4
-                          local.set 0
-                          br 1 (;@10;)
-                        end
-                        block  ;; label = @11
-                          local.get 0
-                          i32.const -3
-                          i32.add
-                          local.tee 6
-                          i32.load8_u
-                          local.tee 5
-                          i32.const 192
-                          i32.and
-                          i32.const 128
-                          i32.eq
-                          br_if 0 (;@11;)
-                          local.get 5
-                          i32.const 15
-                          i32.and
-                          local.set 5
-                          local.get 6
-                          local.set 0
-                          br 1 (;@10;)
-                        end
-                        block  ;; label = @11
-                          block  ;; label = @12
-                            local.get 6
-                            local.get 4
-                            i32.ne
-                            br_if 0 (;@12;)
-                            i32.const 0
-                            local.set 6
-                            local.get 4
-                            local.set 0
-                            br 1 (;@11;)
-                          end
-                          local.get 0
-                          i32.const -4
-                          i32.add
-                          local.tee 0
-                          i32.load8_u
-                          i32.const 7
-                          i32.and
-                          i32.const 6
-                          i32.shl
-                          local.set 6
-                        end
-                        local.get 6
-                        local.get 5
-                        i32.const 63
-                        i32.and
-                        i32.or
-                        local.set 5
-                      end
-                      local.get 5
-                      i32.const 6
-                      i32.shl
-                      local.get 2
-                      i32.const 63
-                      i32.and
-                      i32.or
-                      local.set 2
-                    end
-                    local.get 2
-                    i32.const 6
-                    i32.shl
-                    local.get 3
-                    i32.const 63
-                    i32.and
-                    local.tee 3
-                    i32.or
-                    local.tee 5
-                    i32.const 1114112
-                    i32.eq
-                    br_if 0 (;@8;)
-                    local.get 5
-                    i32.const 128
-                    i32.lt_u
-                    br_if 1 (;@7;)
-                    local.get 1
-                    i32.const 0
-                    i32.store offset=28
-                    block  ;; label = @9
-                      block  ;; label = @10
-                        local.get 5
-                        i32.const 2047
-                        i32.gt_u
-                        br_if 0 (;@10;)
-                        local.get 1
-                        local.get 3
-                        i32.const 128
-                        i32.or
-                        i32.store8 offset=29
-                        local.get 1
-                        local.get 2
-                        i32.const 31
-                        i32.and
-                        i32.const 192
-                        i32.or
-                        i32.store8 offset=28
-                        i32.const 2
-                        local.set 2
-                        br 1 (;@9;)
-                      end
-                      block  ;; label = @10
-                        local.get 5
-                        i32.const 65535
-                        i32.gt_u
-                        br_if 0 (;@10;)
-                        local.get 1
-                        local.get 3
-                        i32.const 128
-                        i32.or
-                        i32.store8 offset=30
-                        local.get 1
-                        local.get 2
-                        i32.const 63
-                        i32.and
-                        i32.const 128
-                        i32.or
-                        i32.store8 offset=29
-                        local.get 1
-                        local.get 2
-                        i32.const 6
-                        i32.shr_u
-                        i32.const 15
-                        i32.and
-                        i32.const 224
-                        i32.or
-                        i32.store8 offset=28
-                        i32.const 3
-                        local.set 2
-                        br 1 (;@9;)
-                      end
-                      local.get 1
-                      local.get 3
-                      i32.const 128
-                      i32.or
-                      i32.store8 offset=31
-                      local.get 1
-                      local.get 2
-                      i32.const 63
-                      i32.and
-                      i32.const 128
-                      i32.or
-                      i32.store8 offset=30
-                      local.get 1
-                      local.get 2
-                      i32.const 12
-                      i32.shr_u
-                      i32.const 240
-                      i32.or
-                      i32.store8 offset=28
-                      local.get 1
-                      local.get 2
-                      i32.const 6
-                      i32.shr_u
-                      i32.const 63
-                      i32.and
-                      i32.const 128
-                      i32.or
-                      i32.store8 offset=29
-                      i32.const 4
-                      local.set 2
-                    end
-                    local.get 1
-                    i32.const 16
-                    i32.add
-                    local.get 1
-                    i32.const 28
-                    i32.add
-                    local.get 2
-                    call $alloc::vec::Vec<T>::extend_from_slice::hacafdfa59324aa33
-                    br 2 (;@6;)
-                  end
-                  local.get 1
-                  i32.load offset=20
-                  local.set 2
-                  local.get 1
-                  i32.load offset=24
-                  local.set 5
-                  local.get 1
-                  i32.load offset=16
-                  local.set 0
-                  local.get 4
-                  local.get 1
-                  i32.load offset=4
-                  call $alloc::raw_vec::RawVec<T_A>::dealloc_buffer::h43d709adf20b025e
-                  local.get 0
-                  local.get 5
-                  call $omnicu_xargo::alert::h86f6a45c725e53a5
-                  local.get 0
-                  local.get 2
-                  call $alloc::raw_vec::RawVec<T_A>::dealloc_buffer::h43d709adf20b025e
-                  local.get 1
-                  i32.const 32
-                  i32.add
-                  global.set 0
-                  return
-                end
-                block  ;; label = @7
-                  local.get 1
-                  i32.load offset=24
-                  local.tee 2
-                  local.get 1
-                  i32.load offset=20
-                  i32.ne
-                  br_if 0 (;@7;)
-                  local.get 1
-                  i32.const 16
-                  i32.add
-                  i32.const 1
-                  call $alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
-                  local.get 1
-                  i32.load offset=24
-                  local.set 2
-                end
-                local.get 1
-                i32.load offset=16
-                local.get 2
-                i32.add
-                local.get 5
-                i32.store8
-                local.get 1
-                local.get 2
-                i32.const 1
-                i32.add
-                i32.store offset=24
-                br 0 (;@6;)
-              end
+              br 1 (;@4;)
             end
+            local.get 3
+            i32.load offset=16
+            local.get 2
+            local.get 2
+            i32.const 10
+            i32.div_s
+            local.tee 4
+            i32.const -10
+            i32.mul
+            i32.add
+            i32.const 255
+            i32.and
+            i32.add
+            local.tee 1
+            i32.const 1114111
+            i32.gt_u
+            br_if 3 (;@1;)
+            local.get 1
+            i32.const 4192256
+            i32.and
+            i32.const 55296
+            i32.eq
+            br_if 3 (;@1;)
+            local.get 0
+            local.get 0
+            i32.const 24
+            i32.shl
+            i32.const 24
+            i32.shr_s
             i32.const 0
-            local.set 3
-            br 1 (;@3;)
+            i32.gt_s
+            i32.sub
+            local.set 0
+            local.get 4
+            local.set 2
           end
-          local.get 0
-          local.get 0
-          i32.const 10
-          i32.div_s
-          local.tee 2
-          i32.const -10
-          i32.mul
+          local.get 3
+          i32.const 32
           i32.add
-          i32.const 255
-          i32.and
-          i32.const 48
-          i32.add
-          local.tee 5
-          i32.const 128
-          i32.ge_u
-          br_if 1 (;@2;)
-          local.get 2
-          local.set 0
-          local.get 4
-          local.set 2
+          local.get 1
+          call $alloc::string::String::push::h73424532677c9fac.473
+          br 0 (;@3;)
         end
-        block  ;; label = @3
-          local.get 1
-          i32.load offset=8
-          local.tee 4
-          local.get 1
-          i32.load offset=4
-          i32.ne
-          br_if 0 (;@3;)
-          local.get 1
-          i32.const 1
-          call $alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
-          local.get 1
-          i32.load offset=8
-          local.set 4
-        end
-        local.get 1
-        i32.load
-        local.get 4
-        i32.add
-        local.get 5
-        i32.store8
-        local.get 1
-        local.get 4
-        i32.const 1
-        i32.add
-        i32.store offset=8
-        br 1 (;@1;)
       end
-      local.get 1
+      local.get 3
+      i32.load offset=36
+      local.set 7
+      local.get 3
+      i32.load offset=32
+      local.set 4
+      local.get 3
+      i32.load offset=40
+      local.set 0
+      local.get 3
       i32.const 0
-      i32.store offset=16
-      local.get 1
-      local.get 5
-      i32.const 63
-      i32.and
-      i32.const 128
-      i32.or
-      i32.store8 offset=17
-      local.get 1
-      local.get 5
-      i32.const 6
-      i32.shr_u
-      i32.const 192
-      i32.or
-      i32.store8 offset=16
-      local.get 1
-      local.get 1
-      i32.const 16
+      i32.store offset=40
+      local.get 3
+      i64.const 1
+      i64.store offset=32
+      local.get 3
+      i32.const 32
+      i32.add
+      local.get 0
+      i32.const 3
       i32.add
       i32.const 2
-      call $alloc::vec::Vec<T>::extend_from_slice::hacafdfa59324aa33
-      local.get 2
+      i32.shr_u
+      call $alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
+      local.get 4
+      local.get 0
+      i32.add
+      local.set 0
+      block  ;; label = @2
+        loop  ;; label = @3
+          local.get 0
+          local.get 4
+          i32.eq
+          br_if 1 (;@2;)
+          block  ;; label = @4
+            block  ;; label = @5
+              local.get 0
+              i32.const -1
+              i32.add
+              local.tee 1
+              i32.load8_u
+              local.tee 2
+              i32.const 24
+              i32.shl
+              i32.const 24
+              i32.shr_s
+              local.tee 6
+              i32.const 0
+              i32.lt_s
+              br_if 0 (;@5;)
+              local.get 1
+              local.set 0
+              br 1 (;@4;)
+            end
+            block  ;; label = @5
+              block  ;; label = @6
+                local.get 1
+                local.get 4
+                i32.ne
+                br_if 0 (;@6;)
+                i32.const 0
+                local.set 2
+                local.get 4
+                local.set 0
+                br 1 (;@5;)
+              end
+              block  ;; label = @6
+                local.get 0
+                i32.const -2
+                i32.add
+                local.tee 1
+                i32.load8_u
+                local.tee 2
+                i32.const 192
+                i32.and
+                i32.const 128
+                i32.eq
+                br_if 0 (;@6;)
+                local.get 2
+                i32.const 31
+                i32.and
+                local.set 2
+                local.get 1
+                local.set 0
+                br 1 (;@5;)
+              end
+              block  ;; label = @6
+                block  ;; label = @7
+                  local.get 1
+                  local.get 4
+                  i32.ne
+                  br_if 0 (;@7;)
+                  i32.const 0
+                  local.set 1
+                  local.get 4
+                  local.set 0
+                  br 1 (;@6;)
+                end
+                block  ;; label = @7
+                  local.get 0
+                  i32.const -3
+                  i32.add
+                  local.tee 5
+                  i32.load8_u
+                  local.tee 1
+                  i32.const 192
+                  i32.and
+                  i32.const 128
+                  i32.eq
+                  br_if 0 (;@7;)
+                  local.get 1
+                  i32.const 15
+                  i32.and
+                  local.set 1
+                  local.get 5
+                  local.set 0
+                  br 1 (;@6;)
+                end
+                block  ;; label = @7
+                  block  ;; label = @8
+                    local.get 5
+                    local.get 4
+                    i32.ne
+                    br_if 0 (;@8;)
+                    i32.const 0
+                    local.set 5
+                    local.get 4
+                    local.set 0
+                    br 1 (;@7;)
+                  end
+                  local.get 0
+                  i32.const -4
+                  i32.add
+                  local.tee 0
+                  i32.load8_u
+                  i32.const 7
+                  i32.and
+                  i32.const 6
+                  i32.shl
+                  local.set 5
+                end
+                local.get 5
+                local.get 1
+                i32.const 63
+                i32.and
+                i32.or
+                local.set 1
+              end
+              local.get 1
+              i32.const 6
+              i32.shl
+              local.get 2
+              i32.const 63
+              i32.and
+              i32.or
+              local.set 2
+            end
+            local.get 2
+            i32.const 6
+            i32.shl
+            local.get 6
+            i32.const 63
+            i32.and
+            i32.or
+            local.tee 2
+            i32.const 1114112
+            i32.eq
+            br_if 2 (;@2;)
+          end
+          local.get 3
+          i32.const 32
+          i32.add
+          local.get 2
+          call $alloc::string::String::push::h73424532677c9fac.473
+          br 0 (;@3;)
+        end
+      end
+      local.get 3
+      i32.load offset=36
+      local.set 2
+      local.get 3
+      i32.load offset=40
+      local.set 1
+      local.get 3
+      i32.load offset=32
       local.set 0
       local.get 4
-      local.set 2
-      br 0 (;@1;)
-    end)
+      local.get 7
+      call $alloc::raw_vec::RawVec<T_A>::dealloc_buffer::h43d709adf20b025e
+      local.get 0
+      local.get 1
+      call $omnicu_xargo::alert::h86f6a45c725e53a5
+      local.get 0
+      local.get 2
+      call $alloc::raw_vec::RawVec<T_A>::dealloc_buffer::h43d709adf20b025e
+      local.get 3
+      i32.const 8
+      i32.add
+      call $core::ptr::real_drop_in_place::hf60447cb8174d7c6
+      local.get 3
+      i32.const 48
+      i32.add
+      global.set 0
+      return
+    end
+    call $core::result::unwrap_failed::h1554aef34dfd1608
+    unreachable)
   (func $wee_alloc::alloc_first_fit::h1af5cb89d218d3ea (type 10) (param i32 i32 i32 i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32)
     local.get 1
@@ -3040,6 +2914,157 @@
     i32.const 16
     i32.add
     global.set 0)
+  (func $alloc::string::String::push::h73424532677c9fac.473 (type 3) (param i32 i32)
+    (local i32 i32)
+    global.get 0
+    i32.const 16
+    i32.sub
+    local.tee 2
+    global.set 0
+    block  ;; label = @1
+      block  ;; label = @2
+        local.get 1
+        i32.const 128
+        i32.lt_u
+        br_if 0 (;@2;)
+        local.get 2
+        i32.const 0
+        i32.store offset=12
+        block  ;; label = @3
+          block  ;; label = @4
+            local.get 1
+            i32.const 2047
+            i32.gt_u
+            br_if 0 (;@4;)
+            local.get 2
+            local.get 1
+            i32.const 63
+            i32.and
+            i32.const 128
+            i32.or
+            i32.store8 offset=13
+            local.get 2
+            local.get 1
+            i32.const 6
+            i32.shr_u
+            i32.const 31
+            i32.and
+            i32.const 192
+            i32.or
+            i32.store8 offset=12
+            i32.const 2
+            local.set 1
+            br 1 (;@3;)
+          end
+          block  ;; label = @4
+            local.get 1
+            i32.const 65535
+            i32.gt_u
+            br_if 0 (;@4;)
+            local.get 2
+            local.get 1
+            i32.const 63
+            i32.and
+            i32.const 128
+            i32.or
+            i32.store8 offset=14
+            local.get 2
+            local.get 1
+            i32.const 6
+            i32.shr_u
+            i32.const 63
+            i32.and
+            i32.const 128
+            i32.or
+            i32.store8 offset=13
+            local.get 2
+            local.get 1
+            i32.const 12
+            i32.shr_u
+            i32.const 15
+            i32.and
+            i32.const 224
+            i32.or
+            i32.store8 offset=12
+            i32.const 3
+            local.set 1
+            br 1 (;@3;)
+          end
+          local.get 2
+          local.get 1
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=15
+          local.get 2
+          local.get 1
+          i32.const 18
+          i32.shr_u
+          i32.const 240
+          i32.or
+          i32.store8 offset=12
+          local.get 2
+          local.get 1
+          i32.const 6
+          i32.shr_u
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=14
+          local.get 2
+          local.get 1
+          i32.const 12
+          i32.shr_u
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=13
+          i32.const 4
+          local.set 1
+        end
+        local.get 0
+        local.get 2
+        i32.const 12
+        i32.add
+        local.get 1
+        call $alloc::vec::Vec<T>::extend_from_slice::hacafdfa59324aa33
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        local.get 0
+        i32.load offset=8
+        local.tee 3
+        local.get 0
+        i32.load offset=4
+        i32.ne
+        br_if 0 (;@2;)
+        local.get 0
+        i32.const 1
+        call $alloc::vec::Vec<T>::reserve::h27e0d8bdbf28f578
+        local.get 0
+        i32.load offset=8
+        local.set 3
+      end
+      local.get 0
+      i32.load
+      local.get 3
+      i32.add
+      local.get 1
+      i32.store8
+      local.get 0
+      local.get 0
+      i32.load offset=8
+      i32.const 1
+      i32.add
+      i32.store offset=8
+    end
+    local.get 2
+    i32.const 16
+    i32.add
+    global.set 0)
   (func $alloc::slice::insert_head::h80ee90280fc5e79f (type 3) (param i32 i32)
     (local i32 i32 i32 i64 i64 i64)
     block  ;; label = @1
@@ -3224,7 +3249,7 @@
           i32.gt_u
           select
           local.tee 4
-          call $core::alloc::Layout::repeat::h3aeea8e44c11afb0.777
+          call $core::alloc::Layout::repeat::h3aeea8e44c11afb0.784
           local.get 2
           i32.load offset=4
           local.tee 5
@@ -3646,7 +3671,7 @@
           i32.gt_u
           select
           local.tee 3
-          call $core::alloc::Layout::repeat::h3aeea8e44c11afb0.777
+          call $core::alloc::Layout::repeat::h3aeea8e44c11afb0.784
           local.get 1
           i32.load offset=4
           local.tee 4
@@ -4030,7 +4055,7 @@
         local.get 2
         i32.const 4
         i32.add
-        i32.const 1049668
+        i32.const 1049676
         call $wee_alloc::alloc_with_refill::h804521cfebfb6ccf
         local.set 1
         local.get 3
@@ -4049,7 +4074,7 @@
       i32.const 8
       i32.add
       i32.const 1049641
-      i32.const 1049692
+      i32.const 1049700
       call $wee_alloc::alloc_with_refill::h804521cfebfb6ccf
       local.set 1
       i32.const 0
@@ -4116,7 +4141,7 @@
         local.get 3
         i32.const 8
         i32.add
-        i32.const 1049668
+        i32.const 1049676
         call $wee_alloc::WeeAlloc::dealloc_impl::__closure__::h2da6fbda2f614867
         local.get 0
         local.get 3
@@ -4135,7 +4160,7 @@
       i32.const 12
       i32.add
       i32.const 1049641
-      i32.const 1049692
+      i32.const 1049700
       call $wee_alloc::WeeAlloc::dealloc_impl::__closure__::h2da6fbda2f614867
       i32.const 0
       local.get 3
@@ -4334,7 +4359,7 @@
     i32.const 12
     i32.add
     i32.const 1
-    i32.const 1049644
+    i32.const 1049652
     call $wee_alloc::alloc_with_refill::h804521cfebfb6ccf
     local.set 2
     local.get 5
@@ -4722,7 +4747,7 @@
     i32.add
     global.set 0
     local.get 6)
-  (func $core::alloc::Layout::repeat::h3aeea8e44c11afb0.777 (type 7) (param i32 i32 i32 i32)
+  (func $core::alloc::Layout::repeat::h3aeea8e44c11afb0.784 (type 7) (param i32 i32 i32 i32)
     (local i32 i64)
     block  ;; label = @1
       local.get 1
@@ -4806,7 +4831,7 @@
     i32.store offset=4
     local.get 0
     local.get 2
-    i32.const 1049641
+    i32.const 1049648
     local.get 2
     select
     i32.store)
@@ -5344,7 +5369,7 @@
     i32.const 1)
   (func $std::alloc::default_alloc_error_hook::h327e2f5512c176a8 (type 3) (param i32 i32))
   (func $core::ptr::real_drop_in_place::h1092d580c466569d (type 1) (param i32))
-  (func $core::ptr::real_drop_in_place::h1092d580c466569d.860 (type 1) (param i32))
+  (func $core::ptr::real_drop_in_place::h1092d580c466569d.867 (type 1) (param i32))
   (func $core::ptr::real_drop_in_place::h90aba2658c9c2bcf (type 1) (param i32))
   (table (;0;) 11 11 funcref)
   (memory (;0;) 17)
@@ -5357,6 +5382,6 @@
   (export "simple_format" (func $simple_format))
   (export "__wbindgen_malloc" (func $__wbindgen_malloc))
   (export "__wbindgen_realloc" (func $__wbindgen_realloc))
-  (elem (;0;) (i32.const 1) $std::alloc::default_alloc_error_hook::h327e2f5512c176a8 $core::ptr::real_drop_in_place::h1092d580c466569d $<wee_alloc::LargeAllocPolicy_as_wee_alloc::AllocPolicy>::new_cell_for_free_list::h4ecedddbb72087a4 $<wee_alloc::LargeAllocPolicy_as_wee_alloc::AllocPolicy>::min_cell_size::he7427e55ff72dc91 $<wee_alloc::LargeAllocPolicy_as_wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::h537d10c7d8a47c59 $core::ptr::real_drop_in_place::h90aba2658c9c2bcf $<wee_alloc::size_classes::SizeClassAllocPolicy_as_wee_alloc::AllocPolicy>::new_cell_for_free_list::h2ff8e18a315eb7f4 $<wee_alloc::size_classes::SizeClassAllocPolicy_as_wee_alloc::AllocPolicy>::min_cell_size::hf946f0e7a049d7aa $<wee_alloc::size_classes::SizeClassAllocPolicy_as_wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hc3fde9e522cd10e2 $core::ptr::real_drop_in_place::h1092d580c466569d.860)
+  (elem (;0;) (i32.const 1) $std::alloc::default_alloc_error_hook::h327e2f5512c176a8 $core::ptr::real_drop_in_place::h1092d580c466569d $<wee_alloc::LargeAllocPolicy_as_wee_alloc::AllocPolicy>::new_cell_for_free_list::h4ecedddbb72087a4 $<wee_alloc::LargeAllocPolicy_as_wee_alloc::AllocPolicy>::min_cell_size::he7427e55ff72dc91 $<wee_alloc::LargeAllocPolicy_as_wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::h537d10c7d8a47c59 $core::ptr::real_drop_in_place::h90aba2658c9c2bcf $<wee_alloc::size_classes::SizeClassAllocPolicy_as_wee_alloc::AllocPolicy>::new_cell_for_free_list::h2ff8e18a315eb7f4 $<wee_alloc::size_classes::SizeClassAllocPolicy_as_wee_alloc::AllocPolicy>::min_cell_size::hf946f0e7a049d7aa $<wee_alloc::size_classes::SizeClassAllocPolicy_as_wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hc3fde9e522cd10e2 $core::ptr::real_drop_in_place::h1092d580c466569d.867)
   (data (;0;) (i32.const 1048576) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
-  (data (;1;) (i32.const 1049628) "Hello, !en-USund\02\00\00\00\00\00\00\00\01\00\00\00\03\00\00\00\04\00\00\00\05\00\00\00\06\00\00\00\04\00\00\00\04\00\00\00\07\00\00\00\08\00\00\00\09\00\00\00\0a\00\00\00\00\00\00\00\01\00\00\00\03\00\00\00\04\00\00\00\05\00\00\00"))
+  (data (;1;) (i32.const 1049628) "Hello, !en-USbnen-INund\00\02\00\00\00\00\00\00\00\01\00\00\00\03\00\00\00\04\00\00\00\05\00\00\00\06\00\00\00\04\00\00\00\04\00\00\00\07\00\00\00\08\00\00\00\09\00\00\00\0a\00\00\00\00\00\00\00\01\00\00\00\03\00\00\00\04\00\00\00\05\00\00\00"))

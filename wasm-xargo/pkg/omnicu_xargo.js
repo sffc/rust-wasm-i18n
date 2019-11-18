@@ -87,10 +87,11 @@ export function pusher(input) {
 }
 
 /**
+* @param {string} loc
 * @param {number} input
 */
-export function simple_format(input) {
-    wasm.simple_format(input);
+export function simple_format(loc, input) {
+    wasm.simple_format(passStringToWasm(loc), WASM_VECTOR_LEN, input);
 }
 
 let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true, fatal: true });

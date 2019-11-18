@@ -16,7 +16,7 @@ pkg:
 	mkdir -p pkg
 
 pkg/omnicu_xargo.wasm: Cargo.toml Xargo.toml src/*.rs $(COMMON)
-	xargo build --release
+	xargo build --release --target "wasm32-unknown-unknown"
 	cp target/wasm32-unknown-unknown/release/omnicu_xargo.wasm $@
 
 pkg/omnicu_xargo_bg.wasm: pkg/omnicu_xargo.wasm $(COMMON)
