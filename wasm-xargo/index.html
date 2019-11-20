@@ -1,9 +1,10 @@
 <script type="module">
-import init, { greet, simple_format } from "./pkg/omnicu_xargo.js";
+import init, { greet, simple_format, simple_parse } from "./pkg/omnicu_xargo.js";
 async function main() {
   await init();
   greet("World");
   simple_format("bn", 51423);
+  simple_parse("en", "abcde");
 }
 main();
 </script>

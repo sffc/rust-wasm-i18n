@@ -1,3 +1,5 @@
+import { get_chars } from './snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js';
+import * as __wbg_star0 from './snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js';
 
 let wasm;
 
@@ -94,12 +96,32 @@ export function simple_format(loc, input) {
     wasm.simple_format(passStringToWasm(loc), WASM_VECTOR_LEN, input);
 }
 
+/**
+* @param {string} loc
+* @param {string} input
+*/
+export function simple_parse(loc, input) {
+    wasm.simple_parse(passStringToWasm(loc), WASM_VECTOR_LEN, passStringToWasm(input), WASM_VECTOR_LEN);
+}
+
 let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true, fatal: true });
 
 cachedTextDecoder.decode();
 
 function getStringFromWasm(ptr, len) {
     return cachedTextDecoder.decode(getUint8Memory().subarray(ptr, ptr + len));
+}
+
+function isLikeNone(x) {
+    return x === undefined || x === null;
+}
+
+let cachegetInt32Memory = null;
+function getInt32Memory() {
+    if (cachegetInt32Memory === null || cachegetInt32Memory.buffer !== wasm.memory.buffer) {
+        cachegetInt32Memory = new Int32Array(wasm.memory.buffer);
+    }
+    return cachegetInt32Memory;
 }
 
 function init(module) {
@@ -109,9 +131,19 @@ function init(module) {
     let result;
     const imports = {};
     imports.wbg = {};
+    imports.wbg.__wbg_getchars_7af6a90ad486762b = function(arg0, arg1, arg2) {
+        const ret = get_chars(getStringFromWasm(arg1, arg2));
+        const ptr0 = isLikeNone(ret) ? 0 : passStringToWasm(ret);
+        const len0 = WASM_VECTOR_LEN;
+        const ret0 = ptr0;
+        const ret1 = len0;
+        getInt32Memory()[arg0 / 4 + 0] = ret0;
+        getInt32Memory()[arg0 / 4 + 1] = ret1;
+    };
     imports.wbg.__wbg_alert_07a8b1643f0fc0c4 = function(arg0, arg1) {
         alert(getStringFromWasm(arg0, arg1));
     };
+    imports['./snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js'] = __wbg_star0;
 
     if ((typeof URL === 'function' && module instanceof URL) || typeof module === 'string' || (typeof Request === 'function' && module instanceof Request)) {
 

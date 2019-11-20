@@ -1,10 +1,14 @@
+mod numfmt;
+mod numparse;
+mod types;
+// mod ustr;
+
 use wasm_bindgen::prelude::*;
 use wee_alloc::WeeAlloc;
 use unic_langid_impl::LanguageIdentifier;
-use unic_langid::langid;
+// use unic_langid::langid;
 
-mod ustr;
-mod numfmt;
+use types::DataConsumer;
 
 #[global_allocator]
 static ALLOC: WeeAlloc = WeeAlloc::INIT;
@@ -13,6 +17,22 @@ static ALLOC: WeeAlloc = WeeAlloc::INIT;
 extern "C" {
 	fn alert(s: &str);
 }
+
+#[wasm_bindgen(module = "/defined-in-js.js")]
+extern "C" {
+	fn get_chars(path: &str) -> Option<String>;
+	fn alert_number(d: f64);
+}
+
+struct ExternDataProvider {}
+
+impl types::DataProvider for ExternDataProvider {
+	fn get_chars(&self, path: &str) -> Option<String> {
+		return get_chars(path)
+	}
+}
+
+static DATA_PROVIDER: ExternDataProvider = ExternDataProvider {};
 
 #[wasm_bindgen]
 pub fn add(a: u32, b: u32) -> u32 {
@@ -61,4 +81,13 @@ pub fn pusher(input: &str) {
 pub fn simple_format(loc: &str, input: i32) {
 	let nf = numfmt::NumFmt::from_locale(loc);
 	alert(&nf.format(input));
+}
+
+#[wasm_bindgen]
+pub fn simple_parse(loc: &str, input: &str) {
+	let np = numparse::NumParse::from_locale(loc)
+		.with_data_provider(&DATA_PROVIDER);
+	// alert(&format!("{:?}", np.data.char_map).to_string());
+	let result = np.parse(input).unwrap_or(-1);
+	alert_number(result as f64);
 }

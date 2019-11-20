@@ -22,6 +22,11 @@ export function pusher(input: string): void;
 * @param {number} input 
 */
 export function simple_format(loc: string, input: number): void;
+/**
+* @param {string} loc 
+* @param {string} input 
+*/
+export function simple_parse(loc: string, input: string): void;
 
 /**
 * If `module_or_path` is {RequestInfo}, makes a request and
