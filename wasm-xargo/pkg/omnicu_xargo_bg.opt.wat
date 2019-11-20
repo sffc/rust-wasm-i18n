@@ -18,7 +18,7 @@
   (type (;16;) (func (param i32 i32 i32)))
   (type (;17;) (func (param i32)))
   (type (;18;) (func (param i32 i32) (result i32)))
-  (import "wbg" "__wbg_getchars_7af6a90ad486762b" (func (;0;) (type 5)))
+  (import "wbg" "__wbg_getstring_f83a3a0c8f7963e3" (func (;0;) (type 5)))
   (import "wbg" "__wbg_alert_07a8b1643f0fc0c4" (func (;1;) (type 2)))
   (import "./snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js" "alert_number" (func (;2;) (type 15)))
   (func (;3;) (type 5) (param i32 i32 i32)

@@ -17,7 +17,7 @@
   (type (;15;) (func (param i64 i64) (result i32)))
   (type (;16;) (func (param i64 i64 i32) (result i64)))
   (type (;17;) (func (param f64)))
-  (import "wbg" "__wbg_getchars_7af6a90ad486762b" (func $__wbg_getchars_7af6a90ad486762b (type 6)))
+  (import "wbg" "__wbg_getstring_f83a3a0c8f7963e3" (func $__wbg_getstring_f83a3a0c8f7963e3 (type 6)))
   (import "wbg" "__wbg_alert_07a8b1643f0fc0c4" (func $__wbg_alert_07a8b1643f0fc0c4 (type 3)))
   (import "./snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js" "alert_number" (func $__wbg_alertnumber_d93243d68cb37778 (type 17)))
   (func $unic_langid_impl::LanguageIdentifier::from_bytes::hc6fa41a72e7381e5 (type 6) (param i32 i32 i32)
@@ -3382,7 +3382,7 @@
     i32.add
     i32.const 1049672
     i32.const 9
-    call $<omnicu_xargo::ExternDataProvider_as_omnicu_xargo::types::DataProvider>::get_chars::h9ffb789c837e14da
+    call $<omnicu_xargo::ExternDataProvider_as_omnicu_xargo::types::DataProvider>::get_string::ha6590cf97f4e5654
     local.get 4
     i32.const 0
     i32.store offset=192
@@ -7791,7 +7791,7 @@
     i32.add
     global.set 0
     local.get 6)
-  (func $<omnicu_xargo::ExternDataProvider_as_omnicu_xargo::types::DataProvider>::get_chars::h9ffb789c837e14da (type 6) (param i32 i32 i32)
+  (func $<omnicu_xargo::ExternDataProvider_as_omnicu_xargo::types::DataProvider>::get_string::ha6590cf97f4e5654 (type 6) (param i32 i32 i32)
     (local i32)
     global.get 0
     i32.const 16
@@ -7803,7 +7803,7 @@
     i32.add
     local.get 1
     local.get 2
-    call $__wbg_getchars_7af6a90ad486762b
+    call $__wbg_getstring_f83a3a0c8f7963e3
     block  ;; label = @1
       block  ;; label = @2
         local.get 3

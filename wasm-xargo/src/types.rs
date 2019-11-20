@@ -1,5 +1,5 @@
 pub trait DataProvider {
-	fn get_chars(&self, path: &str) -> Option<String>;
+	fn get_string(&self, path: &str) -> Option<String>;
 }
 
 pub trait DataConsumer<'a> {

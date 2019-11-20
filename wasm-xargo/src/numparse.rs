@@ -3,18 +3,19 @@ use std::convert::TryFrom;
 
 use super::types;
 
-struct NumParseData {
-	char_map: Option<HashMap<char, u8>>,
+// TODO: This is public only for debugging
+pub struct NumParseData {
+	pub char_map: Option<HashMap<char, u8>>,
 }
 
 pub struct NumParse {
-	data: NumParseData,
+	pub data: NumParseData,
 }
 
 impl<'a> types::DataConsumer<'a> for NumParse {
 	fn with_data_provider(mut self, data_provider: &'a dyn types::DataProvider) -> Self {
 		self.data.char_map = Some(
-			data_provider.get_chars("num/zeros")
+			data_provider.get_string("num/zeros")
 				.unwrap_or("".to_string())
 				.chars()
 				.flat_map(|c| {

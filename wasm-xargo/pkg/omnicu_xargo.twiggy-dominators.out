@@ -1,9 +1,9 @@
  Retained Bytes │ Retained % │ Dominator Tree
 ────────────────┼────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-           7832 ┊     24.44% ┊ "function names" subsection
-           7285 ┊     22.73% ┊ export "simple_parse"
-           7270 ┊     22.68% ┊   ⤷ simple_parse
-           2005 ┊      6.26% ┊       ⤷ core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut::h7c7c588d6e7999fe
+           7836 ┊     24.44% ┊ "function names" subsection
+           7286 ┊     22.73% ┊ export "simple_parse"
+           7271 ┊     22.68% ┊   ⤷ simple_parse
+           2005 ┊      6.25% ┊       ⤷ core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut::h7c7c588d6e7999fe
            1910 ┊      5.96% ┊           ⤷ core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut::h31f516c186101cc0
            1309 ┊      4.08% ┊               ⤷ hashbrown::raw::RawTable<T>::reserve_rehash::h4d271d8f31cbf21b
              37 ┊      0.12% ┊                   ⤷ hashbrown::raw::RawTable<T>::rehash_in_place::{{closure}}::h71ac83f09b92730c
@@ -20,8 +20,8 @@
             368 ┊      1.15% ┊       ⤷ hashbrown::raw::RawTable<T>::try_with_capacity::h087e7e0a5302441c
              45 ┊      0.14% ┊           ⤷ memset
             281 ┊      0.88% ┊       ⤷ <core::str::Chars as core::iter::traits::iterator::Iterator>::next::h78aa72ef51f2d62f.547
-            184 ┊      0.57% ┊       ⤷ <omnicu_xargo::ExternDataProvider as omnicu_xargo::types::DataProvider>::get_chars::h9ffb789c837e14da
-             59 ┊      0.18% ┊           ⤷ import __wbindgen_placeholder__::__wbg_getchars_7af6a90ad486762b
+            185 ┊      0.58% ┊       ⤷ <omnicu_xargo::ExternDataProvider as omnicu_xargo::types::DataProvider>::get_string::ha6590cf97f4e5654
+             60 ┊      0.19% ┊           ⤷ import __wbindgen_placeholder__::__wbg_getstring_f83a3a0c8f7963e3
             166 ┊      0.52% ┊       ⤷ <core::iter::adapters::StepBy<I> as core::iter::traits::iterator::Iterator>::next::h3a2e955f135fefcf
             160 ┊      0.50% ┊       ⤷ <hashbrown::raw::RawIter<T> as core::iter::traits::iterator::Iterator>::next::h7615669f550df320
             123 ┊      0.38% ┊       ⤷ hashbrown::raw::RawTable<T>::find_insert_slot::hb326126872fce9ec
@@ -33,7 +33,7 @@
              62 ┊      0.19% ┊       ⤷ import __wbindgen_placeholder__::__wbg_alertnumber_d93243d68cb37778
              23 ┊      0.07% ┊       ⤷ <hashbrown::raw::RawTable<T> as core::ops::drop::Drop>::drop::hc4a803757fa7e5e1
               6 ┊      0.02% ┊       ⤷ type[12]: (i32, i32) -> i64
-           5114 ┊     15.96% ┊ export "get_langauge"
+           5114 ┊     15.95% ┊ export "get_langauge"
            5099 ┊     15.91% ┊   ⤷ get_langauge
            4663 ┊     14.55% ┊       ⤷ unic_langid_impl::LanguageIdentifier::from_bytes::hc6fa41a72e7381e5
             421 ┊      1.31% ┊           ⤷ unic_langid_impl::subtags::parse_variant_subtag::h9de84d41caa95114
@@ -52,14 +52,14 @@
              79 ┊      0.25% ┊       ⤷ unic_langid_impl::LanguageIdentifier::get_language::hc3ceae532e51945f
              70 ┊      0.22% ┊       ⤷ core::result::Result<T,E>::unwrap::h5eb731a2675a9a82
              47 ┊      0.15% ┊       ⤷ core::ptr::real_drop_in_place::h3814f972ff60a10a
-           2425 ┊      7.57% ┊ export "pusher"
+           2425 ┊      7.56% ┊ export "pusher"
            2416 ┊      7.54% ┊   ⤷ pusher
-            226 ┊      0.71% ┊       ⤷ alloc::vec::Vec<T>::push::ha8cb3e39eaa0f61f
+            226 ┊      0.70% ┊       ⤷ alloc::vec::Vec<T>::push::ha8cb3e39eaa0f61f
             170 ┊      0.53% ┊       ⤷ alloc::slice::insert_head::h0515679ecf4baf0a
              69 ┊      0.22% ┊       ⤷ alloc::slice::<impl [T]>::sort::{{closure}}::hfe35b9dc95663671
              61 ┊      0.19% ┊       ⤷ <core::ops::range::Range<usize> as core::slice::SliceIndex<[T]>>::index_mut::h0c7d072caead306f
              37 ┊      0.12% ┊       ⤷ <alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop::ha31b0eab55e73512
-           1085 ┊      3.39% ┊ data[0]
+           1085 ┊      3.38% ┊ data[0]
            1049 ┊      3.27% ┊ export "simple_format"
            1033 ┊      3.22% ┊   ⤷ simple_format
             317 ┊      0.99% ┊       ⤷ alloc::string::String::push::h73424532677c9fac.544
@@ -96,8 +96,8 @@
             123 ┊      0.38% ┊ wee_alloc::neighbors::Neighbors<T>::remove::h00efd741b39596e7
             120 ┊      0.37% ┊ data[1]
             113 ┊      0.35% ┊ memmove
-            104 ┊      0.32% ┊ export "__wbindgen_describe___wbg_getchars_7af6a90ad486762b"
-             50 ┊      0.16% ┊   ⤷ __wbindgen_describe___wbg_getchars_7af6a90ad486762b
+            105 ┊      0.33% ┊ export "__wbindgen_describe___wbg_getstring_f83a3a0c8f7963e3"
+             50 ┊      0.16% ┊   ⤷ __wbindgen_describe___wbg_getstring_f83a3a0c8f7963e3
              99 ┊      0.31% ┊ export "__wbindgen_describe___wbg_alertnumber_d93243d68cb37778"
              42 ┊      0.13% ┊   ⤷ __wbindgen_describe___wbg_alertnumber_d93243d68cb37778
              91 ┊      0.28% ┊ export "__wbindgen_describe___wbg_alert_07a8b1643f0fc0c4"
@@ -183,4 +183,4 @@
               3 ┊      0.01% ┊ memory section headers
               3 ┊      0.01% ┊ global section headers
               3 ┊      0.01% ┊ element section headers
-           1339 ┊      4.18% ┊ [2 Unreachable Items]
+           1342 ┊      4.19% ┊ [2 Unreachable Items]

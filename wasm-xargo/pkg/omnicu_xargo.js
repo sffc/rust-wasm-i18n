@@ -1,4 +1,4 @@
-import { get_chars } from './snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js';
+import { get_string } from './snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js';
 import * as __wbg_star0 from './snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js';
 
 let wasm;
@@ -131,8 +131,8 @@ function init(module) {
     let result;
     const imports = {};
     imports.wbg = {};
-    imports.wbg.__wbg_getchars_7af6a90ad486762b = function(arg0, arg1, arg2) {
-        const ret = get_chars(getStringFromWasm(arg1, arg2));
+    imports.wbg.__wbg_getstring_f83a3a0c8f7963e3 = function(arg0, arg1, arg2) {
+        const ret = get_string(getStringFromWasm(arg1, arg2));
         const ptr0 = isLikeNone(ret) ? 0 : passStringToWasm(ret);
         const len0 = WASM_VECTOR_LEN;
         const ret0 = ptr0;

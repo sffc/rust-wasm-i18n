@@ -1,4 +1,4 @@
-export function get_chars(path) {
+export function get_string(path) {
 	if (path === "num/zeros") {
 		return "a";
 	}

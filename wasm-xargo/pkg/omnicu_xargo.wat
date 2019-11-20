@@ -18,7 +18,7 @@
   (type (;16;) (func (result i32)))
   (type (;17;) (func (param i32 i32 i32) (result i32)))
   (type (;18;) (func (param i32 i32 i32 i32 i32) (result i32)))
-  (import "__wbindgen_placeholder__" "__wbg_getchars_7af6a90ad486762b" (func $__wbg_getchars_7af6a90ad486762b (type 4)))
+  (import "__wbindgen_placeholder__" "__wbg_getstring_f83a3a0c8f7963e3" (func $__wbg_getstring_f83a3a0c8f7963e3 (type 4)))
   (import "__wbindgen_placeholder__" "__wbindgen_describe" (func $__wbindgen_describe (type 5)))
   (import "__wbindgen_placeholder__" "__wbg_alert_07a8b1643f0fc0c4" (func $__wbg_alert_07a8b1643f0fc0c4 (type 0)))
   (import "__wbindgen_placeholder__" "__wbg_alertnumber_d93243d68cb37778" (func $__wbg_alertnumber_d93243d68cb37778 (type 6)))
@@ -223,7 +223,7 @@
     local.get 3
     call $__rg_realloc)
   (func $_ZN3std5alloc24default_alloc_error_hook17h327e2f5512c176a8E (type 0) (param i32 i32))
-  (func $_ZN86_$LT$omnicu_xargo..ExternDataProvider$u20$as$u20$omnicu_xargo..types..DataProvider$GT$9get_chars17h9ffb789c837e14daE (type 4) (param i32 i32 i32)
+  (func $_ZN86_$LT$omnicu_xargo..ExternDataProvider$u20$as$u20$omnicu_xargo..types..DataProvider$GT$10get_string17ha6590cf97f4e5654E (type 4) (param i32 i32 i32)
     (local i32)
     global.get 0
     i32.const 16
@@ -235,7 +235,7 @@
     i32.add
     local.get 1
     local.get 2
-    call $__wbg_getchars_7af6a90ad486762b
+    call $__wbg_getstring_f83a3a0c8f7963e3
     block  ;; label = @1
       block  ;; label = @2
         local.get 3
@@ -499,7 +499,7 @@
     local.get 0
     local.get 1
     call $__wbg_alert_07a8b1643f0fc0c4)
-  (func $__wbindgen_describe___wbg_getchars_7af6a90ad486762b (type 7)
+  (func $__wbindgen_describe___wbg_getstring_f83a3a0c8f7963e3 (type 7)
     i32.const 11
     call $__wbindgen_describe
     i32.const 0
@@ -3896,7 +3896,7 @@
     i32.add
     i32.const 1049672
     i32.const 9
-    call $_ZN86_$LT$omnicu_xargo..ExternDataProvider$u20$as$u20$omnicu_xargo..types..DataProvider$GT$9get_chars17h9ffb789c837e14daE
+    call $_ZN86_$LT$omnicu_xargo..ExternDataProvider$u20$as$u20$omnicu_xargo..types..DataProvider$GT$10get_string17ha6590cf97f4e5654E
     local.get 4
     i32.const 0
     i32.store offset=192
@@ -9353,7 +9353,7 @@
   (export "__data_end" (global 1))
   (export "__heap_base" (global 2))
   (export "__wbindgen_describe___wbg_alert_07a8b1643f0fc0c4" (func $__wbindgen_describe___wbg_alert_07a8b1643f0fc0c4))
-  (export "__wbindgen_describe___wbg_getchars_7af6a90ad486762b" (func $__wbindgen_describe___wbg_getchars_7af6a90ad486762b))
+  (export "__wbindgen_describe___wbg_getstring_f83a3a0c8f7963e3" (func $__wbindgen_describe___wbg_getstring_f83a3a0c8f7963e3))
   (export "__wbindgen_describe___wbg_alertnumber_d93243d68cb37778" (func $__wbindgen_describe___wbg_alertnumber_d93243d68cb37778))
   (export "add" (func $add))
   (export "__wbindgen_describe_add" (func $__wbindgen_describe_add))

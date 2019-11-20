@@ -1,7 +1,7 @@
  Retained Bytes │ Retained % │ Dominator Tree
 ────────────────┼────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-           6837 ┊     27.62% ┊ export "simple_parse"
-           6822 ┊     27.56% ┊   ⤷ simple_parse
+           6838 ┊     27.62% ┊ export "simple_parse"
+           6823 ┊     27.56% ┊   ⤷ simple_parse
            1884 ┊      7.61% ┊       ⤷ core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut::h7c7c588d6e7999fe
            1805 ┊      7.29% ┊           ⤷ core::ops::function::impls::<impl core::ops::function::FnMut<A> for &mut F>::call_mut::h31f516c186101cc0
            1238 ┊      5.00% ┊               ⤷ hashbrown::raw::RawTable<T>::reserve_rehash::h4d271d8f31cbf21b
@@ -18,11 +18,11 @@
             133 ┊      0.54% ┊           ⤷ core::option::Option<T>::map_or::ha40228d5205c90ea
             332 ┊      1.34% ┊       ⤷ hashbrown::raw::RawTable<T>::try_with_capacity::h087e7e0a5302441c
              45 ┊      0.18% ┊           ⤷ memset
-            281 ┊      1.14% ┊       ⤷ <core::str::Chars as core::iter::traits::iterator::Iterator>::next::h78aa72ef51f2d62f.547
+            281 ┊      1.13% ┊       ⤷ <core::str::Chars as core::iter::traits::iterator::Iterator>::next::h78aa72ef51f2d62f.547
             160 ┊      0.65% ┊       ⤷ <hashbrown::raw::RawIter<T> as core::iter::traits::iterator::Iterator>::next::h7615669f550df320
             150 ┊      0.61% ┊       ⤷ <core::iter::adapters::StepBy<I> as core::iter::traits::iterator::Iterator>::next::h3a2e955f135fefcf
-            143 ┊      0.58% ┊       ⤷ <omnicu_xargo::ExternDataProvider as omnicu_xargo::types::DataProvider>::get_chars::h9ffb789c837e14da
-             38 ┊      0.15% ┊           ⤷ import wbg::__wbg_getchars_7af6a90ad486762b
+            144 ┊      0.58% ┊       ⤷ <omnicu_xargo::ExternDataProvider as omnicu_xargo::types::DataProvider>::get_string::ha6590cf97f4e5654
+             39 ┊      0.16% ┊           ⤷ import wbg::__wbg_getstring_f83a3a0c8f7963e3
             123 ┊      0.50% ┊       ⤷ hashbrown::raw::RawTable<T>::find_insert_slot::hb326126872fce9ec
               6 ┊      0.02% ┊           ⤷ type[14]: (i32, i64) -> i32
             106 ┊      0.43% ┊       ⤷ hashbrown::raw::calculate_layout::h2d0157e570ad6342
@@ -32,7 +32,7 @@
              51 ┊      0.21% ┊       ⤷ hashbrown::raw::RawTable<T>::free_buckets::heba7f665649a6efc
              19 ┊      0.08% ┊       ⤷ <hashbrown::raw::RawTable<T> as core::ops::drop::Drop>::drop::hc4a803757fa7e5e1
               6 ┊      0.02% ┊       ⤷ type[5]: (i32, i32) -> i64
-           5610 ┊     22.66% ┊ "function names" subsection
+           5612 ┊     22.67% ┊ "function names" subsection
            4731 ┊     19.11% ┊ export "get_langauge"
            4716 ┊     19.05% ┊   ⤷ get_langauge
            4350 ┊     17.57% ┊       ⤷ unic_langid_impl::LanguageIdentifier::from_bytes::hc6fa41a72e7381e5

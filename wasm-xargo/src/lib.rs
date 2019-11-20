@@ -20,15 +20,15 @@ extern "C" {
 
 #[wasm_bindgen(module = "/defined-in-js.js")]
 extern "C" {
-	fn get_chars(path: &str) -> Option<String>;
+	fn get_string(path: &str) -> Option<String>;
 	fn alert_number(d: f64);
 }
 
 struct ExternDataProvider {}
 
 impl types::DataProvider for ExternDataProvider {
-	fn get_chars(&self, path: &str) -> Option<String> {
-		return get_chars(path)
+	fn get_string(&self, path: &str) -> Option<String> {
+		return get_string(path)
 	}
 }
 
