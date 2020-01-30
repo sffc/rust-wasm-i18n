@@ -4,3 +4,4 @@ bin/
 target/
 wasm-pack.log
 external/
+wapm_packages/
