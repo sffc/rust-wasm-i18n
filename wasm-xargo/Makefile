@@ -12,6 +12,8 @@ all: \
 
 COMMON=pkg Makefile
 
+WASM_OPT=wasm-opt
+
 pkg:
 	mkdir -p pkg
 
@@ -23,7 +25,7 @@ pkg/omnicu_xargo_bg.wasm: pkg/omnicu_xargo.wasm $(COMMON)
 	wasm-bindgen pkg/omnicu_xargo.wasm --target web --out-dir pkg
 
 pkg/omnicu_xargo_bg.opt.wasm: pkg/omnicu_xargo_bg.wasm $(COMMON)
-	wasm-opt -Os $< -o $@
+	$(WASM_OPT) -Os $< -o $@
 
 pkg/%.wat: pkg/%.wasm $(COMMON)
 	wapm run wasm2wat --dir=pkg $< > $@

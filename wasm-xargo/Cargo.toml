@@ -14,8 +14,8 @@ wee_alloc = "0.4.5"
 wasm-bindgen = "0.2.54"
 # unic-locale = "0.7.1"
 # unic-locale-impl = "0.7.1"
-unic-langid = { version = "0.7.1", features = ["unic-langid-macros"] }
-unic-langid-impl = "0.7.1"
+unic-langid = { version = "0.8.0", features = ["unic-langid-macros"] }
+unic-langid-impl = "0.8.0"
 # unic-langid = { path = "../external/unic-locale/unic-langid", features = ["unic-langid-macros"] }
 # unic-langid-impl = { path = "../external/unic-locale/unic-langid-impl" }
 

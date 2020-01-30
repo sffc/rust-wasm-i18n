@@ -62,8 +62,8 @@ pub fn get_langauge(input: &str) {
 	// let loc = LanguageIdentifier::from_bytes("en-US".as_bytes()).unwrap();
 	// let loc = langid!(&input);
 	// let loc = langid!("en-US");
-	alert(&loc1.get_language());
-	alert(&loc2.get_language());
+	alert(&loc1.language());
+	alert(&loc2.language());
 }
 
 #[wasm_bindgen]

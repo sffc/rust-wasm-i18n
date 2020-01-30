@@ -3,14 +3,20 @@ import * as __wbg_star0 from './snippets/omnicu-xargo-de947ce3fd08cf94/defined-i
 
 let wasm;
 
-/**
-* @param {number} a
-* @param {number} b
-* @returns {number}
-*/
-export function add(a, b) {
-    const ret = wasm.add(a, b);
-    return ret >>> 0;
+let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true, fatal: true });
+
+cachedTextDecoder.decode();
+
+let cachegetUint8Memory0 = null;
+function getUint8Memory0() {
+    if (cachegetUint8Memory0 === null || cachegetUint8Memory0.buffer !== wasm.memory.buffer) {
+        cachegetUint8Memory0 = new Uint8Array(wasm.memory.buffer);
+    }
+    return cachegetUint8Memory0;
+}
+
+function getStringFromWasm0(ptr, len) {
+    return cachedTextDecoder.decode(getUint8Memory0().subarray(ptr, ptr + len));
 }
 
 let WASM_VECTOR_LEN = 0;
@@ -30,20 +36,20 @@ const encodeString = (typeof cachedTextEncoder.encodeInto === 'function'
     };
 });
 
-let cachegetUint8Memory = null;
-function getUint8Memory() {
-    if (cachegetUint8Memory === null || cachegetUint8Memory.buffer !== wasm.memory.buffer) {
-        cachegetUint8Memory = new Uint8Array(wasm.memory.buffer);
-    }
-    return cachegetUint8Memory;
-}
+function passStringToWasm0(arg, malloc, realloc) {
 
-function passStringToWasm(arg) {
+    if (realloc === undefined) {
+        const buf = cachedTextEncoder.encode(arg);
+        const ptr = malloc(buf.length);
+        getUint8Memory0().subarray(ptr, ptr + buf.length).set(buf);
+        WASM_VECTOR_LEN = buf.length;
+        return ptr;
+    }
 
     let len = arg.length;
-    let ptr = wasm.__wbindgen_malloc(len);
+    let ptr = malloc(len);
 
-    const mem = getUint8Memory();
+    const mem = getUint8Memory0();
 
     let offset = 0;
 
@@ -57,8 +63,8 @@ function passStringToWasm(arg) {
         if (offset !== 0) {
             arg = arg.slice(offset);
         }
-        ptr = wasm.__wbindgen_realloc(ptr, len, len = offset + arg.length * 3);
-        const view = getUint8Memory().subarray(ptr + offset, ptr + len);
+        ptr = realloc(ptr, len, len = offset + arg.length * 3);
+        const view = getUint8Memory0().subarray(ptr + offset, ptr + len);
         const ret = encodeString(arg, view);
 
         offset += ret.written;
@@ -67,25 +73,53 @@ function passStringToWasm(arg) {
     WASM_VECTOR_LEN = offset;
     return ptr;
 }
+
+function isLikeNone(x) {
+    return x === undefined || x === null;
+}
+
+let cachegetInt32Memory0 = null;
+function getInt32Memory0() {
+    if (cachegetInt32Memory0 === null || cachegetInt32Memory0.buffer !== wasm.memory.buffer) {
+        cachegetInt32Memory0 = new Int32Array(wasm.memory.buffer);
+    }
+    return cachegetInt32Memory0;
+}
+/**
+* @param {number} a
+* @param {number} b
+* @returns {number}
+*/
+export function add(a, b) {
+    var ret = wasm.add(a, b);
+    return ret >>> 0;
+}
+
 /**
 * @param {string} input
 */
 export function greet(input) {
-    wasm.greet(passStringToWasm(input), WASM_VECTOR_LEN);
+    var ptr0 = passStringToWasm0(input, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    var len0 = WASM_VECTOR_LEN;
+    wasm.greet(ptr0, len0);
 }
 
 /**
 * @param {string} input
 */
 export function get_langauge(input) {
-    wasm.get_langauge(passStringToWasm(input), WASM_VECTOR_LEN);
+    var ptr0 = passStringToWasm0(input, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    var len0 = WASM_VECTOR_LEN;
+    wasm.get_langauge(ptr0, len0);
 }
 
 /**
 * @param {string} input
 */
 export function pusher(input) {
-    wasm.pusher(passStringToWasm(input), WASM_VECTOR_LEN);
+    var ptr0 = passStringToWasm0(input, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    var len0 = WASM_VECTOR_LEN;
+    wasm.pusher(ptr0, len0);
 }
 
 /**
@@ -93,7 +127,9 @@ export function pusher(input) {
 * @param {number} input
 */
 export function simple_format(loc, input) {
-    wasm.simple_format(passStringToWasm(loc), WASM_VECTOR_LEN, input);
+    var ptr0 = passStringToWasm0(loc, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    var len0 = WASM_VECTOR_LEN;
+    wasm.simple_format(ptr0, len0, input);
 }
 
 /**
@@ -101,27 +137,11 @@ export function simple_format(loc, input) {
 * @param {string} input
 */
 export function simple_parse(loc, input) {
-    wasm.simple_parse(passStringToWasm(loc), WASM_VECTOR_LEN, passStringToWasm(input), WASM_VECTOR_LEN);
-}
-
-let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true, fatal: true });
-
-cachedTextDecoder.decode();
-
-function getStringFromWasm(ptr, len) {
-    return cachedTextDecoder.decode(getUint8Memory().subarray(ptr, ptr + len));
-}
-
-function isLikeNone(x) {
-    return x === undefined || x === null;
-}
-
-let cachegetInt32Memory = null;
-function getInt32Memory() {
-    if (cachegetInt32Memory === null || cachegetInt32Memory.buffer !== wasm.memory.buffer) {
-        cachegetInt32Memory = new Int32Array(wasm.memory.buffer);
-    }
-    return cachegetInt32Memory;
+    var ptr0 = passStringToWasm0(loc, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    var len0 = WASM_VECTOR_LEN;
+    var ptr1 = passStringToWasm0(input, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    var len1 = WASM_VECTOR_LEN;
+    wasm.simple_parse(ptr0, len0, ptr1, len1);
 }
 
 function init(module) {
@@ -132,16 +152,14 @@ function init(module) {
     const imports = {};
     imports.wbg = {};
     imports.wbg.__wbg_getstring_f83a3a0c8f7963e3 = function(arg0, arg1, arg2) {
-        const ret = get_string(getStringFromWasm(arg1, arg2));
-        const ptr0 = isLikeNone(ret) ? 0 : passStringToWasm(ret);
-        const len0 = WASM_VECTOR_LEN;
-        const ret0 = ptr0;
-        const ret1 = len0;
-        getInt32Memory()[arg0 / 4 + 0] = ret0;
-        getInt32Memory()[arg0 / 4 + 1] = ret1;
+        var ret = get_string(getStringFromWasm0(arg1, arg2));
+        var ptr0 = isLikeNone(ret) ? 0 : passStringToWasm0(ret, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        var len0 = WASM_VECTOR_LEN;
+        getInt32Memory0()[arg0 / 4 + 1] = len0;
+        getInt32Memory0()[arg0 / 4 + 0] = ptr0;
     };
     imports.wbg.__wbg_alert_07a8b1643f0fc0c4 = function(arg0, arg1) {
-        alert(getStringFromWasm(arg0, arg1));
+        alert(getStringFromWasm0(arg0, arg1));
     };
     imports['./snippets/omnicu-xargo-de947ce3fd08cf94/defined-in-js.js'] = __wbg_star0;
 
