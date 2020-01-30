@@ -1,0 +1,24 @@
+[package]
+name = "omnicu-no-std"
+version = "0.1.0"
+authors = ["Shane F. Carr <shane.carr@wustl.edu>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wee_alloc = "0.4.5"
+
+[profile.dev]
+panic = "unwind"
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+lto = true
+
+[features]
+panic_immediate_abort = []

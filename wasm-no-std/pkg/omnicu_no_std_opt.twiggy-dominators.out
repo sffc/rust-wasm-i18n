@@ -1,0 +1,26 @@
+ Retained Bytes │ Retained % │ Dominator Tree
+────────────────┼────────────┼─────────────────────────────────────────
+             22 ┊      0.08% ┊ export "__heap_base"
+              8 ┊      0.03% ┊   ⤷ global[1]
+             21 ┊      0.08% ┊ export "__data_end"
+              8 ┊      0.03% ┊   ⤷ global[0]
+             21 ┊      0.08% ┊ export "sum"
+             15 ┊      0.06% ┊   ⤷ code[0]
+              6 ┊      0.02% ┊       ⤷ type[0]: (i32, i32) -> i32
+             19 ┊      0.07% ┊ custom section '.debug_pubtypes' headers
+             19 ┊      0.07% ┊ custom section '.debug_pubnames' headers
+             17 ┊      0.06% ┊ custom section '.debug_macinfo' headers
+             17 ┊      0.06% ┊ custom section '.debug_abbrev' headers
+             15 ┊      0.06% ┊ custom section '.debug_info' headers
+             15 ┊      0.06% ┊ custom section '.debug_line' headers
+             14 ┊      0.05% ┊ custom section '.debug_str' headers
+             12 ┊      0.05% ┊ custom section 'producers' headers
+             11 ┊      0.04% ┊ export "memory"
+              2 ┊      0.01% ┊   ⤷ memory[0]
+              8 ┊      0.03% ┊ wasm magic bytes
+              6 ┊      0.02% ┊ code section headers
+              3 ┊      0.01% ┊ type section headers
+              3 ┊      0.01% ┊ memory section headers
+              3 ┊      0.01% ┊ global section headers
+              3 ┊      0.01% ┊ export section headers
+          26288 ┊     99.14% ┊ [8 Unreachable Items]
