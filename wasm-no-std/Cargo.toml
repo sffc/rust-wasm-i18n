@@ -11,6 +11,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wee_alloc = "0.4.5"
+# no-std-compat?
 
 [profile.dev]
 panic = "unwind"

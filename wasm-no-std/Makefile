@@ -3,11 +3,11 @@ all: \
 	pkg/omnicu_no_std.wasm \
 	pkg/omnicu_no_std.wat \
 	pkg/omnicu_no_std.twiggy-dominators.out \
-	pkg/omnicu_no_std_opt.wasm \
-	pkg/omnicu_no_std_opt.wat \
-	pkg/omnicu_no_std_opt.twiggy-dominators.out \
+#	pkg/omnicu_no_std_opt.wasm \
+#	pkg/omnicu_no_std_opt.wat \
+#	pkg/omnicu_no_std_opt.twiggy-dominators.out \
 
-COMMON=pkg Makefile
+COMMON=pkg Makefile .cargo/config
 
 WASM_OPT=wasm-opt
 
@@ -15,7 +15,7 @@ pkg:
 	mkdir -p pkg
 
 pkg/omnicu_no_std.wasm: Cargo.toml src/*.rs $(COMMON)
-	cargo build --release --target "wasm32-unknown-unknown"
+	cargo +nightly build --release --target "wasm32-unknown-unknown"
 	cp target/wasm32-unknown-unknown/release/omnicu_no_std.wasm $@
 
 pkg/omnicu_no_std_opt.wasm: pkg/omnicu_no_std.wasm $(COMMON)
