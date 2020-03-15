@@ -11,10 +11,12 @@ COMMON=pkg Makefile .cargo/config
 
 WASM_OPT=wasm-opt
 
+RS_FILES=$(shell find src/ -type f -name '*.rs')
+
 pkg:
 	mkdir -p pkg
 
-pkg/omnicu_no_std.wasm: Cargo.toml src/*.rs $(COMMON)
+pkg/omnicu_no_std.wasm: Cargo.toml $(RS_FILES) $(COMMON)
 	cargo +nightly build --release --target "wasm32-unknown-unknown"
 	cp target/wasm32-unknown-unknown/release/omnicu_no_std.wasm $@
 

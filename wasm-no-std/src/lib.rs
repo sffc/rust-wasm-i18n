@@ -3,47 +3,15 @@
 // Replacing the allocator and using the `alloc` crate are still unstable.
 #![feature(core_intrinsics, lang_items, alloc_error_handler)]
 
-extern crate alloc;
+mod types;
 
-/////////////////////////////////
-// BEGIN WEE_ALLOC BOILERPLATE //
-/////////////////////////////////
+use types::*;
+use intl::FormattedValue;
 
-
-// Use `wee_alloc` as the global allocator.
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
-// Need to provide a tiny `panic` implementation for `#![no_std]`.
-// This translates into an `unreachable` instruction that will
-// raise a `trap` the WebAssembly execution if we panic at runtime.
-#[panic_handler]
-#[no_mangle]
-pub fn panic(_info: &::core::panic::PanicInfo) -> ! {
-    unsafe {
-        ::core::intrinsics::abort();
-    }
-}
-
-// Need to provide an allocation error handler which just aborts
-// the execution with trap.
-#[alloc_error_handler]
-#[no_mangle]
-pub extern "C" fn oom(_: ::core::alloc::Layout) -> ! {
-    unsafe {
-        ::core::intrinsics::abort();
-    }
-}
-
-///////////////////////////////
-// END WEE_ALLOC BOILERPLATE //
-///////////////////////////////
-
-
-
-use alloc::string::String;
+pub mod intl;
 
 extern "C" {
+	#[allow(improper_ctypes)]
 	fn alert(s: &str);
 }
 
@@ -52,7 +20,7 @@ pub fn sum(a: i32, b: i32) -> i32 {
 	return a + b;
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn greet(input: &str) {
 	let mut message = String::new();
 	message.push_str("Hello, ");
@@ -67,4 +35,32 @@ pub fn greet(input: &str) {
 	// u.push_str(input);
 	// u.push_str("!");
 	// alert(u.as_str());
+}
+
+fn numf_demo_impl() -> intl::FormattedNumber {
+	let provider = intl::util::data::DummyDataProvider {};
+	let nf = intl::number_format(&provider, &intl::numf::Options {
+		notation: intl::numf::Notation::Compact,
+		unit: intl::numf::Unit::None,
+	}).unwrap();
+	let d = intl::Decimal {
+		digits: vec![3, 1, 4, 1, 5, 9],
+		scale: 0,
+		is_negative: false,
+	};
+	nf.format(&d)
+}
+
+#[no_mangle]
+pub fn numf_demo() {
+	let result = numf_demo_impl();
+	unsafe {
+		alert(result.as_str());
+	}
+}
+
+#[test]
+fn numf_test() {
+	let result = numf_demo_impl();
+	assert_eq!("p3.14159s", result.as_str());
 }
