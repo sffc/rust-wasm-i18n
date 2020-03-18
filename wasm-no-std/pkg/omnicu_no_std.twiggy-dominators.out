@@ -1,59 +1,63 @@
  Retained Bytes │ Retained % │ Dominator Tree
 ────────────────┼────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-           4345 ┊      2.36% ┊ export "numf_demo"
-           4333 ┊      2.35% ┊   ⤷ numf_demo
-           1036 ┊      0.56% ┊       ⤷ data[1]
-            411 ┊      0.22% ┊       ⤷ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::dealloc::h81b0678ebfcb7b39
-            199 ┊      0.11% ┊           ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::h43ba3a90a25c8d11
-            383 ┊      0.21% ┊       ⤷ <omnicu_no_std::intl::util::data::DummyDataProvider as omnicu_no_std::intl::util::data::DataProvider>::get_data::h3e7ff08893e52c3e
-            111 ┊      0.06% ┊           ⤷ <alloc::string::String as core::convert::From<&str>>::from::h0e69ac74b2aa0ccb
-             36 ┊      0.02% ┊           ⤷ alloc::alloc::exchange_malloc::h3e4d00a2e461b4b1.92
-            334 ┊      0.18% ┊       ⤷ alloc::string::String::insert_bytes::hd56ac09a3e692bfd
+           4648 ┊      2.34% ┊ export "numf_demo"
+           4636 ┊      2.34% ┊   ⤷ numf_demo
+           1036 ┊      0.52% ┊       ⤷ data[1]
+            444 ┊      0.22% ┊       ⤷ alloc::string::String::insert_bytes::hca878bdfedda6fe6
             115 ┊      0.06% ┊           ⤷ memmove
-            327 ┊      0.18% ┊       ⤷ alloc::string::String::insert::h6441ee29c9c379aa
-            230 ┊      0.12% ┊       ⤷ alloc::vec::Vec<T>::extend_from_slice::h7b4cbb7497fcfb1f
-            217 ┊      0.12% ┊       ⤷ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::alloc::hc088c8c2ac6edf9b
-             75 ┊      0.04% ┊       ⤷ __rust_realloc
+            411 ┊      0.21% ┊       ⤷ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::dealloc::h69d81d2983fc140a
+            199 ┊      0.10% ┊           ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::h8548c58d86f946c0
+            409 ┊      0.21% ┊       ⤷ <omnicu_no_std::intl::util::data::DummyDataProvider as omnicu_no_std::intl::util::data::DataProvider>::get_data::h3e7ff08893e52c3e
+            137 ┊      0.07% ┊           ⤷ <alloc::string::String as core::convert::From<&str>>::from::h3130ee5535d0dbe9
+             36 ┊      0.02% ┊           ⤷ alloc::alloc::exchange_malloc::hc7ff31f3f41dbb33.94
+            328 ┊      0.17% ┊       ⤷ alloc::string::String::insert::h114355055163bb0f
+            314 ┊      0.16% ┊       ⤷ alloc::vec::Vec<T>::extend_from_slice::h3aec272661910934
+            217 ┊      0.11% ┊       ⤷ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::alloc::h3fe523036925f587
+             85 ┊      0.04% ┊       ⤷ __rust_realloc
              59 ┊      0.03% ┊           ⤷ __rg_realloc
-             58 ┊      0.03% ┊       ⤷ core::ptr::real_drop_in_place::h680b155aba849b4e
+              8 ┊      0.00% ┊           ⤷ type[7]: (i32, i32, i32, i32) -> i32
+             58 ┊      0.03% ┊       ⤷ core::ptr::drop_in_place::h564f9ec6f88320be
              56 ┊      0.03% ┊       ⤷ memcpy
-             36 ┊      0.02% ┊       ⤷ alloc::alloc::exchange_malloc::h3e4d00a2e461b4b1
-             34 ┊      0.02% ┊       ⤷ core::ptr::real_drop_in_place::h1c21c4d1ecabc647
+             48 ┊      0.02% ┊       ⤷ <alloc::alloc::Global as core::alloc::AllocRef>::alloc::h9d36c401bd9c2be7
+             36 ┊      0.02% ┊       ⤷ alloc::alloc::exchange_malloc::hc7ff31f3f41dbb33
+             34 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place::h2f2c260587a2237f
              32 ┊      0.02% ┊       ⤷ __rust_dealloc
              16 ┊      0.01% ┊           ⤷ __rg_dealloc
-             28 ┊      0.02% ┊       ⤷ __rust_alloc
+             28 ┊      0.01% ┊       ⤷ __rust_alloc
              14 ┊      0.01% ┊           ⤷ __rg_alloc
-             19 ┊      0.01% ┊       ⤷ alloc::raw_vec::capacity_overflow::h0e49d0ba6c086748
-             17 ┊      0.01% ┊       ⤷ core::panicking::panic::h36013e67f43c6cf3
-              6 ┊      0.00% ┊           ⤷ core::panicking::panic_fmt::h8ac91db16b6d3ba4
+             24 ┊      0.01% ┊       ⤷ <alloc::alloc::Global as core::alloc::AllocRef>::dealloc::h3b7120043d6030b8.125
+             19 ┊      0.01% ┊       ⤷ alloc::raw_vec::capacity_overflow::h6870892cc0f8b37b
+             17 ┊      0.01% ┊       ⤷ core::panicking::panic::hc99d3f502c7b79b3
+              6 ┊      0.00% ┊           ⤷ core::panicking::panic_fmt::h87f3b096cfbc8577
              12 ┊      0.01% ┊       ⤷ import env::alert
-              7 ┊      0.00% ┊       ⤷ type[7]: (i32, i32, i32) -> i32
+              7 ┊      0.00% ┊       ⤷ type[9]: (i32, i32, i32) -> i32
               6 ┊      0.00% ┊       ⤷ type[5]: (i32, i32, i32) -> nil
               6 ┊      0.00% ┊       ⤷ rust_oom
               5 ┊      0.00% ┊       ⤷ type[3]: (i32, i32) -> nil
               3 ┊      0.00% ┊       ⤷ type[6]: () -> nil
-           2393 ┊      1.30% ┊ "function names" subsection
-            598 ┊      0.32% ┊ wee_alloc::alloc_with_refill::h41c5929439e974b1
-            455 ┊      0.25% ┊   ⤷ wee_alloc::alloc_first_fit::h3f31c901cd02a7ee
+           2564 ┊      1.29% ┊ "function names" subsection
+            598 ┊      0.30% ┊ wee_alloc::alloc_with_refill::h5456d3e75dcaaf8b
+            455 ┊      0.23% ┊   ⤷ wee_alloc::alloc_first_fit::hc05dfba6df593b72
               9 ┊      0.00% ┊   ⤷ type[8]: (i32, i32, i32, i32, i32) -> i32
-            336 ┊      0.18% ┊ table[0]
-            332 ┊      0.18% ┊   ⤷ elem[0]
-            160 ┊      0.09% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h604be59bc7139380
-            121 ┊      0.07% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h436c441e368bdfc0
-              7 ┊      0.00% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::he7427e55ff72dc91
-              6 ┊      0.00% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::hf946f0e7a049d7aa
-              6 ┊      0.00% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hc3fde9e522cd10e2
-              6 ┊      0.00% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::h537d10c7d8a47c59
-              4 ┊      0.00% ┊       ⤷ core::ptr::real_drop_in_place::h646b9a55400fdf8e
-              4 ┊      0.00% ┊       ⤷ core::ptr::real_drop_in_place::h646b9a55400fdf8e.139
-              4 ┊      0.00% ┊       ⤷ core::ptr::real_drop_in_place::h3df04f865a0a87aa
-            123 ┊      0.07% ┊ wee_alloc::neighbors::Neighbors<T>::remove::h00efd741b39596e7
+            344 ┊      0.17% ┊ table[0]
+            340 ┊      0.17% ┊   ⤷ elem[0]
+            168 ┊      0.08% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::hd9803a25eab7aa4c
+            121 ┊      0.06% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h937f65262f10c6e6
+              7 ┊      0.00% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h0fe7b28280322a27
+              6 ┊      0.00% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h9a383fa4c088461a
+              6 ┊      0.00% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hd6d61d12fe694cbe
+              6 ┊      0.00% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::h59e3e67a35e255bb
+              4 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::h4e9d782d83a70481
+              4 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::h4e9d782d83a70481.148
+              4 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::h050c109dc4e0466a
+            123 ┊      0.06% ┊ wee_alloc::neighbors::Neighbors<T>::remove::h748bd2f2ed77d44e
              21 ┊      0.01% ┊ export "__heap_base"
               7 ┊      0.00% ┊   ⤷ global[2]
              20 ┊      0.01% ┊ export "__data_end"
               7 ┊      0.00% ┊   ⤷ global[1]
              19 ┊      0.01% ┊ custom section '.debug_pubtypes' headers
              19 ┊      0.01% ┊ custom section '.debug_pubnames' headers
+             18 ┊      0.01% ┊ custom section '.debug_aranges' headers
              17 ┊      0.01% ┊ custom section '.debug_macinfo' headers
              17 ┊      0.01% ┊ custom section '.debug_ranges' headers
              17 ┊      0.01% ┊ custom section '.debug_abbrev' headers
@@ -81,4 +85,4 @@
               3 ┊      0.00% ┊ global section headers
               3 ┊      0.00% ┊ export section headers
               3 ┊      0.00% ┊ element section headers
-         176234 ┊     95.61% ┊ [10 Unreachable Items]
+         189708 ┊     95.67% ┊ [11 Unreachable Items]

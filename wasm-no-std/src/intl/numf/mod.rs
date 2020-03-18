@@ -83,6 +83,9 @@ pub fn number_format(provider: &dyn DataProvider, opts: &Options) -> Result<Box<
 					} else {
 						unreachable!()
 					};
+
+					// Alternative:
+					// intl::numf::add_currency_hooks(...)
 				}
 			}
 		}

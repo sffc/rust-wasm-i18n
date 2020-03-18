@@ -5,4 +5,20 @@ This is a proof-of-concept of running basic i18n algorithms in wasm with the sou
 
 ## Projects
 
-There are several projects with different toolchains.  The only toolchain where I was able to get *panic_immediate_abort* to work (greatly reducing code size) is *wasm-xargo*.  In this project, it is safe to use the standard library without pulling the panic and format infrastructure.
+The most current project is *rust-no-std*.
+
+You can build and run the Rust-native tests as follows (from the rust-no-std directory):
+
+```bash
+$ rustup install nightly
+$ cargo +nightly test
+```
+
+You can build the WASM output as follows:
+
+```
+$ rustup target add wasm32-unknown-unknown --toolchain nightly
+$ curl https://get.wasmer.io -sSfL | sh  # Install WAPM (wapm.io)
+$ cargo install twiggy
+$ make
+```
