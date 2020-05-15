@@ -1,55 +1,47 @@
  Retained Bytes │ Retained % │ Dominator Tree
-────────────────┼────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-           2529 ┊      1.32% ┊ export "greet"
-           2521 ┊      1.32% ┊   ⤷ greet
-           1036 ┊      0.54% ┊       ⤷ data[1]
-            760 ┊      0.40% ┊       ⤷ alloc::vec::Vec<T>::extend_from_slice::h3aec272661910934
-            217 ┊      0.11% ┊           ⤷ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::alloc::h880279dba6b03636
-             85 ┊      0.04% ┊           ⤷ __rust_realloc
-             59 ┊      0.03% ┊               ⤷ __rg_realloc
-              8 ┊      0.00% ┊               ⤷ type[5]: (i32, i32, i32, i32) -> i32
-             63 ┊      0.03% ┊           ⤷ memcpy
-              7 ┊      0.00% ┊               ⤷ type[10]: (i32, i32, i32) -> i32
-             26 ┊      0.01% ┊           ⤷ __rust_alloc
-             14 ┊      0.01% ┊               ⤷ __rg_alloc
-             19 ┊      0.01% ┊           ⤷ alloc::raw_vec::capacity_overflow::h6870892cc0f8b37b
-             17 ┊      0.01% ┊           ⤷ core::panicking::panic::hc99d3f502c7b79b3
-              6 ┊      0.00% ┊               ⤷ core::panicking::panic_fmt::h87f3b096cfbc8577
-              6 ┊      0.00% ┊           ⤷ rust_oom
-              3 ┊      0.00% ┊           ⤷ type[7]: () -> nil
-            534 ┊      0.28% ┊       ⤷ <wee_alloc::WeeAlloc as core::alloc::GlobalAlloc>::dealloc::h6ae1e16dfd7b5050
-            322 ┊      0.17% ┊           ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::h0e09f40d36bcfa97
-             32 ┊      0.02% ┊       ⤷ __rust_dealloc
-             16 ┊      0.01% ┊           ⤷ __rg_dealloc
-             12 ┊      0.01% ┊       ⤷ import env::alert
-              6 ┊      0.00% ┊       ⤷ type[4]: (i32, i32, i32) -> nil
-              5 ┊      0.00% ┊       ⤷ type[3]: (i32, i32) -> nil
-           1721 ┊      0.90% ┊ "function names" subsection
-            721 ┊      0.38% ┊ wee_alloc::alloc_with_refill::h48e8eb7b5b516adf
-            578 ┊      0.30% ┊   ⤷ wee_alloc::alloc_first_fit::h61431e0033ea0aac
-              9 ┊      0.00% ┊   ⤷ type[8]: (i32, i32, i32, i32, i32) -> i32
-            549 ┊      0.29% ┊ export "hash_test"
-            537 ┊      0.28% ┊   ⤷ hash_test
-            127 ┊      0.07% ┊       ⤷ __multi3
-              8 ┊      0.00% ┊           ⤷ type[11]: (i32, i64, i64, i64, i64) -> nil
-              6 ┊      0.00% ┊       ⤷ type[6]: (i32, i32) -> i64
-            348 ┊      0.18% ┊ table[0]
-            344 ┊      0.18% ┊   ⤷ elem[0]
-            168 ┊      0.09% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::hb72ccd47d7d04d12
-            121 ┊      0.06% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h7d74f07222a58f6d
-              7 ┊      0.00% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h0d36e9ab7249c1e3
-              6 ┊      0.00% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::he238e6e4186d0c1b
-              6 ┊      0.00% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hcc785e428246e5d4
-              6 ┊      0.00% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::he1671d47f4722a16
-              4 ┊      0.00% ┊       ⤷ type[9]: (i32) -> nil
-              4 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::h5032a39dfc0297c1
-              4 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::h5032a39dfc0297c1.144
-              4 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::h9f39838897516eda
+────────────────┼────────────┼──────────────────────────────────────────────────────────────────────────────────
+          11070 ┊      3.73% ┊ export "greet"
+          11062 ┊      3.72% ┊   ⤷ greet
+           8791 ┊      2.96% ┊       ⤷ alloc::vec::Vec<T>::extend_from_slice::h3aec272661910934
+           5873 ┊      1.98% ┊           ⤷ dlmalloc::dlmalloc::Dlmalloc::malloc::h221509f8cc9f1f76
+            895 ┊      0.30% ┊           ⤷ dlmalloc::dlmalloc::Dlmalloc::dispose_chunk::ha8411a6cbeb28526
+            801 ┊      0.27% ┊           ⤷ __rust_realloc
+            775 ┊      0.26% ┊               ⤷ __rdl_realloc
+              8 ┊      0.00% ┊               ⤷ type[3]: (i32, i32, i32, i32) -> i32
+            383 ┊      0.13% ┊           ⤷ dlmalloc::dlmalloc::Dlmalloc::memalign::hed6505d6637eed96
+            340 ┊      0.11% ┊           ⤷ core::panicking::panic::hc99d3f502c7b79b3
+            254 ┊      0.09% ┊               ⤷ core::panicking::panic_fmt::h87f3b096cfbc8577
+            186 ┊      0.06% ┊                   ⤷ rust_begin_unwind
+            129 ┊      0.04% ┊                       ⤷ std::panicking::rust_panic_with_hook::h0440cf261e6e36d3
+              6 ┊      0.00% ┊                           ⤷ rust_panic
+             34 ┊      0.01% ┊                       ⤷ core::option::Option<T>::unwrap::h3ca7b36a710bd865
+             63 ┊      0.02% ┊           ⤷ memcpy
+              7 ┊      0.00% ┊               ⤷ type[8]: (i32, i32, i32) -> i32
+             47 ┊      0.02% ┊           ⤷ __rust_alloc
+             33 ┊      0.01% ┊               ⤷ __rdl_alloc
+             25 ┊      0.01% ┊           ⤷ alloc::raw_vec::capacity_overflow::h6870892cc0f8b37b
+              6 ┊      0.00% ┊           ⤷ type[5]: (i32, i32, i32) -> nil
+              5 ┊      0.00% ┊           ⤷ type[7]: (i32) -> i32
+              3 ┊      0.00% ┊           ⤷ type[4]: () -> nil
+           1209 ┊      0.41% ┊       ⤷ dlmalloc::dlmalloc::Dlmalloc::free::h9119f1c53a3f10fa
+            480 ┊      0.16% ┊       ⤷ data[1]
+            410 ┊      0.14% ┊       ⤷ dlmalloc::dlmalloc::Dlmalloc::unlink_chunk::h1ad481621eeec12b
+             24 ┊      0.01% ┊       ⤷ __rust_dealloc
+             12 ┊      0.00% ┊           ⤷ __rdl_dealloc
+             12 ┊      0.00% ┊       ⤷ import env::alert
+              7 ┊      0.00% ┊       ⤷ global[0]
+            986 ┊      0.33% ┊ "function names" subsection
+             40 ┊      0.01% ┊ table[0]
+             36 ┊      0.01% ┊   ⤷ elem[0]
+             20 ┊      0.01% ┊       ⤷ <T as core::any::Any>::type_id::hba0bb024bf18109a
+              5 ┊      0.00% ┊           ⤷ type[6]: (i32) -> i64
+              4 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::h0627693e59362f3a
+              4 ┊      0.00% ┊       ⤷ std::alloc::default_alloc_error_hook::h4b618bbd64c138cc
              21 ┊      0.01% ┊ export "__heap_base"
               7 ┊      0.00% ┊   ⤷ global[2]
              20 ┊      0.01% ┊ export "__data_end"
               7 ┊      0.00% ┊   ⤷ global[1]
-             19 ┊      0.01% ┊ custom section '.debug_pubtypes' headers
+             20 ┊      0.01% ┊ custom section '.debug_pubtypes' headers
              19 ┊      0.01% ┊ custom section '.debug_pubnames' headers
              18 ┊      0.01% ┊ custom section '.debug_aranges' headers
              17 ┊      0.01% ┊ custom section '.debug_macinfo' headers
@@ -60,16 +52,15 @@
              15 ┊      0.01% ┊ export "sum"
               9 ┊      0.00% ┊   ⤷ sum
              15 ┊      0.01% ┊ custom section '.debug_str' headers
-             12 ┊      0.01% ┊ custom section 'producers' headers
-             11 ┊      0.01% ┊ export "memory"
+             12 ┊      0.00% ┊ custom section 'producers' headers
+             11 ┊      0.00% ┊ export "memory"
               2 ┊      0.00% ┊   ⤷ memory[0]
               8 ┊      0.00% ┊ custom section 'name' headers
               8 ┊      0.00% ┊ wasm magic bytes
-              7 ┊      0.00% ┊ type[0]: (i32, i32, i32, i32) -> nil
-              7 ┊      0.00% ┊ global[0]
               7 ┊      0.00% ┊ code section headers
               6 ┊      0.00% ┊ type[1]: (i32, i32) -> i32
-              5 ┊      0.00% ┊ type[2]: (i32) -> i32
+              5 ┊      0.00% ┊ type[0]: (i32, i32) -> nil
+              4 ┊      0.00% ┊ type[2]: (i32) -> nil
               4 ┊      0.00% ┊ data section headers
               3 ┊      0.00% ┊ type section headers
               3 ┊      0.00% ┊ import section headers
@@ -78,4 +69,4 @@
               3 ┊      0.00% ┊ global section headers
               3 ┊      0.00% ┊ export section headers
               3 ┊      0.00% ┊ element section headers
-         184967 ┊     96.77% ┊ [11 Unreachable Items]
+         284585 ┊     95.83% ┊ [11 Unreachable Items]
