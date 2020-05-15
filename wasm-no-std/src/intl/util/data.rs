@@ -1,4 +1,8 @@
-use crate::types::*;
+use std::prelude::v1::*;
+
+use std::string::String;
+use std::boxed::Box;
+use std::char;
 
 pub struct CompactData {
 	// TODO: add data for each magnitude

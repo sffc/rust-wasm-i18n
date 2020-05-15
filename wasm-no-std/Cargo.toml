@@ -11,7 +11,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wee_alloc = "0.4.5"
-# no-std-compat?
+no-std-compat = { version = "0.4.0", features = [ "alloc" ] }
 
 [profile.dev]
 panic = "unwind"
@@ -23,3 +23,4 @@ lto = true
 
 [features]
 panic_immediate_abort = []
+std = ["no-std-compat/std"]

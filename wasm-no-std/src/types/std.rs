@@ -1,13 +1,9 @@
-extern crate std;
+use std::prelude::v1::*;
 
-pub use std::string::String;
-pub use std::boxed::Box;
-pub use std::vec::Vec;
-pub use std::vec;
-pub use std::char;
+extern crate std as ruststd;
 
-use std::fmt;
-use std::error::Error;
+use ruststd::fmt;
+use ruststd::error::Error;
 
 use crate::intl::IntlError;
 

@@ -1,11 +1,13 @@
-extern crate alloc;
+use std::prelude::v1::*;
 
-pub use alloc::boxed::Box;
-pub use alloc::borrow::Cow;
-pub use alloc::string::String;
-pub use alloc::vec::Vec;
-pub use alloc::vec;
-pub use core::char;
+// extern crate alloc;
+
+// pub use alloc::boxed::Box;
+// pub use alloc::borrow::Cow;
+// pub use alloc::string::String;
+// pub use alloc::vec::Vec;
+// pub use alloc::vec;
+// pub use core::char;
 
 /////////////////////////////////
 // BEGIN WEE_ALLOC BOILERPLATE //

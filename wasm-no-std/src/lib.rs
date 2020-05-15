@@ -3,9 +3,14 @@
 // Replacing the allocator and using the `alloc` crate are still unstable.
 #![feature(core_intrinsics, lang_items, alloc_error_handler)]
 
+extern crate no_std_compat as std;
+
+use std::prelude::v1::*;
+
+use std::string::String;
+
 mod types;
 
-use types::*;
 use intl::FormattedValue;
 
 pub mod intl;

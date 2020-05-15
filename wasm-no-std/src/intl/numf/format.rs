@@ -1,5 +1,8 @@
-use crate::types::String;
-use crate::types::char;
+#[allow(unused_imports)]
+use std::prelude::v1::*;
+
+use std::string::String;
+use std::char;
 
 // TODO: How do do a relative import?
 use crate::intl::NumberFormat;
