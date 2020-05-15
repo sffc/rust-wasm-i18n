@@ -8,6 +8,7 @@ extern crate no_std_compat as std;
 use std::prelude::v1::*;
 
 use std::string::String;
+use std::collections::HashMap;
 
 mod types;
 
@@ -26,6 +27,12 @@ pub fn sum(a: i32, b: i32) -> i32 {
 }
 
 // #[no_mangle]
+pub fn hasher() {
+	let mut map: HashMap<&'static str, String> = HashMap::new();
+	map.insert("Foo", "Bar".to_string());
+}
+
+#[no_mangle]
 pub fn greet(input: &str) {
 	let mut message = String::new();
 	message.push_str("Hello, ");
@@ -56,7 +63,7 @@ fn numf_demo_impl() -> intl::FormattedNumber {
 	nf.format(&d)
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn numf_demo() {
 	let result = numf_demo_impl();
 	unsafe {
