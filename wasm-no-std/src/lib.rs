@@ -21,7 +21,7 @@ extern "C" {
 	fn alert(s: &str);
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn sum(a: i32, b: i32) -> i32 {
 	return a + b;
 }
@@ -33,6 +33,29 @@ pub fn hasher() {
 }
 
 #[no_mangle]
+pub fn checked_add(a: i32) -> i32 {
+	match a.checked_add(100) {
+		Some(v) => v,
+		None => 0,
+	}
+}
+
+#[no_mangle]
+pub fn saturating_add(a: i32) -> i32 {
+	a.saturating_add(100)
+}
+
+#[no_mangle]
+pub fn wrapping_add(a: i32) -> i32 {
+	a.wrapping_add(100)
+}
+
+#[no_mangle]
+pub fn default_add(a: i32) -> i32 {
+	a + 100
+}
+
+// #[no_mangle]
 pub fn greet(input: &str) {
 	let mut message = String::new();
 	message.push_str("Hello, ");
