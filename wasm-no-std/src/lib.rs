@@ -10,6 +10,9 @@ use std::prelude::v1::*;
 use std::string::String;
 use std::collections::HashMap;
 
+use smallstr::SmallString;
+use arrayvec::ArrayString;
+
 mod types;
 
 use intl::FormattedValue;
@@ -32,31 +35,77 @@ pub fn hasher() {
 	map.insert("Foo", "Bar".to_string());
 }
 
-#[no_mangle]
-pub fn checked_add(a: i32) -> i32 {
-	match a.checked_add(100) {
+// #[no_mangle]
+pub fn checked_add(a: i32, b: i32) -> i32 {
+	match a.checked_add(b) {
 		Some(v) => v,
 		None => 0,
 	}
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn saturating_add(a: i32) -> i32 {
 	a.saturating_add(100)
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn wrapping_add(a: i32) -> i32 {
 	a.wrapping_add(100)
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn default_add(a: i32) -> i32 {
 	a + 100
 }
 
 // #[no_mangle]
-pub fn greet(input: &str) {
+pub fn init_smallstr() {
+	let message: SmallString<[u8; 16]> = SmallString::from("Hello, world!");
+	unsafe {
+		alert(&message);
+	}
+}
+
+// #[no_mangle]
+pub fn greet_smallstr(input: &str) {
+	let mut message: SmallString<[u8; 16]> = SmallString::new();
+	message.push_str("Hello, ");
+	message.push_str(input);
+	message.push_str("!");
+	unsafe {
+		alert(&message);
+	}
+}
+
+// #[no_mangle]
+pub fn init_arraystring() {
+	let message: ArrayString<[_; 16]> = ArrayString::from("Hello, world!").unwrap();
+	unsafe {
+		alert(&message);
+	}
+}
+
+#[no_mangle]
+pub fn greet_arraystring(input: &str) {
+	let mut message: ArrayString<[_; 16]> = ArrayString::new();
+	message.push_str("Hello, ");
+	message.push_str(input);
+	message.push_str("!");
+	unsafe {
+		alert(&message);
+	}
+}
+
+// #[no_mangle]
+pub fn init_str() {
+	let message = String::from("Hello, world!");
+	unsafe {
+		alert(&message);
+	}
+}
+
+// #[no_mangle]
+pub fn greet_str(input: &str) {
 	let mut message = String::new();
 	message.push_str("Hello, ");
 	message.push_str(input);
@@ -64,12 +113,6 @@ pub fn greet(input: &str) {
 	unsafe {
 		alert(&message);
 	}
-	// alert(name);
-	// let mut u = ustr::UStr::default();
-	// u.push_str("Hello, ");
-	// u.push_str(input);
-	// u.push_str("!");
-	// alert(u.as_str());
 }
 
 fn numf_demo_impl() -> intl::FormattedNumber {

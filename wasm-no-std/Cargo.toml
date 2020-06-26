@@ -12,6 +12,8 @@ crate-type = ["cdylib"]
 [dependencies]
 wee_alloc = "0.4.5"
 no-std-compat = { version = "0.4.0", features = [ "alloc", "compat_hash" ] }
+smallstr = { version = "0.2.0", default-features = false }
+arrayvec = { version = "0.5.1", default-features = false }
 
 [profile.dev]
 panic = "unwind"

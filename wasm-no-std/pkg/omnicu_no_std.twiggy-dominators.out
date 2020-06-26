@@ -1,20 +1,30 @@
  Retained Bytes │ Retained % │ Dominator Tree
-────────────────┼────────────┼────────────────────────────────────────────────────────
-            556 ┊      0.30% ┊ export "hash_test"
-            544 ┊      0.29% ┊   ⤷ hash_test
+────────────────┼────────────┼───────────────────────────────────────────────────────────────────────────────────────────
+           1297 ┊      0.67% ┊ table[0]
+           1293 ┊      0.67% ┊   ⤷ elem[0]
+            964 ┊      0.50% ┊       ⤷ <&T as core::fmt::Display>::fmt::h25bfd2696fea6fae
+            942 ┊      0.49% ┊           ⤷ core::fmt::Formatter::pad::he672955234113292
+            307 ┊      0.16% ┊       ⤷ <arrayvec::errors::CapacityError<T> as core::fmt::Debug>::fmt::hc5e886e84a777402
+              8 ┊      0.00% ┊       ⤷ core::ptr::drop_in_place::hbc53804960979dff
+              4 ┊      0.00% ┊           ⤷ type[7]: (i32) -> nil
+              6 ┊      0.00% ┊       ⤷ type[1]: (i32, i32) -> i32
+            549 ┊      0.28% ┊ export "hash_test"
+            537 ┊      0.28% ┊   ⤷ hash_test
             127 ┊      0.07% ┊       ⤷ __multi3
-              8 ┊      0.00% ┊           ⤷ type[2]: (i32, i64, i64, i64, i64) -> nil
-              7 ┊      0.00% ┊       ⤷ global[0]
-              6 ┊      0.00% ┊       ⤷ type[0]: (i32, i32) -> i64
-             80 ┊      0.04% ┊ "function names" subsection
-             66 ┊      0.04% ┊ export "saturating_add"
-             49 ┊      0.03% ┊   ⤷ saturating_add
-             47 ┊      0.03% ┊ export "checked_add"
-             33 ┊      0.02% ┊   ⤷ checked_add
-             25 ┊      0.01% ┊ export "wrapping_add"
-             10 ┊      0.01% ┊   ⤷ wrapping_add
-             24 ┊      0.01% ┊ export "default_add"
-             10 ┊      0.01% ┊   ⤷ default_add
+              8 ┊      0.00% ┊           ⤷ type[8]: (i32, i64, i64, i64, i64) -> nil
+              6 ┊      0.00% ┊       ⤷ type[3]: (i32, i32) -> i64
+            525 ┊      0.27% ┊ "function names" subsection
+            343 ┊      0.18% ┊ export "greet_arraystring"
+            323 ┊      0.17% ┊   ⤷ greet_arraystring
+            196 ┊      0.10% ┊       ⤷ arrayvec::array_string::ArrayString<A>::push_str::h3739dfc9f60dc80a
+             56 ┊      0.03% ┊           ⤷ memcpy
+             27 ┊      0.01% ┊           ⤷ core::option::expect_none_failed::h988ddf260682dfb0
+              9 ┊      0.00% ┊               ⤷ core::panicking::panic_fmt::h87f3b096cfbc8577
+              3 ┊      0.00% ┊                   ⤷ type[4]: () -> nil
+              7 ┊      0.00% ┊               ⤷ type[5]: (i32, i32, i32, i32) -> nil
+              6 ┊      0.00% ┊           ⤷ type[6]: (i32, i32, i32) -> nil
+             12 ┊      0.01% ┊       ⤷ import env::alert
+              5 ┊      0.00% ┊       ⤷ type[2]: (i32, i32) -> nil
              21 ┊      0.01% ┊ export "__heap_base"
               7 ┊      0.00% ┊   ⤷ global[2]
              20 ┊      0.01% ┊ export "__data_end"
@@ -31,14 +41,17 @@
              12 ┊      0.01% ┊ custom section 'producers' headers
              11 ┊      0.01% ┊ export "memory"
               2 ┊      0.00% ┊   ⤷ memory[0]
+              8 ┊      0.00% ┊ custom section 'name' headers
               8 ┊      0.00% ┊ wasm magic bytes
+              7 ┊      0.00% ┊ type[0]: (i32, i32, i32) -> i32
+              7 ┊      0.00% ┊ global[0]
               7 ┊      0.00% ┊ code section headers
-              7 ┊      0.00% ┊ custom section 'name' headers
-              5 ┊      0.00% ┊ type[1]: (i32) -> i32
-              4 ┊      0.00% ┊ table[0]
+              4 ┊      0.00% ┊ data section headers
               3 ┊      0.00% ┊ type section headers
+              3 ┊      0.00% ┊ import section headers
               3 ┊      0.00% ┊ table section headers
               3 ┊      0.00% ┊ memory section headers
               3 ┊      0.00% ┊ global section headers
               3 ┊      0.00% ┊ export section headers
-         184210 ┊     99.43% ┊ [10 Unreachable Items]
+              3 ┊      0.00% ┊ element section headers
+         191191 ┊     98.46% ┊ [11 Unreachable Items]
