@@ -159,8 +159,8 @@ pub fn alert_message_display() {
 	let message = Message {
 		message: "Hello, world!"
 	};
-	let string = message.to_string();
-	// let string = message.to_string_1().unwrap();
+	// let string = message.to_string();
+	let string = message.to_string_1().unwrap();
 	unsafe {
 		alert(&string);
 	}
