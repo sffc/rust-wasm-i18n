@@ -139,18 +139,18 @@ struct Message {
 	message: &'static str,
 }
 
-impl fmt::Display for Message {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-    	// write!(f, "{}", self.message)
-    	f.write_str(self.message)
-    }
-}
+// impl fmt::Display for Message {
+// 	fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+// 		// write!(f, "{}", self.message)
+// 		f.write_str(self.message)
+// 	}
+// }
 
-impl Message {
-	pub fn to_string_1(&self) -> Result<String, fmt::Error> {
+impl ToString for Message {
+	fn to_string(&self) -> String {
 		let mut output = String::with_capacity(self.message.len());
-		output.write_str(self.message)?;
-		Ok(output)
+		output.write_str(self.message).expect("write_to String should not fail");
+		output
 	}
 }
 
@@ -159,8 +159,7 @@ pub fn alert_message_display() {
 	let message = Message {
 		message: "Hello, world!"
 	};
-	// let string = message.to_string();
-	let string = message.to_string_1().unwrap();
+	let string = message.to_string();
 	unsafe {
 		alert(&string);
 	}
