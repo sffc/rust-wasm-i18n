@@ -8,7 +8,6 @@ extern crate no_std_compat as std;
 use std::prelude::v1::*;
 
 use std::string::String;
-use std::collections::HashMap;
 use std::borrow::Cow;
 use std::fmt;
 use std::fmt::Write;
@@ -41,11 +40,14 @@ pub fn sum(a: i32, b: i32) -> i32 {
 	return a + b;
 }
 
+/*
 // #[no_mangle]
 pub fn hasher() {
+	use std::collections::HashMap;
 	let mut map: HashMap<&'static str, String> = HashMap::new();
 	map.insert("Foo", "Bar".to_string());
 }
+*/
 
 // #[no_mangle]
 pub fn binary_search() {
@@ -152,7 +154,7 @@ impl Message {
 	}
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn alert_message_display() {
 	let message = Message {
 		message: "Hello, world!"
