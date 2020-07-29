@@ -141,8 +141,8 @@ struct Message {
 
 impl fmt::Display for Message {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-    	// write!(f, "{}", self.message)
-    	f.write_str(self.message)
+    	write!(f, "{}", self.message)
+    	// f.write_str(self.message)
     }
 }
 
@@ -154,7 +154,7 @@ impl Message {
 	}
 }
 
-// #[no_mangle]
+#[no_mangle]
 pub fn alert_message_display() {
 	let message = Message {
 		message: "Hello, world!"
