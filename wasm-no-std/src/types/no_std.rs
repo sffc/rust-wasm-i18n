@@ -23,19 +23,16 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 #[panic_handler]
 #[no_mangle]
 pub fn panic(_info: &::core::panic::PanicInfo) -> ! {
-    unsafe {
-        ::core::intrinsics::abort();
-    }
+    ::core::intrinsics::abort();
 }
 
 // Need to provide an allocation error handler which just aborts
 // the execution with trap.
 #[alloc_error_handler]
 #[no_mangle]
+#[allow(improper_ctypes_definitions)]
 pub extern "C" fn oom(_: ::core::alloc::Layout) -> ! {
-    unsafe {
-        ::core::intrinsics::abort();
-    }
+    ::core::intrinsics::abort();
 }
 
 ///////////////////////////////

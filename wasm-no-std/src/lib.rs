@@ -9,9 +9,21 @@ use std::prelude::v1::*;
 
 use std::string::String;
 use std::collections::HashMap;
+use std::borrow::Cow;
+use std::fmt;
+use std::fmt::Write;
 
 use smallstr::SmallString;
 use arrayvec::ArrayString;
+use arrayvec::ArrayVec;
+
+#[macro_use]
+extern crate static_assertions;
+
+// const_assert_eq!(24, size_of::<String>());
+
+assert_eq_size!(SmallString<[u8; 8]>, String);
+assert_eq_size!(SmallString<[u8; 12]>, Cow<'static, str>);
 
 mod types;
 
@@ -33,6 +45,12 @@ pub fn sum(a: i32, b: i32) -> i32 {
 pub fn hasher() {
 	let mut map: HashMap<&'static str, String> = HashMap::new();
 	map.insert("Foo", "Bar".to_string());
+}
+
+// #[no_mangle]
+pub fn binary_search() {
+	let nums = vec![0, 1, 3, 8, 19];
+	assert_eq!(nums.binary_search(&2), Ok(1));
 }
 
 // #[no_mangle]
@@ -85,7 +103,7 @@ pub fn init_arraystring() {
 	}
 }
 
-#[no_mangle]
+// #[no_mangle]
 pub fn greet_arraystring(input: &str) {
 	let mut message: ArrayString<[_; 16]> = ArrayString::new();
 	message.push_str("Hello, ");
@@ -112,6 +130,37 @@ pub fn greet_str(input: &str) {
 	message.push_str("!");
 	unsafe {
 		alert(&message);
+	}
+}
+
+struct Message {
+	message: &'static str,
+}
+
+impl fmt::Display for Message {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+    	// write!(f, "{}", self.message)
+    	f.write_str(self.message)
+    }
+}
+
+impl Message {
+	pub fn to_string_1(&self) -> Result<String, fmt::Error> {
+		let mut output = String::with_capacity(self.message.len());
+		output.write_str(self.message)?;
+		Ok(output)
+	}
+}
+
+#[no_mangle]
+pub fn alert_message_display() {
+	let message = Message {
+		message: "Hello, world!"
+	};
+	let string = message.to_string();
+	// let string = message.to_string_1().unwrap();
+	unsafe {
+		alert(&string);
 	}
 }
 

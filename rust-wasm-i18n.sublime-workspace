@@ -520,218 +520,54 @@
 	"buffers":
 	[
 		{
-			"file": "wasm-xargo/Cargo.toml",
+			"file": "wasm-no-std/src/lib.rs",
 			"settings":
 			{
-				"buffer_size": 766,
+				"buffer_size": 3689,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wasm-xargo/src/lib.rs",
+			"file": "wasm-no-std/src/types/no_std.rs",
 			"settings":
 			{
-				"buffer_size": 2101,
+				"buffer_size": 1123,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wasm-xargo/pkg/omnicu_xargo.wat",
+			"file": "wasm-no-std/Cargo.toml",
 			"settings":
 			{
-				"buffer_size": 271275,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/defined-in-js.js",
-			"settings":
-			{
-				"buffer_size": 149,
+				"buffer_size": 802,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wasm-xargo/src/numfmt.rs",
+			"file": "wasm-no-std/Makefile",
 			"settings":
 			{
-				"buffer_size": 4115,
+				"buffer_size": 835,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wasm-xargo/src/numparse.rs",
+			"file": "wasm-no-std/pkg/omnicu_no_std.wat",
 			"settings":
 			{
-				"buffer_size": 1129,
-				"encoding": "UTF-8",
+				"buffer_size": 55273,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".editorconfig",
+			"file": "wasm-no-std/pkg/omnicu_no_std.twiggy-dominators.out",
 			"settings":
 			{
-				"buffer_size": 297,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "root = true"
-			}
-		},
-		{
-			"file": "wasm-xargo/python/Pipfile",
-			"settings":
-			{
-				"buffer_size": 149,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/python/demo.py",
-			"settings":
-			{
-				"buffer_size": 260,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/php/run.php",
-			"settings":
-			{
-				"buffer_size": 711,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/php/simple.php",
-			"settings":
-			{
-				"buffer_size": 264,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "external/php-ext-wasm/lib/Instance.php",
-			"settings":
-			{
-				"buffer_size": 6095,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "external/php-ext-wasm/src/wasm.cc",
-			"settings":
-			{
-				"buffer_size": 85079,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 14861 files for \"wasm_fetch_bytes\" (regex)\n\n/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm/lib/Instance.php:\n   73          }\n   74  \n   75:         $wasmBytes = wasm_fetch_bytes($filePath);\n   76  \n   77          if (null === $importedFunctions) {\n\n/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm/lib/Module.php:\n   99          }\n  100  \n  101:         $wasmBytes = wasm_fetch_bytes($filePath);\n  102          $wasmModuleUniqueIdentifier = null;\n  103  \n\n/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm/lib/README.md:\n   84  extension. The entire `Wasm` library is based on this API.\n   85  \n   86: ### Function `wasm_fetch_bytes`\n   87  \n   88  Fetches bytes from a WebAssembly file:\n   89  \n   90  ```php\n   91: $bytes = wasm_fetch_bytes('my_program.wasm');\n   92  ```\n   93  \n   ..\n  100  ### Function `wasm_validate`\n  101  \n  102: Validates bytes from the `wasm_fetch_bytes` function:\n  103  \n  104  ```php\n  105: $bytes = wasm_fetch_bytes('my_program.wasm');\n  106  \n  107  if (false === wasm_validate($bytes)) {\n  ...\n  118  \n  119  ```php\n  120: $bytes = wasm_fetch_bytes('my_program.wasm');\n  121  $module = wasm_compile($bytes);\n  122  ```\n  ...\n  140  \n  141  ```php\n  142: $bytes = wasm_fetch_bytes('my_program.wasm');\n  143  $module_unique_identifier = 'foobar';\n  144  $module = wasm_compile($bytes, $module_unique_identifier);\n  ...\n  179  \n  180  ```php\n  181: $bytes = wasm_fetch_bytes('my_program.wasm');\n  182  $module = wasm_compile($bytes);\n  183  $serialized_module = wasm_module_serialize($module);\n  ...\n  192  \n  193  ```php\n  194: $bytes = wasm_fetch_bytes('my_program.wasm');\n  195  $module = wasm_compile($bytes);\n  196  $serialized_module = wasm_module_serialize($module);\n  ...\n  209  \n  210  ```php\n  211: $bytes = wasm_fetch_bytes('my_program.wasm');\n  212  $module = wasm_compile($bytes);\n  213  $instance = wasm_module_new_instance($module);\n  ...\n  224  \n  225  ```php\n  226: $bytes = wasm_fetch_bytes('my_program.wasm');\n  227  $module = wasm_compile($bytes);\n  228  $instance = wasm_module_new_instance(\n  ...\n  243  \n  244  ```php\n  245: $bytes = wasm_fetch_bytes('my_program.wasm');\n  246  $instance = wasm_new_instance($bytes);\n  247  ```\n  ...\n  258  \n  259  ```php\n  260: $bytes = wasm_fetch_bytes('my_program.wasm');\n  261  $instance = wasm_new_instance(\n  262      $bytes,\n  ...\n  286  \n  287  ```php\n  288: $bytes = wasm_fetch_bytes('my_program.wasm');\n  289  $instance = wasm_new_instance($bytes);\n  290  \n  ...\n  319  \n  320  ```php\n  321: $bytes = wasm_fetch_bytes('my_program.wasm');\n  322  $instance = wasm_new_instance($bytes);\n  323  $pointer = wasm_invoke_function($instance, 'function_returning_a_pointer_to_a_string', []);\n  ...\n  345  \n  346  ```php\n  347: $bytes = wasm_fetch_bytes('my_program.wasm');\n  348  $instance = wasm_new_instance($bytes);\n  349  \n\n/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm/src/wasm.cc:\n  306  \n  307  /**\n  308:  * Declare the parameter information for the `wasm_fetch_bytes` function.\n  309   */\n  310: ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_wasm_fetch_bytes, ZEND_RETURN_VALUE, ARITY(1), IS_RESOURCE, NOT_NULLABLE)\n  311      ZEND_ARG_TYPE_INFO(0, file_path, IS_STRING, NOT_NULLABLE)\n  312  ZEND_END_ARG_INFO()\n  313  \n  314  /**\n  315:  * Declare the `wasm_fetch_bytes` function.\n  316   *\n  317   * # Usage\n  318   *\n  319   * ```php\n  320:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n  321   * // `$bytes` is of type `resource of type (wasm_bytes)`.\n  322   * ```\n  ...\n  327   * `wasm_new_instance`.\n  328   */\n  329: PHP_FUNCTION(wasm_fetch_bytes)\n  330  {\n  331      char *file_path;\n  ...\n  358   *\n  359   * ```php\n  360:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n  361   * $valid = wasm_validate($bytes);\n  362   * ```\n  ...\n  426   *\n  427   * ```php\n  428:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n  429   * $module = wasm_compile($bytes);\n  430   * // `$module` is of type `resource of type (wasm_module)`.\n  ...\n  436   *\n  437   * ```php\n  438:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n  439   * $module = wasm_compile($bytes, 'foo');\n  440   * // `$module` is of type `resource of type (wasm_module)`, and persistent.\n  ...\n  560   *\n  561   * ```php\n  562:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n  563   * $module = wasm_compile($bytes, 'foo');\n  564   * // The module is registered as a persistent resource.\n  ...\n  592   *\n  593   * ```php\n  594:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n  595   * $module = wasm_compile($bytes);\n  596   * $serialized_module = wasm_module_serialize($module);\n  ...\n  644   *\n  645   * ```php\n  646:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n  647   * $module = wasm_compile($bytes);\n  648   * $serialized_module = wasm_module_serialize($module);\n  ...\n 1215   *\n 1216   * ```php\n 1217:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n 1218   * $module = wasm_compile($bytes);\n 1219   * $instance = wasm_module_new_instance($module);\n ....\n 1224   *\n 1225   * ```php\n 1226:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n 1227   * $instance = wasm_new_instance($bytes);\n 1228   * ```\n ....\n 1304   *\n 1305   * ```php\n 1306:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n 1307   * $instance = wasm_new_instance($bytes);\n 1308   * // `$instance` is of type `resource of type (wasm_instance)`.\n ....\n 1480   *\n 1481   * ```php\n 1482:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n 1483   * $instance = wasm_new_instance($bytes);\n 1484   *\n ....\n 1790   *\n 1791   * ```php\n 1792:  * $bytes = wasm_fetch_bytes('my_program.wasm');\n 1793   * $instance = wasm_new_instance($bytes);\n 1794   * $memory = wasm_get_memory_buffer($instance);\n ....\n 1897  // Declare the functions with their information.\n 1898  static const zend_function_entry wasm_functions[] = {\n 1899:     PHP_FE(wasm_fetch_bytes,\t\t\t\t\t\t\targinfo_wasm_fetch_bytes)\n 1900      PHP_FE(wasm_validate,\t\t\t\t\t\t\t\targinfo_wasm_validate)\n 1901      PHP_FE(wasm_compile,\t\t\t\t\t\t\t\targinfo_wasm_compile)\n\n/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm/tests/units/Extension/Functions.php:\n   36                  ->array($result)\n   37                      ->hasSize(12)\n   38:                     ->object['wasm_fetch_bytes']->isInstanceOf(ReflectionFunction::class)\n   39                      ->object['wasm_validate']->isInstanceOf(ReflectionFunction::class)\n   40                      ->object['wasm_compile']->isInstanceOf(ReflectionFunction::class)\n   ..\n   49                      ->object['wasm_get_last_error']->isInstanceOf(ReflectionFunction::class)\n   50  \n   51:             ->when($_result = $result['wasm_fetch_bytes'])\n   52              ->then\n   53                  ->integer($_result->getNumberOfParameters())\n   ..\n  343      }\n  344  \n  345:     public function test_wasm_fetch_bytes()\n  346      {\n  347          $this\n  348:             ->when($result = wasm_fetch_bytes(self::FILE_PATH))\n  349              ->then\n  350                  ->resource($result)\n  ...\n  355      {\n  356          $this\n  357:             ->given($wasmBytes = wasm_fetch_bytes(self::FILE_PATH))\n  358              ->when($result = wasm_validate($wasmBytes))\n  359              ->then\n  ...\n  365      {\n  366          $this\n  367:             ->given($wasmBytes = wasm_fetch_bytes(__DIR__ . '/invalid.wasm'))\n  368              ->when($result = wasm_validate($wasmBytes))\n  369              ->then\n  ...\n  375      {\n  376          $this\n  377:             ->given($wasmBytes = wasm_fetch_bytes('foo'))\n  378              ->when($result = wasm_validate($wasmBytes))\n  379              ->then\n  ...\n  385      {\n  386          $this\n  387:             ->given($wasmBytes = wasm_fetch_bytes(self::FILE_PATH))\n  388              ->when($result = wasm_compile($wasmBytes))\n  389              ->then\n  ...\n  395      {\n  396          $this\n  397:             ->given($wasmBytes = wasm_fetch_bytes(dirname(__DIR__) . '/invalid.wasm'))\n  398              ->when($result = wasm_compile($wasmBytes))\n  399              ->then\n  ...\n  407      {\n  408          $this\n  409:             ->given($wasmBytes = wasm_fetch_bytes('foo'))\n  410              ->when($result = wasm_compile($wasmBytes))\n  411              ->then\n  ...\n  418          $this\n  419              ->given(\n  420:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  421                  $wasmModuleIdentifier = __METHOD__\n  422              )\n  ...\n  433          $this\n  434              ->given(\n  435:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  436                  $wasmModule = wasm_compile($wasmBytes)\n  437              )\n  ...\n  447          $this\n  448              ->given(\n  449:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  450                  $wasmModule = wasm_compile($wasmBytes),\n  451                  $wasmSerializedModule = wasm_module_serialize($wasmModule)\n  ...\n  485          $this\n  486              ->given(\n  487:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  488                  $wasmModule = wasm_compile($wasmBytes)\n  489              )\n  ...\n  497      {\n  498          $this\n  499:             ->given($wasmBytes = wasm_fetch_bytes(self::FILE_PATH))\n  500              ->when($result = wasm_new_instance($wasmBytes))\n  501              ->then\n  ...\n  507      {\n  508          $this\n  509:             ->given($wasmBytes = wasm_fetch_bytes('foo'))\n  510              ->when($result = wasm_new_instance($wasmBytes))\n  511              ->then\n  ...\n  517      {\n  518          $this\n  519:             ->given($wasmBytes = wasm_fetch_bytes(__DIR__ . '/empty.wasm'))\n  520              ->when($result = wasm_new_instance($wasmBytes))\n  521              ->then\n  ...\n  557          $this\n  558              ->given(\n  559:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  560                  $wasmInstance = wasm_new_instance($wasmBytes),\n  561                  $wasmArguments = [\n  ...\n  574          $this\n  575              ->given(\n  576:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  577                  $wasmInstance = wasm_new_instance($wasmBytes),\n  578                  $wasmArguments = [wasm_value(WASM_TYPE_I32, 1)]\n  ...\n  599          $this\n  600              ->given(\n  601:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  602                  $wasmInstance = wasm_new_instance($wasmBytes)\n  603              )\n  ...\n  645          $this\n  646              ->given(\n  647:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  648                  $wasmInstance = wasm_new_instance($wasmBytes),\n  649                  $wasmArguments = $inputs\n  ...\n  772          $this\n  773              ->given(\n  774:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  775                  $wasmInstance = wasm_new_instance($wasmBytes),\n  776                  $stringPointer = wasm_invoke_function($wasmInstance, 'string', [])\n  ...\n  807          $this\n  808              ->given(\n  809:                 $wasmBytes = wasm_fetch_bytes(dirname(__DIR__) . '/no_memory.wasm'),\n  810                  $wasmInstance = wasm_new_instance($wasmBytes),\n  811                  $stringPointer = wasm_invoke_function($wasmInstance, 'string', [])\n  ...\n  821          $this\n  822              ->given(\n  823:                 $wasmBytes = wasm_fetch_bytes(self::FILE_PATH),\n  824                  $wasmInstance = wasm_new_instance($wasmBytes),\n  825                  $wasmArguments = []\n\n59 matches across 5 files\n",
-			"settings":
-			{
-				"buffer_size": 11616,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "wasm-xargo/php/run.sh",
-			"settings":
-			{
-				"buffer_size": 43,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/src/ustr.rs",
-			"settings":
-			{
-				"buffer_size": 595,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/src/types.rs",
-			"settings":
-			{
-				"buffer_size": 191,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/Makefile",
-			"settings":
-			{
-				"buffer_size": 932,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 441,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/README.md",
-			"settings":
-			{
-				"buffer_size": 683,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/Xargo.toml",
-			"settings":
-			{
-				"buffer_size": 82,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 59,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/pkg/.gitignore",
-			"settings":
-			{
-				"buffer_size": 10,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wasm-xargo/index.html",
-			"settings":
-			{
-				"buffer_size": 244,
+				"buffer_size": 6452,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -749,15 +585,15 @@
 		"selected_items":
 		[
 			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
 				"chan",
 				"ChangeQuotes"
 			],
 			[
 				"wr",
-				"Word Wrap: Toggle"
-			],
-			[
-				"wra",
 				"Word Wrap: Toggle"
 			],
 			[
@@ -939,19 +775,36 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/external",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm/src",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo/php",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo/pkg",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo/pkg/snippets",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo/pkg/snippets/omnicu-xargo-de947ce3fd08cf94",
-		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo/src"
+		"/home/sffc/projects/rust-wasm-i18n",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-no-std",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-no-std/pkg",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-no-std/src",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-no-std/src/types"
 	],
 	"file_history":
 	[
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/Cargo.toml",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/src/lib.rs",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/pkg/omnicu_xargo.wat",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/defined-in-js.js",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/src/numfmt.rs",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/src/numparse.rs",
+		"/home/sffc/projects/rust-wasm-i18n/.editorconfig",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/python/Pipfile",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/python/demo.py",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/php/run.php",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/php/simple.php",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/php/run.sh",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/src/ustr.rs",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/src/types.rs",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/Makefile",
+		"/home/sffc/projects/rust-wasm-i18n/README.md",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/README.md",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/Xargo.toml",
+		"/home/sffc/projects/rust-wasm-i18n/.gitignore",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/pkg/.gitignore",
+		"/home/sffc/projects/rust-wasm-i18n/wasm-xargo/index.html",
+		"/home/sffc/projects/rust-wasm-i18n/external/php-ext-wasm/lib/Instance.php",
 		"/Users/sffc/Documents/Projects/rust-wasm-i18n/external/php-ext-wasm/lib/Instance.php",
 		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo/.cargo/config",
 		"/Users/sffc/Documents/Projects/rust-wasm-i18n/wasm-xargo/pkg/omnicu_xargo.twiggy-dominators.out",
@@ -1057,37 +910,15 @@
 		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/header.styl",
 		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/output_panel.styl",
 		"/Users/sffc/Documents/Projects/octave-online/projects/back-master/src/octave-session.js",
-		"/Users/sffc/Documents/Projects/octave-online/strings.txt",
-		"/Users/sffc/Documents/Projects/octave-online/projects/back-filesystem/src/working-util.js",
-		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/attachment.ts",
-		"/Users/sffc/Documents/Projects/octave-online/projects/dockerfiles/build-octave.dockerfile",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/official/lava.styl",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/fire.styl",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/ice.styl",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/lava.styl",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/server/sun.styl",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/official/ice.styl",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/themes/official/sun.styl",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/styl/all.styl",
-		"/Users/sffc/Documents/Projects/octave-online/ot-blog.md",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/app/css/themes/fire.css",
-		"/Users/sffc/Documents/Projects/octave-online/projects/shared/async-cache.js",
-		"/Users/sffc/Documents/Projects/octave-online/projects/rack/rackauth.js",
-		"/Users/sffc/Documents/Projects/octave-online/projects/shared/promise-cache.js",
-		"/Users/sffc/Documents/Projects/octave-online/projects/client/Gruntfile.js",
-		"/Users/sffc/Documents/Projects/octave-online/projects/entrypoint/back-selinux.js",
-		"/Users/sffc/Documents/Projects/octave-online/projects/front/src/program_model.ts",
-		"/Users/sffc/Documents/Projects/octave-online/projects/entrypoint/oo-reinstall.service",
-		"/Users/sffc/Documents/Projects/octave-online/projects/.gitignore",
-		"/Users/sffc/Documents/Projects/octave-online/projects/rack/vulnerabilities-20190105.txt"
+		"/Users/sffc/Documents/Projects/octave-online/strings.txt"
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 110.0,
+		"height": 130.0,
 		"where_history":
 		[
 			""
@@ -1098,6 +929,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"size_of",
+			"features = []",
+			"SmolStr",
+			"smolstr",
+			"SmolStr",
+			"<[u8; 16]>",
+			"SmallString",
+			"smallstr",
+			"saturating_add",
+			"std",
+			"hash_test",
 			"wasm_new_instance",
 			"wasm_fetch_bytes",
 			"alertnumber",
@@ -1200,664 +1042,59 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wasm-xargo/Cargo.toml",
+					"file": "wasm-no-std/src/lib.rs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 766,
+						"buffer_size": 3689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								222,
-								222
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TOML/TOML.sublime-syntax",
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 2,
-								"tabSize": 2
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wasm-xargo/src/lib.rs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2101,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1988,
-								1988
+								3052,
+								3052
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rust/Rust.sublime-syntax",
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 2,
-								"tabSize": 2
-							}
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 452.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wasm-xargo/pkg/omnicu_xargo.wat",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 271275,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1273,
-								1284
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/WebAssembly Text Syntax/wast.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wasm-xargo/defined-in-js.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 149,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								149,
-								149
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wasm-xargo/src/numfmt.rs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4115,
-								4115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rust/Rust.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3421.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wasm-xargo/src/numparse.rs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1129,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rust/Rust.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": ".editorconfig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 297,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								297,
-								297
-							]
-						],
-						"settings":
-						{
-							"auto_name": "root = true",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "wasm-xargo/python/Pipfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 149,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								132,
-								132
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TOML/TOML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "wasm-xargo/python/demo.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								132,
-								132
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "wasm-xargo/php/run.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								481,
-								481
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "wasm-xargo/php/simple.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 264,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								264,
-								264
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "external/php-ext-wasm/lib/Instance.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6095,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2229,
-								2246
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1377.0,
+						"translation.y": 2898.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "external/php-ext-wasm/src/wasm.cc",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 85079,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								43784,
-								43801
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 29095.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
+					"buffer": 1,
+					"file": "wasm-no-std/src/types/no_std.rs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11616,
+						"buffer_size": 1123,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										193,
-										209
-									],
-									[
-										418,
-										434
-									],
-									[
-										685,
-										701
-									],
-									[
-										795,
-										811
-									],
-									[
-										934,
-										950
-									],
-									[
-										1000,
-										1016
-									],
-									[
-										1135,
-										1151
-									],
-									[
-										1266,
-										1282
-									],
-									[
-										1458,
-										1474
-									],
-									[
-										1638,
-										1654
-									],
-									[
-										1818,
-										1834
-									],
-									[
-										1992,
-										2008
-									],
-									[
-										2157,
-										2173
-									],
-									[
-										2295,
-										2311
-									],
-									[
-										2433,
-										2449
-									],
-									[
-										2568,
-										2584
-									],
-									[
-										2794,
-										2810
-									],
-									[
-										3039,
-										3055
-									],
-									[
-										3133,
-										3149
-									],
-									[
-										3345,
-										3361
-									],
-									[
-										3447,
-										3463
-									],
-									[
-										3632,
-										3648
-									],
-									[
-										3739,
-										3755
-									],
-									[
-										3884,
-										3900
-									],
-									[
-										4083,
-										4099
-									],
-									[
-										4305,
-										4321
-									],
-									[
-										4507,
-										4523
-									],
-									[
-										4701,
-										4717
-									],
-									[
-										4895,
-										4911
-									],
-									[
-										5083,
-										5099
-									],
-									[
-										5235,
-										5251
-									],
-									[
-										5445,
-										5461
-									],
-									[
-										5593,
-										5609
-									],
-									[
-										5875,
-										5891
-									],
-									[
-										5907,
-										5923
-									],
-									[
-										6273,
-										6289
-									],
-									[
-										6680,
-										6696
-									],
-									[
-										6853,
-										6869
-									],
-									[
-										6942,
-										6958
-									],
-									[
-										7126,
-										7142
-									],
-									[
-										7330,
-										7346
-									],
-									[
-										7544,
-										7560
-									],
-									[
-										7738,
-										7754
-									],
-									[
-										7941,
-										7957
-									],
-									[
-										8163,
-										8179
-									],
-									[
-										8367,
-										8383
-									],
-									[
-										8572,
-										8588
-									],
-									[
-										8781,
-										8797
-									],
-									[
-										9052,
-										9068
-									],
-									[
-										9250,
-										9266
-									],
-									[
-										9458,
-										9474
-									],
-									[
-										9656,
-										9672
-									],
-									[
-										9883,
-										9899
-									],
-									[
-										10121,
-										10137
-									],
-									[
-										10388,
-										10404
-									],
-									[
-										10604,
-										10620
-									],
-									[
-										10848,
-										10864
-									],
-									[
-										11134,
-										11150
-									],
-									[
-										11441,
-										11457
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								203,
-								203
+								1123,
+								1123
 							]
 						],
 						"settings":
 						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+							"syntax": "Packages/Rust/Rust.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1867,105 +1104,48 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "wasm-xargo/php/run.sh",
+					"buffer": 2,
+					"file": "wasm-no-std/Cargo.toml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 43,
+						"buffer_size": 802,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								42,
-								42
+								735,
+								735
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
-					"file": "wasm-xargo/src/ustr.rs",
+					"buffer": 3,
+					"file": "wasm-no-std/Makefile",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 595,
+						"buffer_size": 835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rust/Rust.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "wasm-xargo/src/types.rs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 191,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								47,
-								47
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rust/Rust.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "wasm-xargo/Makefile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 932,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
+								810,
+								810
 							]
 						],
 						"settings":
@@ -1977,175 +1157,67 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "README.md",
+					"buffer": 4,
+					"file": "wasm-no-std/pkg/omnicu_no_std.wat",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 441,
+						"buffer_size": 55273,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								440,
-								440
+								4636,
+								4636
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 13.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
-					"file": "wasm-xargo/README.md",
+					"buffer": 5,
+					"file": "wasm-no-std/pkg/omnicu_no_std.twiggy-dominators.out",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 683,
+						"buffer_size": 6452,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								307,
-								307
+								504,
+								504
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "wasm-xargo/Xargo.toml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 82,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								57,
-								78
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TOML/TOML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 59,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								59,
-								59
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "wasm-xargo/pkg/.gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10,
-								10
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "wasm-xargo/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								244,
-								244
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -2153,7 +1225,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -2194,7 +1266,7 @@
 	"project": "rust-wasm-i18n.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2720,12 +1792,12 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 625.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 475.0
 	},
 	"select_symbol":
 	{
