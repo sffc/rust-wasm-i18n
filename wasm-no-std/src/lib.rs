@@ -141,8 +141,8 @@ struct Message {
 
 impl fmt::Display for Message {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-    	write!(f, "{}", self.message)
-    	// f.write_str(self.message)
+    	// write!(f, "{}", self.message)
+    	f.write_str(self.message)
     }
 }
 

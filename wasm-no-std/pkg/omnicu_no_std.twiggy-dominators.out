@@ -1,79 +1,77 @@
  Retained Bytes │ Retained % │ Dominator Tree
 ────────────────┼────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-           2635 ┊      9.07% ┊ "function names" subsection
-           2288 ┊      7.88% ┊ table[0]
-           2284 ┊      7.86% ┊   ⤷ elem[0]
-            958 ┊      3.30% ┊       ⤷ <&T as core::fmt::Display>::fmt::h116a3a9606a1e7d9
-            936 ┊      3.22% ┊           ⤷ core::fmt::Formatter::pad::h671c63eb2e61967c
-            322 ┊      1.11% ┊       ⤷ <&mut W as core::fmt::Write>::write_char::ha1fb740e71295541
-            266 ┊      0.92% ┊       ⤷ alloc::raw_vec::RawVec<T,A>::reserve::he182167b2528833c
-             28 ┊      0.10% ┊           ⤷ __rust_alloc
-             14 ┊      0.05% ┊               ⤷ __rg_alloc
-             19 ┊      0.07% ┊           ⤷ alloc::raw_vec::capacity_overflow::ha369776b076180ee
-            168 ┊      0.58% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h67b87ca4062c243a
-            131 ┊      0.45% ┊       ⤷ <&T as core::fmt::Display>::fmt::he4a14c34c153e2f9
-            118 ┊      0.41% ┊       ⤷ <&mut W as core::fmt::Write>::write_fmt::h4b7c58ac5fcd3bfb
-            112 ┊      0.39% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::hc042b136d57cfd86
-             55 ┊      0.19% ┊       ⤷ alloc::vec::Vec<T>::extend_from_slice::h9479b31a875bf5ee
-             35 ┊      0.12% ┊       ⤷ <core::fmt::Error as core::fmt::Debug>::fmt::h536e68023cc4bae3
-             21 ┊      0.07% ┊       ⤷ <&mut W as core::fmt::Write>::write_str::h52cf50a76c437b2b
-             15 ┊      0.05% ┊       ⤷ core::ops::function::FnOnce::call_once::hbb1f81e74ea5afcb
-              7 ┊      0.02% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h6dca2a1fac9bf2aa
-              6 ┊      0.02% ┊       ⤷ type[5]: (i32, i32, i32) -> nil
-              6 ┊      0.02% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h2abbdc00ad0ab0d0
-              6 ┊      0.02% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hb6992b70eba153bc
-              6 ┊      0.02% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::ha0801389bf773b94
+           2512 ┊     11.34% ┊ "function names" subsection
+           1240 ┊      5.60% ┊ table[0]
+           1236 ┊      5.58% ┊   ⤷ elem[0]
+            322 ┊      1.45% ┊       ⤷ <&mut W as core::fmt::Write>::write_char::ha1fb740e71295541
+            266 ┊      1.20% ┊       ⤷ alloc::raw_vec::RawVec<T,A>::reserve::he182167b2528833c
+             28 ┊      0.13% ┊           ⤷ __rust_alloc
+             14 ┊      0.06% ┊               ⤷ __rg_alloc
+             19 ┊      0.09% ┊           ⤷ alloc::raw_vec::capacity_overflow::ha369776b076180ee
+            168 ┊      0.76% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::h67b87ca4062c243a
+            118 ┊      0.53% ┊       ⤷ <&mut W as core::fmt::Write>::write_fmt::h4b7c58ac5fcd3bfb
+            112 ┊      0.51% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::new_cell_for_free_list::hc042b136d57cfd86
+             55 ┊      0.25% ┊       ⤷ alloc::vec::Vec<T>::extend_from_slice::h9479b31a875bf5ee
+             42 ┊      0.19% ┊       ⤷ <&T as core::fmt::Display>::fmt::he4a14c34c153e2f9
+             35 ┊      0.16% ┊       ⤷ <core::fmt::Error as core::fmt::Debug>::fmt::h536e68023cc4bae3
+             21 ┊      0.09% ┊       ⤷ <&mut W as core::fmt::Write>::write_str::h52cf50a76c437b2b
+             15 ┊      0.07% ┊       ⤷ core::ops::function::FnOnce::call_once::hbb1f81e74ea5afcb
+              7 ┊      0.03% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h6dca2a1fac9bf2aa
+              6 ┊      0.03% ┊       ⤷ type[5]: (i32, i32, i32) -> nil
+              6 ┊      0.03% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::min_cell_size::h2abbdc00ad0ab0d0
+              6 ┊      0.03% ┊       ⤷ <wee_alloc::size_classes::SizeClassAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::hb6992b70eba153bc
+              6 ┊      0.03% ┊       ⤷ <wee_alloc::LargeAllocPolicy as wee_alloc::AllocPolicy>::should_merge_adjacent_free_cells::ha0801389bf773b94
               5 ┊      0.02% ┊       ⤷ type[3]: (i32) -> i32
-              4 ┊      0.01% ┊       ⤷ type[7]: (i32) -> nil
-              4 ┊      0.01% ┊       ⤷ core::ptr::drop_in_place::hdc2a561f247f8c8c
-              4 ┊      0.01% ┊       ⤷ core::ptr::drop_in_place::hd97b4e8cb039d658
-              4 ┊      0.01% ┊       ⤷ core::ptr::drop_in_place::hce83941a0249a07e
-              4 ┊      0.01% ┊       ⤷ core::ptr::drop_in_place::hce83941a0249a07e.150
-              4 ┊      0.01% ┊       ⤷ core::ptr::drop_in_place::hb377abe8a932bf94.151
-            857 ┊      2.95% ┊ core::fmt::write::h8b996d8af01475c9
-             11 ┊      0.04% ┊   ⤷ core::panicking::panic_bounds_check::ha440f41d0e4eca5f
-            751 ┊      2.59% ┊ wee_alloc::alloc_with_refill::h3579cbb8bfe78a19
-            608 ┊      2.09% ┊   ⤷ wee_alloc::alloc_first_fit::h09249362ac90a6bf
-              9 ┊      0.03% ┊   ⤷ type[8]: (i32, i32, i32, i32, i32) -> i32
-            546 ┊      1.88% ┊ <wee_alloc::WeeAlloc as core::alloc::global::GlobalAlloc>::dealloc::h64fe22c186edb5ed
-            341 ┊      1.17% ┊   ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::h3cc23353811063a6
-            456 ┊      1.57% ┊ export "alert_message_display"
-            432 ┊      1.49% ┊   ⤷ alert_message_display
-             28 ┊      0.10% ┊       ⤷ __rust_dealloc
-             14 ┊      0.05% ┊           ⤷ __rg_dealloc
-             12 ┊      0.04% ┊       ⤷ import env::alert
-             11 ┊      0.04% ┊       ⤷ core::option::expect_none_failed::h807851172125790d
-            217 ┊      0.75% ┊ <wee_alloc::WeeAlloc as core::alloc::global::GlobalAlloc>::alloc::h863bda3e0be4e728
-             73 ┊      0.25% ┊ __rust_realloc
-             57 ┊      0.20% ┊   ⤷ __rg_realloc
-             56 ┊      0.19% ┊ memcpy
-             21 ┊      0.07% ┊ export "__heap_base"
-              7 ┊      0.02% ┊   ⤷ global[2]
-             20 ┊      0.07% ┊ export "__data_end"
-              7 ┊      0.02% ┊   ⤷ global[1]
-             19 ┊      0.07% ┊ custom section '.debug_pubnames' headers
-             18 ┊      0.06% ┊ custom section '.debug_pubtypes' headers
-             18 ┊      0.06% ┊ custom section '.debug_aranges' headers
-             17 ┊      0.06% ┊ custom section '.debug_ranges' headers
-             17 ┊      0.06% ┊ custom section '.debug_abbrev' headers
-             15 ┊      0.05% ┊ custom section '.debug_info' headers
-             15 ┊      0.05% ┊ custom section '.debug_line' headers
-             14 ┊      0.05% ┊ custom section '.debug_str' headers
-             12 ┊      0.04% ┊ custom section 'producers' headers
-             11 ┊      0.04% ┊ export "memory"
+              4 ┊      0.02% ┊       ⤷ type[7]: (i32) -> nil
+              4 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place::hdc2a561f247f8c8c
+              4 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place::hd97b4e8cb039d658
+              4 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place::hce83941a0249a07e
+              4 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place::hce83941a0249a07e.150
+              4 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place::hb377abe8a932bf94.151
+            857 ┊      3.87% ┊ core::fmt::write::h8b996d8af01475c9
+             11 ┊      0.05% ┊   ⤷ core::panicking::panic_bounds_check::ha440f41d0e4eca5f
+            751 ┊      3.39% ┊ wee_alloc::alloc_with_refill::h3579cbb8bfe78a19
+            608 ┊      2.75% ┊   ⤷ wee_alloc::alloc_first_fit::h09249362ac90a6bf
+              9 ┊      0.04% ┊   ⤷ type[8]: (i32, i32, i32, i32, i32) -> i32
+            546 ┊      2.47% ┊ <wee_alloc::WeeAlloc as core::alloc::global::GlobalAlloc>::dealloc::h64fe22c186edb5ed
+            341 ┊      1.54% ┊   ⤷ wee_alloc::WeeAlloc::dealloc_impl::{{closure}}::h3cc23353811063a6
+            456 ┊      2.06% ┊ export "alert_message_display"
+            432 ┊      1.95% ┊   ⤷ alert_message_display
+             28 ┊      0.13% ┊       ⤷ __rust_dealloc
+             14 ┊      0.06% ┊           ⤷ __rg_dealloc
+             12 ┊      0.05% ┊       ⤷ import env::alert
+             11 ┊      0.05% ┊       ⤷ core::option::expect_none_failed::h807851172125790d
+            217 ┊      0.98% ┊ <wee_alloc::WeeAlloc as core::alloc::global::GlobalAlloc>::alloc::h863bda3e0be4e728
+             73 ┊      0.33% ┊ __rust_realloc
+             57 ┊      0.26% ┊   ⤷ __rg_realloc
+             56 ┊      0.25% ┊ memcpy
+             21 ┊      0.09% ┊ export "__heap_base"
+              7 ┊      0.03% ┊   ⤷ global[2]
+             20 ┊      0.09% ┊ export "__data_end"
+              7 ┊      0.03% ┊   ⤷ global[1]
+             19 ┊      0.09% ┊ custom section '.debug_pubnames' headers
+             18 ┊      0.08% ┊ custom section '.debug_pubtypes' headers
+             18 ┊      0.08% ┊ custom section '.debug_aranges' headers
+             17 ┊      0.08% ┊ custom section '.debug_ranges' headers
+             17 ┊      0.08% ┊ custom section '.debug_abbrev' headers
+             15 ┊      0.07% ┊ custom section '.debug_info' headers
+             15 ┊      0.07% ┊ custom section '.debug_line' headers
+             14 ┊      0.06% ┊ custom section '.debug_str' headers
+             12 ┊      0.05% ┊ custom section 'producers' headers
+             11 ┊      0.05% ┊ export "memory"
               2 ┊      0.01% ┊   ⤷ memory[0]
-             11 ┊      0.04% ┊ core::panicking::panic::h94c4b8c5a269b671
-              8 ┊      0.03% ┊ custom section 'name' headers
-              8 ┊      0.03% ┊ wasm magic bytes
-              7 ┊      0.02% ┊ type[0]: (i32, i32, i32) -> i32
-              7 ┊      0.02% ┊ type[2]: (i32, i32, i32, i32) -> nil
-              7 ┊      0.02% ┊ global[0]
-              7 ┊      0.02% ┊ code section headers
-              6 ┊      0.02% ┊ type[1]: (i32, i32) -> i32
-              6 ┊      0.02% ┊ rust_oom
-              6 ┊      0.02% ┊ core::panicking::panic_fmt::h62f7e605cdf65d83
+             11 ┊      0.05% ┊ core::panicking::panic::h94c4b8c5a269b671
+              8 ┊      0.04% ┊ custom section 'name' headers
+              8 ┊      0.04% ┊ wasm magic bytes
+              7 ┊      0.03% ┊ type[0]: (i32, i32, i32) -> i32
+              7 ┊      0.03% ┊ type[2]: (i32, i32, i32, i32) -> nil
+              7 ┊      0.03% ┊ global[0]
+              7 ┊      0.03% ┊ code section headers
+              6 ┊      0.03% ┊ type[1]: (i32, i32) -> i32
+              6 ┊      0.03% ┊ rust_oom
+              6 ┊      0.03% ┊ core::panicking::panic_fmt::h62f7e605cdf65d83
               5 ┊      0.02% ┊ type[4]: (i32, i32) -> nil
-              4 ┊      0.01% ┊ data section headers
+              4 ┊      0.02% ┊ data section headers
               3 ┊      0.01% ┊ type[6]: () -> nil
               3 ┊      0.01% ┊ type section headers
               3 ┊      0.01% ┊ import section headers
@@ -82,4 +80,4 @@
               3 ┊      0.01% ┊ global section headers
               3 ┊      0.01% ┊ export section headers
               3 ┊      0.01% ┊ element section headers
-          20862 ┊     71.83% ┊ [10 Unreachable Items]
+          15134 ┊     68.34% ┊ [10 Unreachable Items]
